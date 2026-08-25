@@ -425,114 +425,263 @@ footer p{
 
 <section class="courses" id="courses">
 
-    <div class="container">
+<style>
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
-        <div class="section-title">
-            <h2>Our Quran Courses</h2>
-            <p>Choose the right Quran course and begin your learning journey with experience teachers.</p>
-        </div>
-<div class="course-grid">
+.course-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #e5eee9;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
 
-    <!-- Quran Nazra -->
-    <div class="course-card">
-        <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?auto=format&fit=crop&w=800&q=80"
-             alt="Quran Nazra">
-        <div class="course-content">
-            <h3>Quran Nazra</h3>
-            <p>Learn to read the Holy Quran correctly with proper pronunciation and regular practice.</p>
-            <a href="#contact" class="course-btn">Enroll Now →</a>
-        </div>
+.course-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.13);
+}
+
+.course-image {
+    height: 190px;
+    background: linear-gradient(135deg, #eefaf4, #dff3e8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.course-image svg {
+    width: 135px;
+    height: 135px;
+}
+
+.course-content {
+    padding: 22px 20px 25px;
+}
+
+.course-content h3 {
+    margin: 0 0 12px;
+    color: #176b45;
+    font-size: 22px;
+}
+
+.course-content p {
+    margin: 0 0 20px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.course-btn {
+    display: inline-block;
+    background: #176b45;
+    color: white !important;
+    padding: 11px 24px;
+    border-radius: 30px;
+    text-decoration: none !important;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.course-btn:hover {
+    background: #0f5134;
+}
+
+@media (max-width: 900px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .course-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .course-image {
+        height: 175px;
+    }
+
+    .course-content h3 {
+        font-size: 20px;
+    }
+}
+</style>
+
+<div class="container">
+
+    <div class="section-title">
+        <h2>Our Quran Courses</h2>
+        <p>Choose the right Quran course and begin your learning journey with experienced teachers.</p>
     </div>
 
-    <!-- Noorani Qaida -->
-    <div class="course-card">
-        <img src="https://images.unsplash.com/photo-1585036156171-384164a8c675?auto=format&fit=crop&w=800&q=80"
-             alt="Noorani Qaida">
-        <div class="course-content">
-            <h3>Noorani Qaida</h3>
-            <p>Build a strong foundation in Arabic letters, pronunciation and Quran reading.</p>
-            <a href="#contact" class="course-btn">Enroll Now →</a>
-        </div>
-    </div>
+    <div class="course-grid">
 
-    <!-- Quran with Tajweed -->
-    <div class="course-card">
-        <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=800&q=80"
-             alt="Quran with Tajweed">
-        <div class="course-content">
-            <h3>Quran with Tajweed</h3>
-            <p>Improve your Quran recitation with correct pronunciation and Tajweed rules.</p>
-            <a href="#contact" class="course-btn">Enroll Now →</a>
+        <!-- 1 Quran Nazra -->
+        <div class="course-card">
+            <div class="course-image">
+                <svg viewBox="0 0 160 160">
+                    <rect x="35" y="25" width="90" height="110" rx="8" fill="#ffffff" stroke="#176b45" stroke-width="5"/>
+                    <path d="M50 55h60M50 75h60M50 95h45M50 115h55" stroke="#176b45" stroke-width="5" stroke-linecap="round"/>
+                    <circle cx="80" cy="38" r="5" fill="#176b45"/>
+                </svg>
+            </div>
+            <div class="course-content">
+                <h3>Quran Nazra</h3>
+                <p>Learn to read the Holy Quran correctly with proper pronunciation and regular practice.</p>
+                <a href="#contact" class="course-btn">Enroll Now</a>
+            </div>
         </div>
-    </div>
 
-    <!-- Hifz-ul-Quran -->
-    <div class="course-card">
-        <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=800&q=80"
-             alt="Hifz-ul-Quran">
-        <div class="course-content">
-            <h3>Hifz-ul-Quran</h3>
-            <p>Memorize the Holy Quran with a structured plan and regular revision.</p>
-            <a href="#contact" class="course-btn">Enroll Now →</a>
+        <!-- 2 Noorani Qaida -->
+        <div class="course-card">
+            <div class="course-image">
+                <svg viewBox="0 0 160 160">
+                    <rect x="30" y="30" width="100" height="100" rx="10" fill="#ffffff" stroke="#176b45" stroke-width="5"/>
+                    <text x="80" y="88" text-anchor="middle" font-size="38" fill="#176b45">ا ب ت</text>
+                    <path d="M50 105h60" stroke="#176b45" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="course-content">
+                <h3>Noorani Qaida</h3>
+                <p>Build a strong foundation in Quran reading, Arabic letters and correct pronunciation.</p>
+                <a href="#contact" class="course-btn">Enroll Now</a>
+            </div>
         </div>
-    </div>
 
-    <!-- Islamic Studies -->
-    <div class="course-card">
-        <img src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&w=800&q=80"
-             alt="Islamic Studies">
-        <div class="course-content">
-            <h3>Islamic Studies</h3>
-            <p>Learn essential Islamic knowledge, duas, manners and practical teachings.</p>
-            <a href="#contact" class="course-btn">Enroll Now →</a>
+        <!-- 3 Quran Tajweed -->
+        <div class="course-card">
+            <div class="course-image">
+                <svg viewBox="0 0 160 160">
+                    <circle cx="80" cy="80" r="55" fill="#ffffff" stroke="#176b45" stroke-width="5"/>
+                    <path d="M48 62 Q80 42 112 62 M48 82 Q80 62 112 82 M48 102 Q80 82 112 102" fill="none" stroke="#176b45" stroke-width="5"/>
+                    <circle cx="80" cy="80" r="8" fill="#176b45"/>
+                </svg>
+            </div>
+            <div class="course-content">
+                <h3>Quran with Tajweed</h3>
+                <p>Improve Quran recitation with correct pronunciation and essential Tajweed rules.</p>
+                <a href="#contact" class="course-btn">Enroll Now</a>
+            </div>
         </div>
-    </div>
 
-    <!-- Quran Translation -->
-    <div class="course-card">
-        <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=800&q=80"
-             alt="Quran Translation">
-        <div class="course-content">
-            <h3>Quran Translation</h3>
-            <p>Understand the meaning of the Holy Quran through clear and simple translation.</p>
-            <a href="#contact" class="course-btn">Enroll Now →</a>
+        <!-- 4 Hifz Quran -->
+        <div class="course-card">
+            <div class="course-image">
+                <svg viewBox="0 0 160 160">
+                    <path d="M35 45 Q55 25 80 45 Q105 25 125 45 V125 Q102 105 80 125 Q58 105 35 125 Z"
+                          fill="#ffffff" stroke="#176b45" stroke-width="5"/>
+                    <path d="M80 45v80" stroke="#176b45" stroke-width="4"/>
+                    <path d="M50 65h20M90 65h20M50 85h20M90 85h20" stroke="#176b45" stroke-width="4"/>
+                </svg>
+            </div>
+            <div class="course-content">
+                <h3>Hifz-ul-Quran</h3>
+                <p>Memorize the Holy Quran through a structured, consistent and guided learning program.</p>
+                <a href="#contact" class="course-btn">Enroll Now</a>
+            </div>
         </div>
-    </div>
 
-    <!-- Hadith -->
-    <div class="course-card">
-        <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?auto=format&fit=crop&w=800&q=80"
-             alt="Hadith">
-        <div class="course-content">
-            <h3>Hadith</h3>
-            <p>Learn selected authentic Ahadith with simple explanations and practical lessons.</p>
-            <a href="#contact" class="course-btn">Enroll Now →</a>
+        <!-- 5 Islamic Studies -->
+        <div class="course-card">
+            <div class="course-image">
+                <svg viewBox="0 0 160 160">
+                    <path d="M35 70 L80 35 L125 70" fill="none" stroke="#176b45" stroke-width="6"/>
+                    <rect x="45" y="70" width="70" height="55" rx="5" fill="#ffffff" stroke="#176b45" stroke-width="5"/>
+                    <path d="M60 85v25M80 85v25M100 85v25" stroke="#176b45" stroke-width="5"/>
+                    <circle cx="80" cy="45" r="8" fill="#176b45"/>
+                </svg>
+            </div>
+            <div class="course-content">
+                <h3>Islamic Studies</h3>
+                <p>Learn essential Islamic knowledge, daily duas, manners and practical Islamic teachings.</p>
+                <a href="#contact" class="course-btn">Enroll Now</a>
+            </div>
         </div>
-    </div>
 
-    <!-- Seerah -->
-    <div class="course-card">
-        <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=800&q=80"
-             alt="Seerah">
-        <div class="course-content">
-            <h3>Seerah</h3>
-            <p>Discover the life, character and teachings of Prophet Muhammad ﷺ.</p>
-            <a href="#contact" class="course-btn">Enroll Now →</a>
+        <!-- 6 Quran Translation -->
+        <div class="course-card">
+            <div class="course-image">
+                <svg viewBox="0 0 160 160">
+                    <rect x="30" y="35" width="100" height="90" rx="10" fill="#ffffff" stroke="#176b45" stroke-width="5"/>
+                    <text x="80" y="72" text-anchor="middle" font-size="24" fill="#176b45">QURAN</text>
+                    <path d="M48 90h64M48 108h50" stroke="#176b45" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="course-content">
+                <h3>Quran Translation</h3>
+                <p>Understand the meaning of the Holy Quran with clear and simple translation.</p>
+                <a href="#contact" class="course-btn">Enroll Now</a>
+            </div>
         </div>
-    </div>
 
-    <!-- Namaz -->
-    <div class="course-card">
-        <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=800&q=80"
-             alt="Namaz">
-        <div class="course-content">
-            <h3>Namaz</h3>
-            <p>Learn how to perform Salah correctly, step by step, with proper guidance.</p>
-            <a href="#contact" class="course-btn">Enroll Now →</a>
+        <!-- 7 Hadith -->
+        <div class="course-card">
+            <div class="course-image">
+                <svg viewBox="0 0 160 160">
+                    <rect x="35" y="30" width="90" height="105" rx="8" fill="#ffffff" stroke="#176b45" stroke-width="5"/>
+                    <circle cx="80" cy="55" r="12" fill="none" stroke="#176b45" stroke-width="4"/>
+                    <path d="M55 82h50M55 100h50M55 118h35" stroke="#176b45" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="course-content">
+                <h3>Hadith</h3>
+                <p>Study authentic Hadith with simple explanations, lessons and practical guidance.</p>
+                <a href="#contact" class="course-btn">Enroll Now</a>
+            </div>
         </div>
-    </div>
 
+        <!-- 8 Seerah -->
+        <div class="course-card">
+            <div class="course-image">
+                <svg viewBox="0 0 160 160">
+                    <circle cx="80" cy="80" r="55" fill="#ffffff" stroke="#176b45" stroke-width="5"/>
+                    <path d="M55 105 Q80 70 105 105" fill="none" stroke="#176b45" stroke-width="5"/>
+                    <path d="M60 68 Q80 48 100 68" fill="none" stroke="#176b45" stroke-width="5"/>
+                    <circle cx="80" cy="55" r="7" fill="#176b45"/>
+                </svg>
+            </div>
+            <div class="course-content">
+                <h3>Seerah</h3>
+                <p>Learn inspiring lessons from the life and character of the Prophet ﷺ.</p>
+                <a href="#contact" class="course-btn">Enroll Now</a>
+            </div>
+        </div>
+
+        <!-- 9 Namaz -->
+        <div class="course-card">
+            <div class="course-image">
+                <svg viewBox="0 0 160 160">
+                    <path d="M80 30 L92 55 L120 58 L99 77 L105 105 L80 92 L55 105 L61 77 L40 58 L68 55 Z"
+                          fill="#ffffff" stroke="#176b45" stroke-width="5"/>
+                    <circle cx="80" cy="65" r="10" fill="#176b45"/>
+                    <path d="M65 105 Q80 85 95 105" fill="none" stroke="#176b45" stroke-width="6"/>
+                </svg>
+            </div>
+            <div class="course-content">
+                <h3>Namaz</h3>
+                <p>Learn the correct method of Salah, essential duas and the basic steps of prayer.</p>
+                <a href="#contact" class="course-btn">Enroll Now</a>
+            </div>
+        </div>
+
+    </div>
 </div>
+
+</section>
+            
+               
         
 
 </section>
