@@ -450,7 +450,7 @@ footer p{
     box-shadow: 0 15px 35px rgba(0,0,0,0.13);
 }
 .course-image {
-    height: 120px;
+    height: 180px;
     background: #f4faf7;
     display: flex;
     align-items: center;
@@ -458,7 +458,13 @@ footer p{
     padding: 12px;
     border-bottom: 1px solid #e6eee9;
 }
-
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
 .course-image svg {
     width: 72px;
     height: 72px;
@@ -702,100 +708,121 @@ footer p{
       <p>Affordable Quran learning plans for every family.</p>
     </div><div class="course-grid">
 
-    <!-- Quran Nazra -->
-    <a href="#contact" class="course-card">
-        <img src="images/quran-nazra.jpg" alt="Quran Nazra">
-        <div class="course-content">
-            <h3>Quran Nazra</h3>
-            <p>Learn to read the Holy Quran correctly with proper pronunciation and regular practice.</p>
-            <span class="course-btn">Enroll Now →</span>
-        </div>
-    </a>
 
-    <!-- Noorani Qaida -->
-    <a href="#contact" class="course-card">
-        <img src="images/noorani-qaida.jpg" alt="Noorani Qaida">
-        <div class="course-content">
-            <h3>Noorani Qaida</h3>
-            <p>Start your Quran learning journey with Arabic letters, sounds and basic reading rules.</p>
-            <span class="course-btn">Enroll Now →</span>
-        </div>
-    </a>
 
-    <!-- Tajweed -->
-    <a href="#contact" class="course-card">
-        <img src="images/tajweed.jpg" alt="Quran with Tajweed">
-        <div class="course-content">
-            <h3>Quran with Tajweed</h3>
-            <p>Improve your Quran recitation with correct pronunciation and essential Tajweed rules.</p>
-            <span class="course-btn">Enroll Now →</span>
-        </div>
-    </a>
 
-    <!-- Hifz -->
-    <a href="#contact" class="course-card">
-        <img src="images/hifz-quran.jpg" alt="Hifz-ul-Quran">
-        <div class="course-content">
-            <h3>Hifz-ul-Quran</h3>
-            <p>Memorize the Holy Quran with a structured learning plan and regular revision.</p>
-            <span class="course-btn">Enroll Now →</span>
-        </div>
-    </a>
 
-    <!-- Islamic Studies -->
-    <a href="#contact" class="course-card">
-        <img src="images/islamic-studies.jpg" alt="Islamic Studies">
-        <div class="course-content">
-            <h3>Islamic Studies</h3>
-            <p>Learn essential Islamic knowledge, daily duas, manners and practical teachings.</p>
-            <span class="course-btn">Enroll Now →</span>
-        </div>
-    </a>
 
-    <!-- Hadith -->
-    <a href="#contact" class="course-card">
-        <img src="images/hadith.jpg" alt="Hadith">
-        <div class="course-content">
-            <h3>Hadith</h3>
-            <p>Learn authentic Hadith and understand how to apply Islamic teachings in daily life.</p>
-            <span class="course-btn">Enroll Now →</span>
-        </div>
-    </a>
-
-    <!-- Seerah -->
-    <a href="#contact" class="course-card">
-        <img src="images/seerah.jpg" alt="Seerah">
-        <div class="course-content">
-            <h3>Seerah</h3>
-            <p>Learn about the life, character and teachings of Prophet Muhammad ﷺ.</p>
-            <span class="course-btn">Enroll Now →</span>
-        </div>
-    </a>
-
-    <!-- Quran Translation -->
-    <a href="#contact" class="course-card">
-        <img src="images/quran-translation.jpg" alt="Quran Translation">
-        <div class="course-content">
-            <h3>Quran Translation</h3>
-            <p>Understand the meaning of the Holy Quran with clear and simple translation.</p>
-            <span class="course-btn">Enroll Now →</span>
-        </div>
-    </a>
-
-    <!-- Namaz -->
-    <a href="#contact" class="course-card">
-        <img src="images/namaz.jpg" alt="Namaz">
-        <div class="course-content">
-            <h3>Namaz</h3>
-            <p>Learn how to offer Salah correctly, step by step, with proper guidance.</p>
-            <span class="course-btn">Enroll Now →</span>
-        </div>
-    </a>
-
-</div>
+    
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;max-width:1100px;margin:40px auto;">
+<!-- 1 Quran Nazra -->
+<div class="course-card">
+    <div class="course-image">
+        <img src="images/quran-nazra.png" alt="Quran Nazra">
+    </div>
+    <div class="course-content">
+        <h3>Quran Nazra</h3>
+        <p>Learn to read the Holy Quran correctly with proper pronunciation and regular practice.</p>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+    </div>
+</div>
 
+<!-- 2 Noorani Qaida -->
+<div class="course-card">
+    <div class="course-image">
+        <img src="images/noorani-qaida.png" alt="Noorani Qaida">
+    </div>
+    <div class="course-content">
+        <h3>Noorani Qaida</h3>
+        <p>Build a strong foundation in Quran reading, Arabic letters and correct pronunciation.</p>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+    </div>
+</div>
+
+<!-- 3 Quran Tajweed -->
+<div class="course-card">
+    <div class="course-image">
+        <img src="images/quran-tajweed.png" alt="Quran with Tajweed">
+    </div>
+    <div class="course-content">
+        <h3>Quran with Tajweed</h3>
+        <p>Improve Quran recitation with correct pronunciation and essential Tajweed rules.</p>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+    </div>
+</div>
+
+<!-- 4 Hifz Quran -->
+<div class="course-card">
+    <div class="course-image">
+        <img src="images/hifz-ul-quran.png" alt="Hifz-ul-Quran">
+    </div>
+    <div class="course-content">
+        <h3>Hifz-ul-Quran</h3>
+        <p>Memorize the Holy Quran through a structured, consistent and guided learning program.</p>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+    </div>
+</div>
+
+<!-- 5 Islamic Studies -->
+<div class="course-card">
+    <div class="course-image">
+        <img src="images/islamic-studies.png" alt="Islamic Studies">
+    </div>
+    <div class="course-content">
+        <h3>Islamic Studies</h3>
+        <p>Learn essential Islamic knowledge, daily duas, manners and practical Islamic teachings.</p>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+    </div>
+</div>
+
+<!-- 6 Quran Translation -->
+<div class="course-card">
+    <div class="course-image">
+        <img src="images/quran-translation.png" alt="Quran Translation">
+    </div>
+    <div class="course-content">
+        <h3>Quran Translation</h3>
+        <p>Understand the meaning of the Holy Quran with clear and simple translation.</p>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+    </div>
+</div>
+
+<!-- 7 Hadith -->
+<div class="course-card">
+    <div class="course-image">
+        <img src="images/hadith.png" alt="Hadith">
+    </div>
+    <div class="course-content">
+        <h3>Hadith</h3>
+        <p>Study authentic Hadith with simple explanations, lessons and practical guidance.</p>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+    </div>
+</div>
+
+<!-- 8 Seerah -->
+<div class="course-card">
+    <div class="course-image">
+        <img src="images/seerah.png" alt="Seerah">
+    </div>
+    <div class="course-content">
+        <h3>Seerah</h3>
+        <p>Learn inspiring lessons from the life and character of the Prophet ﷺ.</p>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+    </div>
+</div>
+
+<!-- 9 Namaz -->
+<div class="course-card">
+    <div class="course-image">
+        <img src="images/namaz.png" alt="Namaz">
+    </div>
+    <div class="course-content">
+        <h3>Namaz</h3>
+        <p>Learn the correct method of Salah, essential duas and the basic steps of prayer.</p>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+    </div>
+</div>
       <!-- 2 DAYS -->
       <div style="background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.10);border:1px solid #e5e5e5;">
         <div style="background:#b91c3c;color:white;padding:25px 15px;">
