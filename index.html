@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,1143 +6,823 @@
 
 <title>JHN Quran Academy | Learn Quran Online</title>
 
-<meta name="description" content="JHN Quran Academy - Learn Quran online with experienced teachers. Quran Nazra, Hifz-ul-Quran, Tajweed and Islamic Studies.">
+<meta name="description" content="JHN Quran Academy offers online Quran classes with qualified teachers. Learn Quran Nazra, Noorani Qaida, Tajweed, Hifz-ul-Quran, Islamic Studies and more.">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
+
+/* =====================================================
+   JHN QURAN ACADEMY
+   PROFESSIONAL WEBSITE
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    line-height:1.6;
-    color:#18352f;
-    background:#f8fbf9;
+:root {
+    --green: #0d5c4b;
+    --dark-green: #083f34;
+    --light-green: #f0f7f4;
+    --gold: #f4c95d;
+    --white: #ffffff;
+    --text: #18352f;
+    --gray: #666666;
 }
 
-header{
-    background:#0d5c4b;
-    color:white;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 3px 15px rgba(0,0,0,.15);
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fbf9;
+    color: var(--text);
+    line-height: 1.6;
 }
 
-.navbar{
-    max-width:1150px;
-    margin:auto;
-    padding:0 20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--green);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
-.
-    
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    min-height: 85px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.logo span{
-    color:#f4c95d;
-}
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 24px;
-    font-weight: bold;
 }
 
 .logo img {
-    width: 120px;
-    height: 120px;
+    width: 78px;
+    height: 78px;
     object-fit: contain;
     display: block;
-    margin: 0;
-    padding: 0;
-    border-radius: 50%;
-}
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-    font-size:15px;
 }
 
-nav a:hover{
-    color:#f4c95d;
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.hero{
-    min-height:90vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(135deg,#0d5c4b,#137a63);
-    color:white;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-.hero-content{
-    max-width:850px;
+nav a:hover {
+    color: var(--gold);
 }
 
-.hero h1{
-    font-size:52px;
-    margin-bottom:15px;
+/* =====================================================
+   HERO
+   ===================================================== */
+
+.hero {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(13,92,75,0.93),
+            rgba(19,122,99,0.93)
+        );
 }
 
-.hero h1 span{
-    color:#f4c95d;
+.hero-content {
+    max-width: 900px;
+    margin: auto;
 }
 
-.hero p{
-    font-size:20px;
-    margin-bottom:30px;
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 22px;
 }
 
-.btn{
-    display:inline-block;
-    background:#f4c95d;
-    color:#18352f;
-    padding:13px 25px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-    margin:6px;
+.hero h1 span {
+    color: var(--gold);
 }
 
-.btn:hover{
-    background:white;
+.hero p {
+    max-width: 760px;
+    margin: 0 auto 30px;
+    font-size: 20px;
+    color: #f2f8f6;
 }
 
-.btn-outline{
-    background:transparent;
-    color:white;
-    border:2px solid white;
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    margin: 6px;
+    border-radius: 30px;
+    background: var(--gold);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-section{
-    padding:75px 20px;
+.btn:hover {
+    background: white;
+    transform: translateY(-2px);
 }
 
-.container{
-    max-width:1100px;
-    margin:auto;
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:45px;
+.btn-outline:hover {
+    background: white;
+    color: var(--green);
 }
 
-.section-title h2{
-    font-size:35px;
-    color:#0d5c4b;
-    margin-bottom:10px;
+/* =====================================================
+   GENERAL SECTIONS
+   ===================================================== */
+
+section {
+    padding: 75px 20px;
 }
 
-.section-title p{
-    color:#666;
+.container {
+    max-width: 1100px;
+    margin: auto;
 }
 
-.about{
-    background:white;
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
 }
 
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:35px;
-    align-items:center;
+.section-title h2 {
+    color: var(--green);
+    font-size: 35px;
+    margin-bottom: 10px;
 }
 
-.about-box{
-    padding:25px;
-    background:#f0f7f4;
-    border-radius:15px;
+.section-title p {
+    color: var(--gray);
+    max-width: 750px;
+    margin: auto;
 }
 
-.about-box h3{
-    color:#0d5c4b;
-    margin-bottom:12px;
+/* =====================================================
+   ABOUT
+   ===================================================== */
+
+.about {
+    background: white;
 }
 
-.courses{
-    background:#f8fbf9;
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
 }
 
-.course-grid{
-    display:grid;
-   grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); 
-    gap:20px;
+.about-text h3 {
+    color: var(--green);
+    font-size: 27px;
+    margin-bottom: 15px;
 }
 
-.course{
-    background:white;
-    padding:25px 20px;
-    text-align:center;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    transition:.3s;
+.about-text p {
+    color: #555;
+    margin-bottom: 18px;
 }
 
-.course:hover{
-    transform:translateY(-7px);
+.about-box {
+    background: var(--light-green);
+    padding: 32px;
+    border-radius: 20px;
+    border-left: 5px solid var(--gold);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
 }
 
-.course-icon{
-    font-size:42px;
-    margin-bottom:15px;
+.about-box h3 {
+    color: var(--green);
+    font-size: 25px;
+    margin-bottom: 12px;
 }
 
-.course h3{
-    color:#0d5c4b;
-    margin-bottom:10px;
+.about-box p {
+    color: #555;
 }
 
-.course p{
-    color:#666;
-    font-size:14px;
+/* =====================================================
+   COURSES
+   ===================================================== */
+
+.courses {
+    background: #f8fbf9;
 }
 
-.features{
-    background:#0d5c4b;
-    color:white;
-}
-
-.feature-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.feature{
-    text-align:center;
-    padding:25px;
-}
-
-.feature h3{
-    color:#f4c95d;
-    margin:10px 0;
-}
-
-.contact{
-    background:white;
-}
-
-.contact-box{
-    max-width:700px;
-    margin:auto;
-    background:#f0f7f4;
-    padding:35px;
-    border-radius:18px;
-    text-align:center;
-}
-
-.contact-box h3{
-    color:#0d5c4b;
-    font-size:28px;
-    margin-bottom:15px;
-}
-
-.contact-info{
-    margin:20px 0;
-    font-size:17px;
-}
-
-.contact-button{
-    display:inline-block;
-    background:#0d5c4b;
-    color:white;
-    padding:13px 25px;
-    border-radius:30px;
-    text-decoration:none;
-    margin:5px;
-}
-
-.contact-button:hover{
-    background:#137a63;
-}
-
-footer{
-    background:#083f34;
-    color:white;
-    text-align:center;
-    padding:30px 20px;
-}
-
-footer p{
-    margin:5px;
-}
-
-@media(max-width:900px){
-    .course-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .feature-grid{
-        grid-template-columns:1fr;
-    }
-}
-
-@media(max-width:700px){
-    .navbar{
-        flex-direction:column;
-        gap:12px;
-    }
-
-    nav a{
-        margin:0 6px;
-        font-size:13px;
-    }
-
-    .hero h1{
-        font-size:32px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    .about-grid{
-        grid-template-columns:1fr;
-    }
-
-    .course-grid{
-        grid-template-columns:1fr;
-    }
-
-    section{
-        padding:55px 15px;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <div class="navbar">
-
-       
-        <div class="logo">
-    <img src="./logo.png" alt="JHN Quran Academy Logo">
-</div>
-
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#courses">Courses</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-    </div>
-</header>
-
-
-<section class="hero" id="home">
-
-    <div class="hero-content">
-
-        <h1>
-            Learn the Holy Quran Online with <span>JHN Quran Academy</span>
-        </h1>
-
-        
-            
-        
-<p>
-    Learn the Holy Quran online with qualified teachers. Improve
-    your Quran Reading, Tajweed and understanding from the comfort of your
-    home.
-</p>
-        <a class="btn" href="#contact">
-            Enroll Now
-        </a>
-
-        <a class="btn btn-outline" href="#contact">
-            Contact Us
-        </a>
-
-    </div>
-
-</section>
-
-
-<section class="about" id="about">
-
-    <div class="container">
-
-        <div class="section-title">
-            <h2>About JHN Quran Academy</h2>
-            <p>Learn Quran with knowledge, love and dedication.</p>
-        </div>
-
-        <div class="about-grid">
-
-            <div>
-                <h3>Learn the Quran with Confidence</h3
-             <p>
-    JHN Quran Academy provides a friendly and supportive online learning environment
-    where children and adults can learn the Holy Quran with qualified teachers. Our
-    students improve their Quran reading, Tajweed, memorization and understanding
-    from the comfort of home.
-</p>   <br>
-
-                <p>
-                    Our mission is to provide quality 
-                    Quran education throught
-                    experienced teachers in a friendly, 
-                    respectful and supportive
-                    online learning environments.
-                </p>
-            </div>
-
-            <div class="about-box">
-
-                <h3>Our Mission</h3>
-
-                <p>
-                    To make Quran education accessible to students around the
-                    world and help them improve their Quran reading,
-                    memorization and understanding.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="courses" id="courses">
-
-<style>
 .course-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-    max-width: 1150px;
-    margin: 40px auto;
-    padding: 0 20px;
+    gap: 25px;
 }
 
 .course-card {
-    background: #ffffff;
+    background: white;
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid #e5eee9;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-    text-align: center;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
 }
 
 .course-card:hover {
     transform: translateY(-7px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.13);
 }
+
 .course-image {
-    height: 180px;
-    background: #f4faf7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 190px;
     padding: 12px;
-    border-bottom: 1px solid #e6eee9;
+    background: #f0f7f4;
 }
+
 .course-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 14px;
     display: block;
-}
-.course-image svg {
-    width: 72px;
-    height: 72px;
-    max-width: 72px;
-    max-height: 72px;
-}
-
-}
-
-.course-image svg {
-    width: 135px;
-    height: 135px;
 }
 
 .course-content {
-    padding: 18px 18px 22px;
+    padding: 20px;
+    text-align: center;
 }
 
 .course-content h3 {
-    margin: 0 0 12px;
-    color: #176b45;
+    color: var(--green);
     font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .course-content p {
-    margin: 0 0 20px;
-    color: #555;
-    font-size: 15px;
-    line-height: 1.7;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 18px;
+    min-height: 68px;
 }
 
 .course-btn {
     display: inline-block;
-    background: #176b45;
-    color: white !important;
-    padding: 11px 24px;
-    border-radius: 30px;
-    text-decoration: none !important;
-    font-weight: 600;
+    padding: 10px 22px;
+    background: var(--green);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 .course-btn:hover {
-    background: #0f5134;
+    background: var(--dark-green);
 }
 
-@media (max-width: 900px) {
+/* =====================================================
+   FEES
+   ===================================================== */
+
+.fees {
+    background: white;
+}
+
+.fee-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.fee-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #e3ebe7;
+    box-shadow: 0 7px 22px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.fee-card:hover {
+    transform: translateY(-6px);
+}
+
+.fee-header {
+    color: white;
+    padding: 18px 10px;
+}
+
+.fee-header h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.fee-header p {
+    font-size: 12px;
+}
+
+.red {
+    background: #b91c3c;
+}
+
+.blue {
+    background: #299fc4;
+}
+
+.green {
+    background: #4caf3d;
+}
+
+.orange {
+    background: #d27a3d;
+}
+
+.fee-body {
+    padding: 22px 12px;
+}
+
+.old-price {
+    color: #777;
+    font-size: 17px;
+    text-decoration: line-through;
+}
+
+.new-price {
+    display: block;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.price-red {
+    color: #b91c3c;
+}
+
+.price-blue {
+    color: #299fc4;
+}
+
+.price-green {
+    color: #4caf3d;
+}
+
+.price-orange {
+    color: #d27a3d;
+}
+
+.monthly {
+    color: #777;
+    font-size: 13px;
+}
+
+.fee-body p {
+    color: #555;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.fee-btn {
+    display: inline-block;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.fee-btn.red {
+    background: #b91c3c;
+}
+
+.fee-btn.blue {
+    background: #299fc4;
+}
+
+.fee-btn.green {
+    background: #4caf3d;
+}
+
+.fee-btn.orange {
+    background: #d27a3d;
+}
+
+/* =====================================================
+   FAMILY BENEFITS
+   ===================================================== */
+
+.family-box {
+    max-width: 680px;
+    margin: 35px auto 0;
+    padding: 28px 20px;
+    text-align: center;
+    background: var(--light-green);
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.family-box h3 {
+    color: var(--green);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.family-box p {
+    color: #555;
+    margin: 8px 0;
+}
+
+/* =====================================================
+   WHY CHOOSE US
+   ===================================================== */
+
+.features {
+    background: var(--green);
+    color: white;
+}
+
+.features .section-title h2 {
+    color: white;
+}
+
+.features .section-title p {
+    color: #dcebe7;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature {
+    text-align: center;
+    padding: 28px 20px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.06);
+}
+
+.feature-icon {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.feature h3 {
+    color: var(--gold);
+    margin: 10px 0;
+    font-size: 21px;
+}
+
+.feature p {
+    color: #e3f0ec;
+    font-size: 15px;
+}
+
+/* =====================================================
+   CONTACT
+   ===================================================== */
+
+.contact {
+    background: white;
+}
+
+.contact-box {
+    max-width: 720px;
+    margin: auto;
+    padding: 38px 25px;
+    background: var(--light-green);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+}
+
+.contact-box h3 {
+    color: var(--green);
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.contact-box > p {
+    color: #555;
+}
+
+.contact-info {
+    margin: 22px 0;
+    color: #444;
+    font-size: 17px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 13px 25px;
+    margin: 5px;
+    border-radius: 30px;
+    background: var(--green);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: var(--dark-green);
+    transform: translateY(-2px);
+}
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    background: var(--dark-green);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 6px;
+    font-size: 14px;
+}
+
+.footer-title {
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 950px) {
+
     .course-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .fee-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
 
-@media (max-width: 600px) {
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px 15px;
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 68px;
+        height: 68px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding: 65px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 55px 15px;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
     .course-grid {
         grid-template-columns: 1fr;
-        padding: 0 15px;
         gap: 20px;
     }
 
     .course-image {
-        height: 175px;
+        height: 190px;
     }
 
-    .course-content h3 {
-        font-size: 20px;
+    .fee-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .fee-header {
+        padding: 15px 7px;
+    }
+
+    .fee-header h3 {
+        font-size: 15px;
+    }
+
+    .fee-header p {
+        font-size: 10px;
+    }
+
+    .fee-body {
+        padding: 18px 8px;
+    }
+
+    .new-price {
+        font-size: 31px;
+    }
+
+    .fee-body p {
+        font-size: 11px;
+    }
+
+    .fee-btn {
+        padding: 9px 13px;
+        font-size: 11px;
+    }
+
+    .family-box {
+        padding: 23px 15px;
+    }
+
+    .contact-button {
+        padding: 12px 20px;
+        font-size: 14px;
     }
 }
+
 </style>
+</head>
 
-<div class="container">
+<body>
 
-    <div class="section-title">
-        <h2>Our Quran Courses</h2>
-        <p>Choose the right Quran course and begin your learning journey with experienced teachers.</p>
-    </div>
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
 
-    <div class="course-grid">
-<!-- 1. Quran Nazra -->
-<div class="course-card">
-    <div class="course-image">
-        <img src="images/quran-nazra.png" alt="Quran Nazra">
-    </div>
-    <div class="course-content">
-        <h3>Quran Nazra</h3>
-        <p>Learn to read the Holy Quran correctly with proper pronunciation and regular practice.</p>
-        <a href="#contact" class="course-btn">Enroll Now</a>
-    </div>
-</div>
+<header>
 
-<!-- 2. Noorani Qaida -->
-<div class="course-card">
-    <div class="course-image">
-        <img src="images/noorani-qaida.png" alt="Noorani Qaida">
-    </div>
-    <div class="course-content">
-        <h3>Noorani Qaida</h3>
-        <p>Build a strong foundation in Quran reading, Arabic letters and correct pronunciation.</p>
-        <a href="#contact" class="course-btn">Enroll Now</a>
-    </div>
-</div>
+    <div class="navbar">
 
-<!-- 3. Quran with Tajweed -->
-<div class="course-card">
-    <div class="course-image">
-        <img src="images/quran-tajweed.png" alt="Quran with Tajweed">
-    </div>
-    <div class="course-content">
-        <h3>Quran with Tajweed</h3>
-        <p>Improve Quran recitation with correct pronunciation and essential Tajweed rules.</p>
-        <a href="#contact" class="course-btn">Enroll Now</a>
-    </div>
-</div>
-
-<!-- 4. Hifz-ul-Quran -->
-<div class="course-card">
-    <div class="course-image">
-        <img src="images/hifz-ul-quran.png" alt="Hifz-ul-Quran">
-    </div>
-    <div class="course-content">
-        <h3>Hifz-ul-Quran</h3>
-        <p>Memorize the Holy Quran through a structured, consistent and guided learning program.</p>
-        <a href="#contact" class="course-btn">Enroll Now</a>
-    </div>
-</div>
-
-<!-- 5. Islamic Studies -->
-<div class="course-card">
-    <div class="course-image">
-        <img src="images/islamic-studies.png" alt="Islamic Studies">
-    </div>
-    <div class="course-content">
-        <h3>Islamic Studies</h3>
-        <p>Learn essential Islamic knowledge, daily duas, manners and practical Islamic teachings.</p>
-        <a href="#contact" class="course-btn">Enroll Now</a>
-    </div>
-</div>
-
-<!-- 6. Quran Translation -->
-<div class="course-card">
-    <div class="course-image">
-        <img src="images/quran-translation.png" alt="Quran Translation">
-    </div>
-    <div class="course-content">
-        <h3>Quran Translation</h3>
-        <p>Understand the meaning of the Holy Quran with clear and simple translation.</p>
-        <a href="#contact" class="course-btn">Enroll Now</a>
-    </div>
-</div>
-
-<!-- 7. Hadith -->
-<div class="course-card">
-    <div class="course-image">
-        <img src="images/hadith.png" alt="Hadith">
-    </div>
-    <div class="course-content">
-        <h3>Hadith</h3>
-        <p>Study authentic Hadith with simple explanations, lessons and practical guidance.</p>
-        <a href="#contact" class="course-btn">Enroll Now</a>
-    </div>
-</div>
-
-<!-- 8. Seerah -->
-<div class="course-card">
-    <div class="course-image">
-        <img src="images/seerah.png" alt="Seerah">
-    </div>
-    <div class="course-content">
-        <h3>Seerah</h3>
-        <p>Learn inspiring lessons from the life and character of the Prophet ﷺ.</p>
-        <a href="#contact" class="course-btn">Enroll Now</a>
-    </div>
-</div>
-
-<!-- 9. Namaz -->
-<div class="course-card">
-    <div class="course-image">
-        <img src="images/namaz.png" alt="Namaz">
-    </div>
-    <div class="course-content">
-        <h3>Namaz</h3>
-        <p>Learn the correct method of Salah, essential duas and the basic steps of prayer.</p>
-        <a href="#contact" class="course-btn">Enroll Now</a>
-    </div>
-</div>
-<!-- FEES & SCHEDULE -->
-<section class="fees" style="padding:50px 15px;text-align:center;background:#f8faf7;">
-
-  <div class="container">
-
-    <div class="section-title">
-      <h2 style="color:#123b2a;margin-bottom:10px;">
-        Fees &amp; Schedule Plan
-      </h2>
-
-      <p style="color:#666;margin-bottom:30px;">
-        Affordable Quran learning plans for every family.
-      </p>
-    </div>
-
-
-
-
-
-/* ===== MOBILE ===== */
-@media (max-width: 600px) {
-
-    .fees .container > div[style*="display:grid"] {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 12px !important;
-        margin: 25px 10px !important;
-    }
-
-    .fees .container > div[style*="display:grid"] > div {
-        border-radius: 14px !important;
-    }
-
-    .fees .container > div[style*="display:grid"] h3 {
-        font-size: 17px !important;
-        line-height: 1.25 !important;
-    }
-
-    .fees .container > div[style*="display:grid"] h3 + p {
-        font-size: 11px !important;
-    }
-
-    .fees .container > div[style*="display:grid"] > div > div {
-        padding: 20px 10px !important;
-    }
-
-    .fees .container > div[style*="display:grid"] span {
-        font-size: 22px !important;
-    }
-
-    .fees .container > div[style*="display:grid"] span + span {
-        font-size: 34px !important;
-    }
-
-    .fees .container > div[style*="display:grid"] p {
-        font-size: 13px !important;
-    }
-
-    .fees .container > div[style*="display:grid"] a {
-        padding: 10px 16px !important;
-        font-size: 13px !important;
-    }
-}
-<!-- PROFESSIONAL FEE PLANS -->
-
-<div style="
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:16px;
-    max-width:1100px;
-    margin:30px auto;
-    padding:0 10px;
-">
-
-    <!-- 2 DAYS/WEEK -->
-    <div style="
-        background:#ffffff;
-        border-radius:16px;
-        overflow:hidden;
-        border:1px solid #e5eee9;
-        box-shadow:0 6px 20px rgba(0,0,0,0.08);
-    ">
-
-        <div style="
-            background:#b91c3c;
-            color:#ffffff;
-            padding:18px 10px;
-        ">
-            <h3 style="
-                margin:0;
-                font-size:19px;
-                line-height:1.3;
-            ">
-                2 DAYS/WEEK
-            </h3>
-
-            <p style="
-                margin:6px 0 0;
-                font-size:12px;
-            ">
-                👨‍👩‍👧‍👦 Family Discount
-            </p>
+        <div class="logo">
+            <img src="logo.png" alt="JHN Quran Academy Logo">
         </div>
 
-        <div style="padding:20px 12px;">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#fees">Fees</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-            <div style="margin-bottom:15px;">
-                <span style="
-                    color:#777;
-                    font-size:17px;
-                    text-decoration:line-through;
-                ">
-                    $40
-                </span>
-
-                <strong style="
-                    color:#b91c3c;
-                    font-size:38px;
-                    display:block;
-                    line-height:1.1;
-                ">
-                    $35
-                </strong>
-
-                <span style="
-                    color:#777;
-                    font-size:13px;
-                ">
-                    Monthly
-                </span>
-            </div>
-
-            <p style="font-size:13px;margin:10px 0;">
-                ✓ 30 Minutes / Live Session
-            </p>
-
-            <p style="font-size:13px;margin:10px 0;">
-                ✓ 8 Classes / Month
-            </p>
-
-            <a href="#contact" style="
-                display:inline-block;
-                background:#b91c3c;
-                color:#ffffff;
-                padding:10px 18px;
-                border-radius:8px;
-                text-decoration:none;
-                font-size:13px;
-                margin-top:8px;
-            ">
-                Enroll Now
-            </a>
-
-        </div>
     </div>
 
+</header>
 
-    <!-- 3 DAYS/WEEK -->
-    <div style="
-        background:#ffffff;
-        border-radius:16px;
-        overflow:hidden;
-        border:1px solid #e5eee9;
-        box-shadow:0 6px 20px rgba(0,0,0,0.08);
-    ">
 
-        <div style="
-            background:#299fc4;
-            color:#ffffff;
-            padding:18px 10px;
-        ">
-            <h3 style="
-                margin:0;
-                font-size:19px;
-                line-height:1.3;
-            ">
-                3 DAYS/WEEK
-            </h3>
+<!-- =====================================================
+     HERO
+     ===================================================== -->
 
-            <p style="
-                margin:6px 0 0;
-                font-size:12px;
-            ">
-                👨‍👩‍👧‍👦 Family Discount
-            </p>
-        </div>
+<section class="hero" id="home">
 
-        <div style="padding:20px 12px;">
+    <div class="hero-content">
 
-            <div style="margin-bottom:15px;">
-                <span style="
-                    color:#777;
-                    font-size:17px;
-                    text-decoration:line-through;
-                ">
-                    $55
-                </span>
+        <h1>
+            Learn the Holy Quran Online with
+            <span>JHN Quran Academy</span>
+        </h1>
 
-                <strong style="
-                    color:#299fc4;
-                    font-size:38px;
-                    display:block;
-                    line-height:1.1;
-                ">
-                    $50
-                </strong>
+        <p>
+            Learn Quran online with qualified and dedicated teachers.
+            Improve your Quran reading, Tajweed, memorization and
+            Islamic knowledge from the comfort of your home.
+        </p>
 
-                <span style="
-                    color:#777;
-                    font-size:13px;
-                ">
-                    Monthly
-                </span>
-            </div>
+        <a href="#contact" class="btn">
+            Enroll Now
+        </a>
 
-            <p style="font-size:13px;margin:10px 0;">
-                ✓ 30 Minutes / Live Session
-            </p>
+        <a href="#courses" class="btn btn-outline">
+            Explore Courses
+        </a>
 
-            <p style="font-size:13px;margin:10px 0;">
-                ✓ 12 Classes / Month
-            </p>
-
-            <a href="#contact" style="
-                display:inline-block;
-                background:#299fc4;
-                color:#ffffff;
-                padding:10px 18px;
-                border-radius:8px;
-                text-decoration:none;
-                font-size:13px;
-                margin-top:8px;
-            ">
-                Enroll Now
-            </a>
-
-        </div>
     </div>
 
-
-    <!-- 4 DAYS/WEEK -->
-    <div style="
-        background:#ffffff;
-        border-radius:16px;
-        overflow:hidden;
-        border:1px solid #e5eee9;
-        box-shadow:0 6px 20px rgba(0,0,0,0.08);
-    ">
-
-        <div style="
-            background:#4caf3d;
-            color:#ffffff;
-            padding:18px 10px;
-        ">
-            <h3 style="
-                margin:0;
-                font-size:19px;
-                line-height:1.3;
-            ">
-                4 DAYS/WEEK
-            </h3>
-
-            <p style="
-                margin:6px 0 0;
-                font-size:12px;
-            ">
-                👨‍👩‍👧‍👦 Family Discount
-            </p>
-        </div>
-
-        <div style="padding:20px 12px;">
-
-            <div style="margin-bottom:15px;">
-                <span style="
-                    color:#777;
-                    font-size:17px;
-                    text-decoration:line-through;
-                ">
-                    $70
-                </span>
-
-                <strong style="
-                    color:#4caf3d;
-                    font-size:38px;
-                    display:block;
-                    line-height:1.1;
-                ">
-                    $63
-                </strong>
-
-                <span style="
-                    color:#777;
-                    font-size:13px;
-                ">
-                    Monthly
-                </span>
-            </div>
-
-            <p style="font-size:13px;margin:10px 0;">
-                ✓ 30 Minutes / Live Session
-            </p>
-
-            <p style="font-size:13px;margin:10px 0;">
-                ✓ 16 Classes / Month
-            </p>
-
-            <a href="#contact" style="
-                display:inline-block;
-                background:#4caf3d;
-                color:#ffffff;
-                padding:10px 18px;
-                border-radius:8px;
-                text-decoration:none;
-                font-size:13px;
-                margin-top:8px;
-            ">
-                Enroll Now
-            </a>
-
-        </div>
-    </div>
+</section>
 
 
-    <!-- 5 DAYS/WEEK -->
-    <div style="
-        background:#ffffff;
-        border-radius:16px;
-        overflow:hidden;
-        border:1px solid #e5eee9;
-        box-shadow:0 6px 20px rgba(0,0,0,0.08);
-    ">
+<!-- =====================================================
+     ABOUT
+     ===================================================== -->
 
-        <div style="
-            background:#d27a3d;
-            color:#ffffff;
-            padding:18px 10px;
-        ">
-            <h3 style="
-                margin:0;
-                font-size:19px;
-                line-height:1.3;
-            ">
-                5 DAYS/WEEK
-            </h3>
-
-            <p style="
-                margin:6px 0 0;
-                font-size:12px;
-            ">
-                👨‍👩‍👧‍👦 Family Discount
-            </p>
-        </div>
-
-        <div style="padding:20px 12px;">
-
-            <div style="margin-bottom:15px;">
-                <span style="
-                    color:#777;
-                    font-size:17px;
-                    text-decoration:line-through;
-                ">
-                    $80
-                </span>
-
-                <strong style="
-                    color:#d27a3d;
-                    font-size:38px;
-                    display:block;
-                    line-height:1.1;
-                ">
-                    $72
-                </strong>
-
-                <span style="
-                    color:#777;
-                    font-size:13px;
-                ">
-                    Monthly
-                </span>
-            </div>
-
-            <p style="font-size:13px;margin:10px 0;">
-                ✓ 30 Minutes / Live Session
-            </p>
-
-            <p style="font-size:13px;margin:10px 0;">
-                ✓ 20 Classes / Month
-            </p>
-
-            <a href="#contact" style="
-                display:inline-block;
-                background:#d27a3d;
-                color:#ffffff;
-                padding:10px 18px;
-                border-radius:8px;
-                text-decoration:none;
-                font-size:13px;
-                margin-top:8px;
-            ">
-                Enroll Now
-            </a>
-
-        </div>
-    </div>
-
-</div>
-
-
-<!-- FAMILY BENEFITS -->
-
-<div style="
-    max-width:650px;
-    margin:30px auto;
-    padding:20px;
-    background:#ffffff;
-    border-radius:15px;
-    box-shadow:0 5px 18px rgba(0,0,0,0.07);
-    text-align:center;
-">
-
-    <h3 style="
-        color:#123b2a;
-        margin-top:0;
-    ">
-        🌙 Special Family Benefits
-    </h3>
-
-    <p>🎁 3 Days Free Trial</p>
-    <p>✓ No Admission Fee</p>
-    <p>✓ No Registration Fee</p>
-    <p>📅 Classes Available Monday to Saturday</p>
-
-</div>    
-
-
-
-
-
-
-
-      
-              
-    
-
-
-        
-
-     
-
-        
-
-
-        
-
-    
-
-
-<section class="features">
+<section class="about" id="about">
 
     <div class="container">
 
         <div class="section-title">
-            <h2 style="color:white;">Why Choose JHN Quran Academy?</h2>
-            <p style="color:#dcebe7;">
-                Learn the Holy Quran online with experienced teachers,
-                faxible classes, and caring learning envirments.
+
+            <h2>About JHN Quran Academy</h2>
+
+            <p>
+                Learn the Holy Quran with knowledge, love and dedication.
             </p>
+
         </div>
 
-        <div class="feature-grid">
 
-            <div class="feature">
-                <div style="font-size:40px;">👨‍🏫</div>
-                <h3>Experienced Teachers</h3>
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <h3>Learn the Quran with Confidence</h3>
+
                 <p>
-                    Learn from dedicated teachers who guide students
-                    step by step.
+                    JHN Quran Academy provides a friendly and supportive
+                    online learning environment where children and adults
+                    can learn the Holy Quran with qualified teachers.
                 </p>
+
+                <p>
+                    Our students can improve their Quran reading,
+                    Tajweed, memorization and understanding through
+                    structured online classes.
+                </p>
+
+                <p>
+                    Our goal is to make quality Quran education accessible
+                    to students around the world.
+                </p>
+
             </div>
 
-            <div class="feature">
-                <div style="font-size:40px;">💻</div>
-                <h3>Online Classes</h3>
-                <p>
-                    Attend Quran classes from home using your computer
-                    or mobile phone.
-                </p>
-            </div>
 
-            <div class="feature">
-                <div style="font-size:40px;">⏰</div>
-                <h3>Flexible Timings</h3>
+            <div class="about-box">
+
+                <h3>Our Mission</h3>
+
                 <p>
-                    Choose a suitable class schedule according to your
-                    availability.
+                    To provide accessible and quality Quran education
+                    through experienced teachers in a friendly,
+                    respectful and supportive online learning environment.
                 </p>
+
             </div>
 
         </div>
@@ -1153,14 +832,556 @@ footer p{
 </section>
 
 
+<!-- =====================================================
+     COURSES
+     ===================================================== -->
+
+<section class="courses" id="courses">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Our Quran Courses</h2>
+
+            <p>
+                Choose the right Quran course and begin your learning
+                journey with experienced teachers.
+            </p>
+
+        </div>
+
+
+        <div class="course-grid">
+
+
+            <!-- 1 -->
+            <div class="course-card">
+
+                <div class="course-image">
+                    <img src="images/quran-nazra.png"
+                         alt="Quran Nazra">
+                </div>
+
+                <div class="course-content">
+
+                    <h3>Quran Nazra</h3>
+
+                    <p>
+                        Learn to read the Holy Quran correctly with
+                        proper pronunciation and regular practice.
+                    </p>
+
+                    <a href="#contact" class="course-btn">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 2 -->
+            <div class="course-card">
+
+                <div class="course-image">
+                    <img src="images/noorani-qaida.png"
+                         alt="Noorani Qaida">
+                </div>
+
+                <div class="course-content">
+
+                    <h3>Noorani Qaida</h3>
+
+                    <p>
+                        Build a strong foundation in Quran reading,
+                        Arabic letters and correct pronunciation.
+                    </p>
+
+                    <a href="#contact" class="course-btn">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 3 -->
+            <div class="course-card">
+
+                <div class="course-image">
+                    <img src="images/quran-tajweed.png"
+                         alt="Quran with Tajweed">
+                </div>
+
+                <div class="course-content">
+
+                    <h3>Quran with Tajweed</h3>
+
+                    <p>
+                        Improve Quran recitation with correct
+                        pronunciation and essential Tajweed rules.
+                    </p>
+
+                    <a href="#contact" class="course-btn">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 4 -->
+            <div class="course-card">
+
+                <div class="course-image">
+                    <img src="images/hifz-ul-quran.png"
+                         alt="Hifz-ul-Quran">
+                </div>
+
+                <div class="course-content">
+
+                    <h3>Hifz-ul-Quran</h3>
+
+                    <p>
+                        Memorize the Holy Quran through a structured,
+                        consistent and guided learning program.
+                    </p>
+
+                    <a href="#contact" class="course-btn">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 5 -->
+            <div class="course-card">
+
+                <div class="course-image">
+                    <img src="images/islamic-studies.png"
+                         alt="Islamic Studies">
+                </div>
+
+                <div class="course-content">
+
+                    <h3>Islamic Studies</h3>
+
+                    <p>
+                        Learn essential Islamic knowledge, daily duas,
+                        manners and practical Islamic teachings.
+                    </p>
+
+                    <a href="#contact" class="course-btn">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 6 -->
+            <div class="course-card">
+
+                <div class="course-image">
+                    <img src="images/quran-translation.png"
+                         alt="Quran Translation">
+                </div>
+
+                <div class="course-content">
+
+                    <h3>Quran Translation</h3>
+
+                    <p>
+                        Understand the meaning of the Holy Quran
+                        with clear and simple translation.
+                    </p>
+
+                    <a href="#contact" class="course-btn">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 7 -->
+            <div class="course-card">
+
+                <div class="course-image">
+                    <img src="images/hadith.png"
+                         alt="Hadith">
+                </div>
+
+                <div class="course-content">
+
+                    <h3>Hadith</h3>
+
+                    <p>
+                        Study authentic Hadith with simple explanations,
+                        lessons and practical guidance.
+                    </p>
+
+                    <a href="#contact" class="course-btn">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 8 -->
+            <div class="course-card">
+
+                <div class="course-image">
+                    <img src="images/seerah.png"
+                         alt="Seerah">
+                </div>
+
+                <div class="course-content">
+
+                    <h3>Seerah</h3>
+
+                    <p>
+                        Learn inspiring lessons from the life and
+                        character of the Prophet ﷺ.
+                    </p>
+
+                    <a href="#contact" class="course-btn">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 9 -->
+            <div class="course-card">
+
+                <div class="course-image">
+                    <img src="images/namaz.png"
+                         alt="Namaz">
+                </div>
+
+                <div class="course-content">
+
+                    <h3>Namaz</h3>
+
+                    <p>
+                        Learn the correct method of Salah, essential
+                        duas and the basic steps of prayer.
+                    </p>
+
+                    <a href="#contact" class="course-btn">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FEES
+     ===================================================== -->
+
+<section class="fees" id="fees">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Fees &amp; Schedule Plan</h2>
+
+            <p>
+                Affordable Quran learning plans for every family.
+            </p>
+
+        </div>
+
+
+        <div class="fee-grid">
+
+
+            <!-- 2 DAYS -->
+            <div class="fee-card">
+
+                <div class="fee-header red">
+
+                    <h3>2 DAYS/WEEK</h3>
+
+                    <p>👨‍👩‍👧‍👦 Family Discount</p>
+
+                </div>
+
+                <div class="fee-body">
+
+                    <span class="old-price">$40</span>
+
+                    <strong class="new-price price-red">
+                        $35
+                    </strong>
+
+                    <span class="monthly">
+                        Monthly
+                    </span>
+
+                    <p>✓ 30 Minutes / Live Session</p>
+
+                    <p>✓ 8 Classes / Month</p>
+
+                    <a href="#contact" class="fee-btn red">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 3 DAYS -->
+            <div class="fee-card">
+
+                <div class="fee-header blue">
+
+                    <h3>3 DAYS/WEEK</h3>
+
+                    <p>👨‍👩‍👧‍👦 Family Discount</p>
+
+                </div>
+
+                <div class="fee-body">
+
+                    <span class="old-price">$55</span>
+
+                    <strong class="new-price price-blue">
+                        $50
+                    </strong>
+
+                    <span class="monthly">
+                        Monthly
+                    </span>
+
+                    <p>✓ 30 Minutes / Live Session</p>
+
+                    <p>✓ 12 Classes / Month</p>
+
+                    <a href="#contact" class="fee-btn blue">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 4 DAYS -->
+            <div class="fee-card">
+
+                <div class="fee-header green">
+
+                    <h3>4 DAYS/WEEK</h3>
+
+                    <p>👨‍👩‍👧‍👦 Family Discount</p>
+
+                </div>
+
+                <div class="fee-body">
+
+                    <span class="old-price">$70</span>
+
+                    <strong class="new-price price-green">
+                        $63
+                    </strong>
+
+                    <span class="monthly">
+                        Monthly
+                    </span>
+
+                    <p>✓ 30 Minutes / Live Session</p>
+
+                    <p>✓ 16 Classes / Month</p>
+
+                    <a href="#contact" class="fee-btn green">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- 5 DAYS -->
+            <div class="fee-card">
+
+                <div class="fee-header orange">
+
+                    <h3>5 DAYS/WEEK</h3>
+
+                    <p>👨‍👩‍👧‍👦 Family Discount</p>
+
+                </div>
+
+                <div class="fee-body">
+
+                    <span class="old-price">$80</span>
+
+                    <strong class="new-price price-orange">
+                        $72
+                    </strong>
+
+                    <span class="monthly">
+                        Monthly
+                    </span>
+
+                    <p>✓ 30 Minutes / Live Session</p>
+
+                    <p>✓ 20 Classes / Month</p>
+
+                    <a href="#contact" class="fee-btn orange">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- FAMILY BENEFITS -->
+
+        <div class="family-box">
+
+            <h3>🌙 Special Family Benefits</h3>
+
+            <p>🎁 3 Days Free Trial</p>
+
+            <p>✓ No Admission Fee</p>
+
+            <p>✓ No Registration Fee</p>
+
+            <p>📅 Classes Available Monday to Saturday</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHY CHOOSE US
+     ===================================================== -->
+
+<section class="features">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Why Choose JHN Quran Academy?</h2>
+
+            <p>
+                Learn the Holy Quran online with experienced teachers,
+                flexible classes and a caring learning environment.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    👨‍🏫
+                </div>
+
+                <h3>Experienced Teachers</h3>
+
+                <p>
+                    Learn from dedicated teachers who guide students
+                    step by step.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    💻
+                </div>
+
+                <h3>Online Classes</h3>
+
+                <p>
+                    Attend Quran classes from home using your computer,
+                    tablet or mobile phone.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ⏰
+                </div>
+
+                <h3>Flexible Timings</h3>
+
+                <p>
+                    Choose a suitable class schedule according to
+                    your availability.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+     ===================================================== -->
+
 <section class="contact" id="contact">
 
     <div class="container">
 
         <div class="section-title">
+
             <h2>Contact JHN Quran Academy</h2>
-            <p>Start your Quran learning journey today.</p>
+
+            <p>
+                Start your Quran learning journey today.
+            </p>
+
         </div>
+
 
         <div class="contact-box">
 
@@ -1171,15 +1392,27 @@ footer p{
                 please contact us.
             </p>
 
+
             <div class="contact-info">
-                📱 WhatsApp: Contact us for details
+
+                📱 WhatsApp:
+                +92 313 9793754
+
             </div>
 
-            <a class="contact-button" href="https://wa.me/923139793754" target="_blank">
+
+            <a
+                class="contact-button"
+                href="https://wa.me/923139793754"
+                target="_blank"
+                rel="noopener">
                 WhatsApp Us
             </a>
 
-            <a class="contact-button" href="https://mail.google.com/mail/?view=cm&fs=1&to=info%40jhnquranacademy.com" target="_blank">
+
+            <a
+                class="contact-button"
+                href="mailto:info@jhnquranacademy.com">
                 Email Us
             </a>
 
@@ -1190,7 +1423,15 @@ footer p{
 </section>
 
 
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
 <footer>
+
+    <p class="footer-title">
+        JHN Quran Academy
+    </p>
 
     <p>
         © 2026 JHN Quran Academy. All Rights Reserved.
@@ -1205,4 +1446,3 @@ footer p{
 
 </body>
 </html>
-```
