@@ -1,984 +1,455 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>JHN Quran Academy | Learn Quran Online</title>
-
-  <meta name="description" content="JHN Quran Academy offers professional online Quran classes for kids and adults with qualified Quran teachers. Learn Quran, Tajweed, Hifz, Noorani Qaida and Islamic Studies online.">
-
-  <meta name="keywords" content="JHN Quran Academy, Online Quran Classes, Learn Quran Online, Quran Tajweed, Hifz Quran, Noorani Qaida, Islamic Studies">
-
-  <meta name="author" content="JHN Quran Academy">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-
-    /* =====================================================
-       JHN QURAN ACADEMY
-       PREMIUM ISLAMIC COLOR SYSTEM
-       ===================================================== */
-
-    :root {
-
-      /* Main Brand Colors */
-      --primary: #0b5d3b;
-      --primary-dark: #063d28;
-      --primary-light: #16845a;
-
-      /* Premium Gold */
-      --gold: #c69a45;
-      --gold-light: #e5c477;
-      --gold-dark: #9b742d;
-
-      /* Backgrounds */
-      --cream: #f8f6ef;
-      --cream-dark: #eeeade;
-      --white: #ffffff;
-
-      /* Text */
-      --text-dark: #17231d;
-      --text: #405047;
-      --text-light: #718078;
-
-      /* Borders */
-      --border: #dfe6df;
-
-      /* Shadows */
-      --shadow-sm: 0 5px 20px rgba(6, 61, 40, 0.08);
-      --shadow-md: 0 15px 40px rgba(6, 61, 40, 0.12);
-      --shadow-lg: 0 25px 60px rgba(6, 61, 40, 0.16);
-
-      /* Radius */
-      --radius-sm: 10px;
-      --radius-md: 18px;
-      --radius-lg: 28px;
-
-      /* Container */
-      --container: 1180px;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: "DM Sans", sans-serif;
-      color: var(--text);
-      background: var(--white);
-      line-height: 1.7;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    button,
-    input,
-    select,
-    textarea {
-      font-family: inherit;
-    }
-
-    .container {
-      width: min(92%, var(--container));
-      margin: auto;
-    }
-
-    /* =====================================================
-       TOP BAR
-       ===================================================== */
-
-    .topbar {
-      background: var(--primary-dark);
-      color: white;
-      font-size: 13px;
-      padding: 9px 0;
-    }
-
-    .topbar-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .topbar span {
-      opacity: 0.9;
-    }
-
-    .topbar strong {
-      color: var(--gold-light);
-    }
-
-    /* =====================================================
-       HEADER
-       ===================================================== */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255,255,255,0.96);
-      backdrop-filter: blur(15px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .navbar {
-      min-height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .logo-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 50%;
-      background: var(--primary);
-      color: var(--gold-light);
-      display: grid;
-      place-items: center;
-      font-size: 22px;
-      border: 2px solid var(--gold);
-    }
-
-    .logo-text h2 {
-      font-family: "Playfair Display", serif;
-      color: var(--primary-dark);
-      font-size: 21px;
-      line-height: 1.1;
-    }
-
-    .logo-text span {
-      font-size: 11px;
-      color: var(--gold-dark);
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 26px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: var(--text-dark);
-      font-weight: 600;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: var(--primary);
-    }
-
-    .nav-btn {
-      background: var(--primary);
-      color: white !important;
-      padding: 11px 19px;
-      border-radius: 50px;
-    }
-
-    .nav-btn:hover {
-      background: var(--primary-dark);
-      transform: translateY(-1px);
-    }
-
-    /* =====================================================
-       HERO
-       ===================================================== */
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 85% 20%, rgba(198,154,69,0.18), transparent 28%),
-        linear-gradient(135deg, #f8f6ef 0%, #ffffff 60%, #edf5ef 100%);
-      padding: 95px 0 90px;
-    }
-
-    .hero::before {
-      content: "۞";
-      position: absolute;
-      right: 4%;
-      top: 8%;
-      font-size: 250px;
-      color: rgba(11,93,59,0.035);
-      pointer-events: none;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 70px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--primary);
-      background: rgba(11,93,59,0.08);
-      padding: 7px 14px;
-      border-radius: 50px;
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .hero h1 {
-      font-family: "Playfair Display", serif;
-      color: var(--primary-dark);
-      font-size: clamp(42px, 5vw, 67px);
-      line-height: 1.12;
-      margin-bottom: 22px;
-    }
-
-    .hero h1 span {
-      color: var(--primary);
-    }
-
-    .hero p {
-      max-width: 620px;
-      font-size: 17px;
-      color: var(--text);
-      margin-bottom: 30px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 13px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 14px 23px;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 14px;
-      transition: 0.3s;
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: white;
-      box-shadow: 0 10px 25px rgba(11,93,59,0.2);
-    }
-
-    .btn-primary:hover {
-      background: var(--primary-dark);
-      transform: translateY(-2px);
-    }
-
-    .btn-outline {
-      border: 1px solid var(--primary);
-      color: var(--primary);
-      background: white;
-    }
-
-    .btn-outline:hover {
-      background: var(--primary);
-      color: white;
-    }
-
-    .hero-card {
-      position: relative;
-      min-height: 420px;
-      background: var(--primary);
-      border-radius: 35px;
-      padding: 45px;
-      overflow: hidden;
-      box-shadow: var(--shadow-lg);
-      display: flex;
-      align-items: flex-end;
-    }
-
-    .hero-card::before {
-      content: "﷽";
-      position: absolute;
-      top: 45px;
-      left: 50%;
-      transform: translateX(-50%);
-      color: rgba(255,255,255,0.15);
-      font-size: 45px;
-      white-space: nowrap;
-    }
-
-    .hero-card::after {
-      content: "";
-      position: absolute;
-      width: 300px;
-      height: 300px;
-      border: 1px solid rgba(229,196,119,0.3);
-      border-radius: 50%;
-      top: -110px;
-      right: -100px;
-    }
-
-    .hero-quote {
-      position: relative;
-      z-index: 2;
-      color: white;
-    }
-
-    .hero-quote .arabic {
-      font-family: serif;
-      font-size: 27px;
-      color: var(--gold-light);
-      margin-bottom: 18px;
-      line-height: 1.8;
-    }
-
-    .hero-quote h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .hero-quote p {
-      color: rgba(255,255,255,0.78);
-      font-size: 14px;
-      margin: 0;
-    }
-
-    /* =====================================================
-       TRUST STATS
-       ===================================================== */
-
-    .stats {
-      background: var(--primary-dark);
-      padding: 28px 0;
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-
-    .stat {
-      text-align: center;
-      color: white;
-      padding: 8px;
-      border-right: 1px solid rgba(255,255,255,0.13);
-    }
-
-    .stat:last-child {
-      border-right: none;
-    }
-
-    .stat strong {
-      display: block;
-      font-family: "Playfair Display", serif;
-      color: var(--gold-light);
-      font-size: 28px;
-    }
-
-    .stat span {
-      font-size: 13px;
-      opacity: 0.82;
-    }
-
-    /* =====================================================
-       GENERAL SECTIONS
-       ===================================================== */
-
-    section {
-      padding: 90px 0;
-    }
-
-    .section-heading {
-      max-width: 720px;
-      margin: 0 auto 50px;
-      text-align: center;
-    }
-
-    .section-heading small {
-      display: block;
-      color: var(--gold-dark);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 700;
-      margin-bottom: 8px;
-      font-size: 12px;
-    }
-
-    .section-heading h2 {
-      font-family: "Playfair Display", serif;
-      color: var(--primary-dark);
-      font-size: clamp(32px, 4vw, 46px);
-      line-height: 1.2;
-      margin-bottom: 15px;
-    }
-
-    .section-heading p {
-      color: var(--text-light);
-    }
-
-    /* =====================================================
-       ABOUT
-       ===================================================== */
-
-    .about {
-      background: var(--white);
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 65px;
-      align-items: center;
-    }
-
-    .about-visual {
-      background: var(--cream);
-      min-height: 400px;
-      border-radius: 30px;
-      padding: 35px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid var(--border);
-    }
-
-    .about-visual .circle {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      background: var(--primary);
-      display: grid;
-      place-items: center;
-      color: var(--gold-light);
-      font-size: 90px;
-      border: 10px solid rgba(198,154,69,0.25);
-      box-shadow: var(--shadow-lg);
-    }
-
-    .about-content h2 {
-      font-family: "Playfair Display", serif;
-      color: var(--primary-dark);
-      font-size: 42px;
-      line-height: 1.2;
-      margin-bottom: 18px;
-    }
-
-    .about-content p {
-      margin-bottom: 20px;
-    }
-
-    .check-list {
-      list-style: none;
-      display: grid;
-      gap: 13px;
-      margin: 25px 0;
-    }
-
-    .check-list li {
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-      font-weight: 600;
-      color: var(--text-dark);
-    }
-
-    .check-list li::before {
-      content: "✓";
-      width: 24px;
-      height: 24px;
-      min-width: 24px;
-      border-radius: 50%;
-      background: rgba(11,93,59,0.1);
-      color: var(--primary);
-      display: grid;
-      place-items: center;
-      font-weight: bold;
-    }
-
-    /* =====================================================
-       COURSES
-       ===================================================== */
-
-    .courses {
-      background: var(--cream);
-    }
-
-    .course-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .course-card {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      transition: 0.3s;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .course-card:hover {
-      transform: translateY(-7px);
-      box-shadow: var(--shadow-md);
-      border-color: rgba(198,154,69,0.5);
-    }
-
-    .course-icon {
-      height: 145px;
-      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-      display: grid;
-      place-items: center;
-      color: var(--gold-light);
-      font-size: 52px;
-      position: relative;
-    }
-
-    .course-icon::after {
-      content: "۞";
-      position: absolute;
-      right: 17px;
-      bottom: 7px;
-      font-size: 48px;
-      opacity: 0.12;
-    }
-
-    .course-content {
-      padding: 22px;
-    }
-
-    .course-content h3 {
-      font-family: "Playfair Display", serif;
-      color: var(--primary-dark);
-      font-size: 23px;
-      margin-bottom: 8px;
-    }
-
-    .course-content p {
-      color: var(--text-light);
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-
-    .course-link {
-      color: var(--primary);
-      font-weight: 700;
-      font-size: 14px;
-    }
-
-    /* =====================================================
-       HOW IT WORKS
-       ===================================================== */
-
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .step {
-      position: relative;
-      background: white;
-      padding: 32px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .step-number {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: var(--primary);
-      color: var(--gold-light);
-      display: grid;
-      place-items: center;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .step h3 {
-      color: var(--primary-dark);
-      margin-bottom: 8px;
-    }
-
-    .step p {
-      color: var(--text-light);
-      font-size: 14px;
-    }
-
-    /* =====================================================
-       WHY CHOOSE US
-       ===================================================== */
-
-    .why {
-      background: var(--primary-dark);
-      color: white;
-    }
-
-    .why .section-heading h2 {
-      color: white;
-    }
-
-    .why .section-heading p {
-      color: rgba(255,255,255,0.7);
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .feature {
-      padding: 28px;
-      border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(255,255,255,0.045);
-      border-radius: var(--radius-md);
-    }
-
-    .feature-icon {
-      font-size: 31px;
-      margin-bottom: 15px;
-    }
-
-    .feature h3 {
-      color: var(--gold-light);
-      font-family: "Playfair Display", serif;
-      margin-bottom: 8px;
-      font-size: 22px;
-    }
-
-    .feature p {
-      color: rgba(255,255,255,0.7);
-      font-size: 14px;
-    }
-
-    /* =====================================================
-       PRICING
-       ===================================================== */
-
-    .pricing {
-      background: var(--cream);
-    }
-
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-      align-items: stretch;
-    }
-
-    .price-card {
-      background: white;
-      border-radius: var(--radius-md);
-      padding: 28px 22px;
-      border: 1px solid var(--border);
-      text-align: center;
-      box-shadow: var(--shadow-sm);
-      position: relative;
-    }
-
-    .price-card.featured {
-      border: 2px solid var(--gold);
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .popular {
-      position: absolute;
-      top: -13px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--gold);
-      color: white;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 5px 14px;
-      border-radius: 50px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .price-card h3 {
-      color: var(--primary-dark);
-      font-family: "Playfair Display", serif;
-      font-size: 23px;
-      margin-bottom: 10px;
-    }
-
-    .old-price {
-      color: #9a9a9a;
-      text-decoration: line-through;
-      font-size: 17px;
-    }
-
-    .price {
-      color: var(--primary);
-      font-size: 38px;
-      font-weight: 800;
-      line-height: 1.2;
-      margin: 5px 0;
-    }
-
-    .price small {
-      font-size: 14px;
-      color: var(--text-light);
-      font-weight: 500;
-    }
-
-    .discount {
-      display: inline-block;
-      background: rgba(11,93,59,0.09);
-      color: var(--primary);
-      font-size: 12px;
-      padding: 5px 10px;
-      border-radius: 50px;
-      font-weight: 700;
-      margin: 8px 0 18px;
-    }
-
-    .price-card ul {
-      list-style: none;
-      text-align: left;
-      display: grid;
-      gap: 9px;
-      margin-bottom: 22px;
-      font-size: 13px;
-    }
-
-    .price-card li::before {
-      content: "✓";
-      color: var(--primary);
-      font-weight: bold;
-      margin-right: 7px;
-    }
-
-    /* =====================================================
-       TESTIMONIALS
-       ===================================================== */
-
-    .testimonials {
-      background: white;
-    }
-
-    .testimonial-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .testimonial {
-      background: var(--cream);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 28px;
-    }
-
-    .stars {
-      color: var(--gold);
-      letter-spacing: 3px;
-      margin-bottom: 15px;
-    }
-
-    .testimonial p {
-      font-size: 14px;
-      color: var(--text);
-      margin-bottom: 20px;
-    }
-
-    .person {
-      font-weight: 700;
-      color: var(--primary-dark);
-    }
-
-    .person span {
-      display: block;
-      color: var(--text-light);
-      font-size: 12px;
-      font-weight: 400;
-    }
-
-    /* =====================================================
-       CTA
-       ===================================================== */
-
-    .cta {
-      background:
-        radial-gradient(circle at 10% 20%, rgba(229,196,119,0.18), transparent 25%),
-        var(--primary);
-      color: white;
-      text-align: center;
-      padding: 75px 0;
-    }
-
-    .cta h2 {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(34px, 4vw, 48px);
-      margin-bottom: 14px;
-    }
-
-    .cta p {
-      max-width: 650px;
-      margin: 0 auto 25px;
-      color: rgba(255,255,255,0.76);
-    }
-
-    .btn-gold {
-      background: var(--gold);
-      color: white;
-    }
-
-    .btn-gold:hover {
-      background: var(--gold-dark);
-      transform: translateY(-2px);
-    }
-
-    /* =====================================================
-       CONTACT / FORM
-       ===================================================== */
-
-    .contact {
-      background: var(--cream);
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 35px;
-      align-items: start;
-    }
-
-    .contact-info {
-      background: var(--primary-dark);
-      color: white;
-      border-radius: var(--radius-lg);
-      padding: 35px;
-    }
-
-    .contact-info h2 {
-      font-family: "Playfair Display", serif;
-      font-size: 34px;
-      margin-bottom: 12px;
-      color: white;
-    }
-
-    .contact-info > p {
-      color: rgba(255,255,255,0.7);
-      margin-bottom: 25px;
-      font-size: 14px;
-    }
-
-    .contact-item {
-      display: flex;
-      gap: 14px;
-      padding: 15px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .contact-item:last-child {
-      border-bottom: none;
-    }
-
-    .contact-item strong {
-      color: var(--gold-light);
-      display: block;
-    }
-
-    .contact-item span {
-      font-size: 13px;
-      color: rgba(255,255,255,0.7);
-    }
-
-    .form-card {
-      background: white;
-      padding: 35px;
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-md);
-    }
-
-    .form-card h2 {
-      font-family: "Playfair Display", serif;
-      color: var(--primary-dark);
-      font-size: 32px;
-      margin-bottom: 7px;
-    }
-
-    .form-card > p {
-      color: var(--text-light);
-      font-size: 14px;
-      margin-bottom: 25px;
-    }
-
-    .form-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .form-group.full {
-      grid-column: 1 / -1;
-    }
-
-    label {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--text-dark);
-    }
-
-    input,
-    select,
-    textarea {
-      width: 100%;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 13px 14px;
-      outline: none;
-      color: var(--text-dark);
-      background: #fcfcfa;
-      transition: 0.3s;
-    }
-
-    input:focus,
+/* =========================================================
+   JHN QURAN ACADEMY — PREMIUM ISLAMIC THEME SYSTEM
+   ========================================================= */
+
+:root {
+  /* ---------- Brand Colors ---------- */
+  --jhn-primary: #0B5D4B;
+  --jhn-primary-dark: #06483A;
+  --jhn-primary-light: #167A63;
+
+  --jhn-gold: #C9A227;
+  --jhn-gold-light: #E5C766;
+  --jhn-gold-dark: #9C7814;
+
+  /* ---------- Backgrounds ---------- */
+  --jhn-bg: #F8F7F2;
+  --jhn-white: #FFFFFF;
+  --jhn-cream: #FCFAF3;
+  --jhn-soft-green: #EEF7F3;
+
+  /* ---------- Text ---------- */
+  --jhn-heading: #12372F;
+  --jhn-text: #43534E;
+  --jhn-muted: #71807B;
+
+  /* ---------- Borders & Shadows ---------- */
+  --jhn-border: rgba(11, 93, 75, 0.12);
+  --jhn-shadow: 0 10px 30px rgba(11, 93, 75, 0.10);
+  --jhn-shadow-hover: 0 18px 40px rgba(11, 93, 75, 0.16);
+
+  /* ---------- Shape ---------- */
+  --jhn-radius: 18px;
+  --jhn-radius-small: 12px;
+
+  /* ---------- Transitions ---------- */
+  --jhn-transition: all 0.3s ease;
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--jhn-bg);
+  color: var(--jhn-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--jhn-heading);
+}
+
+
+/* =========================================================
+   SECTION TITLES
+   ========================================================= */
+
+.section-title {
+  color: var(--jhn-heading);
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  margin: 12px auto 0;
+  background: linear-gradient(
+    90deg,
+    var(--jhn-primary),
+    var(--jhn-gold)
+  );
+  border-radius: 50px;
+}
+
+
+/* =========================================================
+   HEADER / NAVBAR
+   ========================================================= */
+
+header,
+.navbar,
+nav {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--jhn-border);
+}
+
+.logo,
+.logo-text,
+.brand {
+  color: var(--jhn-primary);
+}
+
+nav a,
+.navbar a {
+  color: var(--jhn-heading);
+  transition: var(--jhn-transition);
+}
+
+nav a:hover,
+.navbar a:hover {
+  color: var(--jhn-gold-dark);
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(201, 162, 39, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #06483A 0%,
+      #0B5D4B 55%,
+      #167A63 100%
+    );
+  color: var(--jhn-white);
+}
+
+.hero h1,
+.hero h2,
+.hero h3 {
+  color: var(--jhn-white);
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* =========================================================
+   PREMIUM BUTTONS
+   ========================================================= */
+
+button,
+.btn,
+.button,
+.cta-button {
+  background: linear-gradient(
+    135deg,
+    var(--jhn-primary),
+    var(--jhn-primary-light)
+  );
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-weight: 700;
+  box-shadow: 0 7px 18px rgba(11, 93, 75, 0.20);
+  transition: var(--jhn-transition);
+}
+
+button:hover,
+.btn:hover,
+.button:hover,
+.cta-button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(
+    135deg,
+    var(--jhn-primary-dark),
+    var(--jhn-primary)
+  );
+  box-shadow: 0 12px 25px rgba(11, 93, 75, 0.25);
+}
+
+
+/* Gold Button */
+
+.btn-gold {
+  background: linear-gradient(
+    135deg,
+    var(--jhn-gold-dark),
+    var(--jhn-gold)
+  );
+  color: #fff;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(
+    135deg,
+    var(--jhn-gold),
+    var(--jhn-gold-light)
+  );
+}
+
+
+/* =========================================================
+   COURSES SECTION
+   ========================================================= */
+
+.courses-section,
+#courses {
+  background: var(--jhn-bg);
+}
+
+.course-card {
+  background: var(--jhn-white);
+  border: 1px solid var(--jhn-border);
+  border-radius: var(--jhn-radius);
+  box-shadow: var(--jhn-shadow);
+  overflow: hidden;
+  transition: var(--jhn-transition);
+}
+
+.course-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--jhn-shadow-hover);
+  border-color: rgba(201, 162, 39, 0.35);
+}
+
+.course-card h3,
+.course-card h4 {
+  color: var(--jhn-primary-dark);
+}
+
+.course-card p {
+  color: var(--jhn-text);
+}
+
+
+/* Course Image */
+
+.course-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* Course Icon */
+
+.course-icon {
+  color: var(--jhn-gold);
+}
+
+
+/* =========================================================
+   GENERAL CARDS
+   ========================================================= */
+
+.card {
+  background: var(--jhn-white);
+  border: 1px solid var(--jhn-border);
+  border-radius: var(--jhn-radius);
+  box-shadow: var(--jhn-shadow);
+  transition: var(--jhn-transition);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--jhn-shadow-hover);
+}
+
+
+/* =========================================================
+   PRICING
+   ========================================================= */
+
+.pricing-section,
+#pricing {
+  background: var(--jhn-soft-green);
+}
+
+.pricing-card {
+  background: var(--jhn-white);
+  border: 1px solid var(--jhn-border);
+  border-radius: var(--jhn-radius);
+  box-shadow: var(--jhn-shadow);
+  transition: var(--jhn-transition);
+}
+
+.pricing-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--jhn-gold);
+  box-shadow: var(--jhn-shadow-hover);
+}
+
+.pricing-card .price {
+  color: var(--jhn-primary);
+  font-weight: 800;
+}
+
+.old-price {
+  color: var(--jhn-muted);
+  text-decoration: line-through;
+}
+
+.discount,
+.discount-badge {
+  background: linear-gradient(
+    135deg,
+    var(--jhn-gold-dark),
+    var(--jhn-gold)
+  );
+  color: #fff;
+  border-radius: 50px;
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   ADMISSION / CONTACT FORM
+   ========================================================= */
+
+form {
+  background: var(--jhn-white);
+  border: 1px solid var(--jhn-border);
+  border-radius: var(--jhn-radius);
+  box-shadow: var(--jhn-shadow);
+}
+
+label {
+  color: var(--jhn-heading);
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  background: #fff;
+  color: var(--jhn-text);
+  border: 1px solid rgba(11, 93, 75, 0.18);
+  border-radius: var(--jhn-radius-small);
+  padding: 12px 14px;
+  outline: none;
+  transition: var(--jhn-transition);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--jhn-gold);
+  box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.12);
+}
+
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
+
+.testimonial,
+.testimonial-card {
+  background: var(--jhn-white);
+  border-left: 4px solid var(--jhn-gold);
+  border-radius: var(--jhn-radius);
+  box-shadow: var(--jhn-shadow);
+}
+
+.testimonial p,
+.testimonial-card p {
+  color: var(--jhn-text);
+}
+
+
+/* =========================================================
+   BADGES / LABELS
+   ========================================================= */
+
+.badge {
+  background: var(--jhn-soft-green);
+  color: var(--jhn-primary-dark);
+  border: 1px solid rgba(11, 93, 75, 0.12);
+  border-radius: 50px;
+  padding: 5px 12px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  background: linear-gradient(
+    135deg,
+    #043B30,
+    #06483A
+  );
+  color: rgba(255, 255, 255, 0.85);
+}
+
+footer h3,
+footer h4,
+footer h5 {
+  color: var(--jhn-gold-light);
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.82);
+  transition: var(--jhn-transition);
+}
+
+footer a:hover {
+  color: var(--jhn-gold-light);
+}
+
+
+/* =========================================================
+   GOLD DIVIDERS
+   ========================================================= */
+
+.gold-line {
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--jhn-primary),
+    var(--jhn-gold)
+  );
+  border-radius: 50px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  .course-card,
+  .pricing-card,
+  .card {
+    border-radius: 15px;
+  }
+
+  button,
+  .btn,
+  .button,
+  .cta-button {
+    padding: 11px 20px;
+  }
+
+}
