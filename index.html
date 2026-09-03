@@ -491,7 +491,7 @@
 
 .course-image img {
   width: 100%;
-  height: 100%;
+  
   object-fit: contain;
   display: block;
 }
@@ -502,13 +502,12 @@
   flex-direction: column;
 }
 
-.course-body {
-  flex: 1;
-}
-    .course-body {
-      padding: 23px;
-    }
 
+.course-body {
+  padding: 23px;
+  min-height: 145px;
+  box-sizing: border-box;
+}
     .course-body h3 {
       color: var(--green-dark);
       font-size: 20px;
