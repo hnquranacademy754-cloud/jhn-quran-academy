@@ -477,23 +477,17 @@
       border-color: rgba(201,162,39,.35);
     }
 .course-image {
-  height: 180px;
-  min-height: 180px;
-  max-height: 180px;
-  display: grid;
-  place-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(201,162,39,.20), transparent 25%),
-    linear-gradient(135deg, var(--green-dark), var(--green));
-  color: var(--gold-light);
-  font-size: 55px;
+  border-radius: 14px;
+  background: #F2F8F5;
 }
 
 .course-image img {
   width: 100%;
-  
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
