@@ -1178,124 +1178,753 @@
 </div>
 
 </div>
-            <h3>Hifz Quran</h3>
+<!-- =========================
+     JHN QURAN ACADEMY COURSES
+     ========================= -->
 
-            <p>
-              Structured Quran memorization with a supportive and
-              consistent learning approach.
-            </p>
+<style>
+  .jhn-courses {
+    padding: 70px 20px;
+    background: #f7fbf9;
+  }
 
-          </div>
+  .jhn-courses-title {
+    text-align: center;
+    margin-bottom: 45px;
+  }
 
-        </div>
+  .jhn-courses-title h2 {
+    margin: 0 0 10px;
+    color: #0b4d3b;
+    font-size: 38px;
+    font-weight: 700;
+  }
+
+  .jhn-courses-title p {
+    margin: 0 auto;
+    max-width: 650px;
+    color: #687873;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .jhn-courses-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .jhn-course-card {
+    background: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid #e0ebe6;
+    box-shadow: 0 8px 25px rgba(11, 77, 59, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .jhn-course-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(11, 77, 59, 0.15);
+  }
+
+  .jhn-course-picture {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #eaf4ef;
+  }
+
+  .jhn-course-picture svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .jhn-course-body {
+    padding: 25px 24px 28px;
+    text-align: center;
+  }
+
+  .jhn-course-body h3 {
+    margin: 0 0 7px;
+    color: #0b4d3b;
+    font-size: 25px;
+  }
+
+  .jhn-arabic {
+    color: #b08a3c;
+    font-size: 21px;
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+
+  .jhn-course-body p {
+    margin: 0;
+    color: #687873;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .jhn-course-line {
+    width: 45px;
+    height: 3px;
+    background: #b08a3c;
+    margin: 18px auto 0;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 900px) {
+    .jhn-courses-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .jhn-courses {
+      padding: 50px 14px;
+    }
+
+    .jhn-courses-title h2 {
+      font-size: 30px;
+    }
+
+    .jhn-courses-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .jhn-course-picture {
+      height: 210px;
+    }
+  }
+</style>
 
 
-        <div class="course-card">
+<section class="jhn-courses" id="courses">
 
-   <div class="course-image">
-  <img src="images/hifz-ul-quran.png" alt="Hifz Quran">
-</div>
-
-<div class="course-body">
-
-            <h3>Islamic Studies</h3>
-
-            <p>
-              Learn essential Islamic knowledge, values and daily
-              teachings in an easy way.
-            </p>
-
-          </div>
-
-        </div>
+  <div class="jhn-courses-title">
+    <h2>Our Courses</h2>
+    <p>
+      Learn the Holy Quran and essential Islamic knowledge
+      with experienced teachers in a peaceful online environment.
+    </p>
+  </div>
 
 
-        <div class="course-card">
-
-          <div class="course-image">
-            📜
-          </div>
-
-          <div class="course-body">
-
-            <h3>Quran Translation</h3>
-
-            <p>
-              Understand the meaning and message of the Holy Quran
-              through translation and explanation.
-            </p>
-
-          </div>
-
-        </div>
+  <div class="jhn-courses-grid">
 
 
-        <div class="course-card">
+    <!-- 1. QURAN NAZRA -->
+    <div class="jhn-course-card">
 
-          <div class="course-image">
-            📘
-          </div>
+      <div class="jhn-course-picture">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
 
-          <div class="course-body">
+          <defs>
+            <linearGradient id="nazraBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e8f5ee"/>
+              <stop offset="100%" stop-color="#c9e5d6"/>
+            </linearGradient>
+          </defs>
 
-            <h3>Hadith</h3>
+          <rect width="600" height="400" fill="url(#nazraBg)"/>
 
-            <p>
-              Learn selected authentic Hadith and their practical
-              lessons for everyday life.
-            </p>
+          <!-- window -->
+          <rect x="35" y="35" width="150" height="220"
+                rx="10" fill="#f8efe0"/>
+          <path d="M110 35V255M35 145H185"
+                stroke="#c5a46d" stroke-width="8"/>
 
-          </div>
+          <!-- child -->
+          <circle cx="305" cy="145" r="48" fill="#d5a77b"/>
+          <path d="M258 145 Q305 90 352 145"
+                fill="#ffffff"/>
+          <path d="M270 130 Q305 105 340 130"
+                stroke="#b08a3c" stroke-width="7"
+                fill="none"/>
 
-        </div>
+          <path d="M265 205 Q305 170 350 205 L370 315
+                   L240 315Z"
+                fill="#0b4d3b"/>
 
+          <!-- Quran -->
+          <path d="M220 300 Q300 250 380 300 L300 350Z"
+                fill="#174f3f"/>
+          <path d="M300 350V300"
+                stroke="#d8b45d" stroke-width="4"/>
 
-        <div class="course-card">
+          <text x="300" y="385"
+                text-anchor="middle"
+                font-size="22"
+                fill="#0b4d3b"
+                font-family="serif">
+            Quran Nazra
+          </text>
 
-          <div class="course-image">
-            🕌
-          </div>
+        </svg>
+      </div>
 
-          <div class="course-body">
-
-            <h3>Seerah</h3>
-
-            <p>
-              Discover the life, character and teachings of Prophet
-              Muhammad ﷺ.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="course-card">
-
-          <div class="course-image">
-            🤲
-          </div>
-
-          <div class="course-body">
-
-            <h3>Namaz</h3>
-
-            <p>
-              Learn the correct method, essential duas and practical
-              aspects of Salah.
-            </p>
-
-          </div>
-
-        </div>
-
+      <div class="jhn-course-body">
+        <h3>Quran Nazra</h3>
+        <div class="jhn-arabic">قرآن ناظرہ</div>
+        <p>
+          Learn to read the Holy Quran correctly with confidence
+          and beautiful pronunciation.
+        </p>
+        <div class="jhn-course-line"></div>
       </div>
 
     </div>
 
-  </section>
+
+    <!-- 2. NOORANI QAIDA -->
+    <div class="jhn-course-card">
+
+      <div class="jhn-course-picture">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+            <linearGradient id="qaidaBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f6ecd8"/>
+              <stop offset="100%" stop-color="#dceee4"/>
+            </linearGradient>
+          </defs>
+
+          <rect width="600" height="400" fill="url(#qaidaBg)"/>
+
+          <!-- table -->
+          <rect x="60" y="315" width="480" height="30"
+                rx="8" fill="#8c6848"/>
+
+          <!-- book -->
+          <path d="M145 85 Q300 45 455 85
+                   L455 300 Q300 265 145 300Z"
+                fill="#fffdf6"
+                stroke="#b08a3c"
+                stroke-width="5"/>
+
+          <line x1="300" y1="75" x2="300" y2="285"
+                stroke="#b08a3c" stroke-width="4"/>
+
+          <!-- Arabic letters -->
+          <g fill="#0b4d3b"
+             font-size="42"
+             font-family="serif"
+             text-anchor="middle">
+
+            <text x="205" y="135">ا</text>
+            <text x="260" y="135">ب</text>
+            <text x="315" y="135">ت</text>
+            <text x="370" y="135">ث</text>
+
+            <text x="205" y="200">ج</text>
+            <text x="260" y="200">ح</text>
+            <text x="315" y="200">خ</text>
+            <text x="370" y="200">د</text>
+
+            <text x="205" y="265">ر</text>
+            <text x="260" y="265">ز</text>
+            <text x="315" y="265">س</text>
+            <text x="370" y="265">ش</text>
+
+          </g>
+
+          <!-- lantern -->
+          <path d="M480 90 L510 115 L500 250
+                   L460 250 L450 115Z"
+                fill="#c28e3e"/>
+
+          <circle cx="480" cy="180" r="22"
+                  fill="#ffe7a3"/>
+
+        </svg>
+      </div>
+
+      <div class="jhn-course-body">
+        <h3>Noorani Qaida</h3>
+        <div class="jhn-arabic">نورانی قاعدہ</div>
+        <p>
+          Build a strong foundation by learning Arabic letters,
+          pronunciation and basic Quran reading.
+        </p>
+        <div class="jhn-course-line"></div>
+      </div>
+
+    </div>
 
 
+    <!-- 3. TAJWEED -->
+    <div class="jhn-course-card">
+
+      <div class="jhn-course-picture">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+            <linearGradient id="tajweedBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#d7eee3"/>
+              <stop offset="100%" stop-color="#b8d7c8"/>
+            </linearGradient>
+          </defs>
+
+          <rect width="600" height="400" fill="url(#tajweedBg)"/>
+
+          <!-- mosque -->
+          <rect x="80" y="165" width="440" height="145"
+                fill="#f8f3e8"/>
+
+          <path d="M175 165 Q300 50 425 165Z"
+                fill="#0b4d3b"/>
+
+          <rect x="125" y="90" width="25" height="220"
+                fill="#d8b45d"/>
+          <rect x="450" y="90" width="25" height="220"
+                fill="#d8b45d"/>
+
+          <!-- Quran -->
+          <path d="M150 310 Q300 245 450 310
+                   L300 365Z"
+                fill="#164f3e"/>
+
+          <path d="M300 365V310"
+                stroke="#d8b45d" stroke-width="5"/>
+
+          <!-- tajweed marks -->
+          <g fill="#b08a3c"
+             font-size="28"
+             font-family="serif">
+            <text x="205" y="205">م</text>
+            <text x="250" y="205">ن</text>
+            <text x="295" y="205">ق</text>
+            <text x="340" y="205">ر</text>
+            <text x="385" y="205">ل</text>
+          </g>
+
+        </svg>
+      </div>
+
+      <div class="jhn-course-body">
+        <h3>Quran Tajweed</h3>
+        <div class="jhn-arabic">قرآن تجوید</div>
+        <p>
+          Improve your Quran recitation by learning Tajweed rules,
+          correct pronunciation and beautiful rhythm.
+        </p>
+        <div class="jhn-course-line"></div>
+      </div>
+
+    </div>
+
+
+    <!-- 4. HIFZ QURAN -->
+    <div class="jhn-course-card">
+
+      <div class="jhn-course-picture">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+            <linearGradient id="hifzBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e3f2eb"/>
+              <stop offset="100%" stop-color="#c1dfd0"/>
+            </linearGradient>
+          </defs>
+
+          <rect width="600" height="400" fill="url(#hifzBg)"/>
+
+          <!-- laptop -->
+          <rect x="335" y="95" width="190" height="125"
+                rx="8" fill="#263b36"/>
+          <rect x="350" y="110" width="160" height="95"
+                fill="#e8f4ef"/>
+
+          <!-- online teacher -->
+          <circle cx="430" cy="140" r="22"
+                  fill="#d5a77b"/>
+          <path d="M395 185 Q430 160 465 185"
+                fill="#0b4d3b"/>
+
+          <!-- child -->
+          <circle cx="190" cy="145" r="42"
+                  fill="#d5a77b"/>
+
+          <!-- headphones -->
+          <path d="M145 150 Q190 75 235 150"
+                fill="none"
+                stroke="#333"
+                stroke-width="16"/>
+
+          <circle cx="148" cy="160" r="18"
+                  fill="#333"/>
+          <circle cx="232" cy="160" r="18"
+                  fill="#333"/>
+
+          <!-- body -->
+          <path d="M155 200 Q190 175 225 200
+                   L245 315 L135 315Z"
+                fill="#0b4d3b"/>
+
+          <!-- Quran -->
+          <path d="M140 300 Q190 260 240 300
+                   L190 335Z"
+                fill="#164f3e"/>
+
+          <path d="M190 335V300"
+                stroke="#d8b45d" stroke-width="4"/>
+
+        </svg>
+      </div>
+
+      <div class="jhn-course-body">
+        <h3>Hifz Quran</h3>
+        <div class="jhn-arabic">حفظ القرآن</div>
+        <p>
+          Memorize the Holy Quran step by step with proper guidance,
+          revision and personal attention.
+        </p>
+        <div class="jhn-course-line"></div>
+      </div>
+
+    </div>
+
+
+    <!-- 5. ISLAMIC STUDIES -->
+    <div class="jhn-course-card">
+
+      <div class="jhn-course-picture">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+            <linearGradient id="islamicBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f4ead8"/>
+              <stop offset="100%" stop-color="#d8eadf"/>
+            </linearGradient>
+          </defs>
+
+          <rect width="600" height="400" fill="url(#islamicBg)"/>
+
+          <!-- books -->
+          <rect x="115" y="265" width="370" height="35"
+                rx="5" fill="#0b4d3b"/>
+          <rect x="135" y="225" width="330" height="35"
+                rx="5" fill="#174f3f"/>
+          <rect x="165" y="185" width="270" height="35"
+                rx="5" fill="#8d6a40"/>
+
+          <!-- globe -->
+          <circle cx="440" cy="110" r="65"
+                  fill="#dfeee8"
+                  stroke="#0b4d3b"
+                  stroke-width="6"/>
+
+          <path d="M375 110H505
+                   M440 45V175
+                   M395 65 Q440 110 485 155
+                   M485 65 Q440 110 395 155"
+                stroke="#0b4d3b"
+                stroke-width="3"
+                fill="none"/>
+
+          <!-- lantern -->
+          <path d="M90 75 L120 100 L110 185
+                   L70 185 L60 100Z"
+                fill="#b08a3c"/>
+
+          <circle cx="90" cy="140" r="18"
+                  fill="#ffe8a6"/>
+
+        </svg>
+      </div>
+
+      <div class="jhn-course-body">
+        <h3>Islamic Studies</h3>
+        <div class="jhn-arabic">اسلامک اسٹڈیز</div>
+        <p>
+          Learn essential Islamic knowledge, values and beliefs
+          to strengthen your faith and character.
+        </p>
+        <div class="jhn-course-line"></div>
+      </div>
+
+    </div>
+
+
+    <!-- 6. QURAN TRANSLATION -->
+    <div class="jhn-course-card">
+
+      <div class="jhn-course-picture">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+            <linearGradient id="translationBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#d9eee4"/>
+              <stop offset="100%" stop-color="#c8dcd7"/>
+            </linearGradient>
+          </defs>
+
+          <rect width="600" height="400" fill="url(#translationBg)"/>
+
+          <!-- globe -->
+          <circle cx="430" cy="130" r="85"
+                  fill="#e8f3ef"
+                  stroke="#0b4d3b"
+                  stroke-width="6"/>
+
+          <path d="M345 130H515
+                   M430 45V215
+                   M370 75 Q430 130 490 185
+                   M490 75 Q430 130 370 185"
+                stroke="#0b4d3b"
+                stroke-width="4"
+                fill="none"/>
+
+          <!-- open Quran -->
+          <path d="M100 270 Q200 210 300 270
+                   Q400 210 500 270
+                   L500 350
+                   Q400 300 300 350
+                   Q200 300 100 350Z"
+                fill="#174f3f"/>
+
+          <path d="M300 270V350"
+                stroke="#d8b45d" stroke-width="5"/>
+
+          <!-- translation lines -->
+          <g stroke="#e7d69c" stroke-width="5">
+            <line x1="135" y1="285" x2="270" y2="265"/>
+            <line x1="135" y1="305" x2="270" y2="285"/>
+            <line x1="330" y1="265" x2="465" y2="285"/>
+            <line x1="330" y1="285" x2="465" y2="305"/>
+          </g>
+
+        </svg>
+      </div>
+
+      <div class="jhn-course-body">
+        <h3>Quran Translation</h3>
+        <div class="jhn-arabic">قرآن ترجمہ</div>
+        <p>
+          Understand the meaning and message of the Holy Quran
+          through translation and explanation.
+        </p>
+        <div class="jhn-course-line"></div>
+      </div>
+
+    </div>
+
+
+    <!-- 7. HADITH -->
+    <div class="jhn-course-card">
+
+      <div class="jhn-course-picture">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+            <linearGradient id="hadithBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#efe5d0"/>
+              <stop offset="100%" stop-color="#c9e2d6"/>
+            </linearGradient>
+          </defs>
+
+          <rect width="600" height="400" fill="url(#hadithBg)"/>
+
+          <!-- stacked books -->
+          <rect x="125" y="275" width="350" height="38"
+                rx="6" fill="#174f3f"/>
+
+          <rect x="145" y="230" width="310" height="38"
+                rx="6" fill="#0b4d3b"/>
+
+          <rect x="165" y="185" width="270" height="38"
+                rx="6" fill="#80613f"/>
+
+          <!-- central hadith book -->
+          <rect x="190" y="80" width="220" height="115"
+                rx="8" fill="#164f3e"/>
+
+          <rect x="210" y="100" width="180" height="75"
+                fill="#f3ead7"/>
+
+          <text x="300" y="145"
+                text-anchor="middle"
+                font-size="27"
+                fill="#0b4d3b"
+                font-family="serif">
+            حديث
+          </text>
+
+          <!-- feather -->
+          <path d="M465 85 Q520 45 500 145"
+                stroke="#b08a3c"
+                stroke-width="8"
+                fill="none"/>
+
+          <path d="M500 145 L465 175"
+                stroke="#b08a3c"
+                stroke-width="5"/>
+
+        </svg>
+      </div>
+
+      <div class="jhn-course-body">
+        <h3>Hadith</h3>
+        <div class="jhn-arabic">حدیث</div>
+        <p>
+          Learn authentic Hadith and apply their practical lessons
+          and guidance in your daily life.
+        </p>
+        <div class="jhn-course-line"></div>
+      </div>
+
+    </div>
+
+
+    <!-- 8. SEERAH -->
+    <div class="jhn-course-card">
+
+      <div class="jhn-course-picture">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+            <linearGradient id="seerahSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f4d8a3"/>
+              <stop offset="100%" stop-color="#d8eadf"/>
+            </linearGradient>
+          </defs>
+
+          <rect width="600" height="400" fill="url(#seerahSky)"/>
+
+          <!-- sun -->
+          <circle cx="450" cy="90" r="45"
+                  fill="#f6d68c"/>
+
+          <!-- mosque -->
+          <rect x="100" y="210" width="400" height="130"
+                fill="#f7f1e4"/>
+
+          <!-- green dome -->
+          <path d="M220 210 Q300 110 380 210Z"
+                fill="#0b4d3b"/>
+
+          <circle cx="300" cy="160" r="8"
+                  fill="#d8b45d"/>
+
+          <!-- minarets -->
+          <rect x="125" y="110" width="35" height="230"
+                fill="#f7f1e4"/>
+          <rect x="440" y="110" width="35" height="230"
+                fill="#f7f1e4"/>
+
+          <path d="M112 110 L142 70 L172 110Z"
+                fill="#0b4d3b"/>
+
+          <path d="M427 110 L457 70 L487 110Z"
+                fill="#0b4d3b"/>
+
+          <!-- arches -->
+          <path d="M175 340 V280 Q200 245 225 280 V340"
+                fill="#0b4d3b"/>
+
+          <path d="M375 340 V280 Q400 245 425 280 V340"
+                fill="#0b4d3b"/>
+
+          <!-- birds -->
+          <path d="M65 90 Q75 80 85 90
+                   Q95 80 105 90"
+                fill="none"
+                stroke="#536c63"
+                stroke-width="4"/>
+
+          <path d="M500 130 Q510 120 520 130
+                   Q530 120 540 130"
+                fill="none"
+                stroke="#536c63"
+                stroke-width="4"/>
+
+        </svg>
+      </div>
+
+      <div class="jhn-course-body">
+        <h3>Seerah</h3>
+        <div class="jhn-arabic">سیرت</div>
+        <p>
+          Discover the life, character and teachings of Prophet
+          Muhammad ﷺ and learn from his beautiful example.
+        </p>
+        <div class="jhn-course-line"></div>
+      </div>
+
+    </div>
+
+
+    <!-- 9. NAMAZ -->
+    <div class="jhn-course-card">
+
+      <div class="jhn-course-picture">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+            <linearGradient id="namazBg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e5f2eb"/>
+              <stop offset="100%" stop-color="#c7dfd2"/>
+            </linearGradient>
+          </defs>
+
+          <rect width="600" height="400" fill="url(#namazBg)"/>
+
+          <!-- mosque -->
+          <rect x="105" y="175" width="390" height="150"
+                fill="#f7f2e7"/>
+
+          <path d="M190 175 Q300 65 410 175Z"
+                fill="#0b4d3b"/>
+
+          <rect x="135" y="95" width="28" height="230"
+                fill="#d8b45d"/>
+
+          <rect x="437" y="95" width="28" height="230"
+                fill="#d8b45d"/>
+
+          <!-- prayer mat -->
+          <rect x="225" y="285" width="150" height="65"
+                rx="8" fill="#0b4d3b"/>
+
+          <path d="M300 295 L345 335 H255Z"
+                fill="#d8b45d"/>
+
+          <!-- person praying -->
+          <circle cx="300" cy="205" r="22"
+                  fill="#d5a77b"/>
+
+          <path d="M270 230 Q300 215 330 230
+                   L345 275 L255 275Z"
+                fill="#174f3f"/>
+
+          <path d="M260 270 L225 310
+                   M340 270 L375 310"
+                stroke="#174f3f"
+                stroke-width="14"
+                stroke-linecap="round"/>
+
+        </svg>
+      </div>
+
+      <div class="jhn-course-body">
+        <h3>Namaz</h3>
+        <div class="jhn-arabic">نماز</div>
+        <p>
+          Learn the correct method of Salah, essential duas
+          and practical aspects of daily prayer.
+        </p>
+        <div class="jhn-course-line"></div>
+      </div>
+
+    </div>
+
+
+  </div>
+</section>
 
   <!-- =====================================================
        WHY CHOOSE US
