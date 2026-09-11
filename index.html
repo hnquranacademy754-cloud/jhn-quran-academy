@@ -922,86 +922,160 @@
     padding: 25px 22px;
   }
     }
-    
-    
-
-    
-
     /* =====================================================
-       ADMISSION FORM
-       ===================================================== */
+   ADMISSION FORM
+   ===================================================== */
 
-    #admission {
-      background:
-        radial-gradient(circle at 90% 10%, rgba(201,162,39,.10), transparent 25%),
-        var(--cream);
-    }
+#admission {
+  padding: 75px 20px;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(198,161,91,0.12), transparent 25%),
+    var(--cream);
+}
 
-    .form-wrapper {
-      max-width: 850px;
-      margin: auto;
-      background: white;
-      padding: 40px;
-      border-radius: 25px;
-      box-shadow: var(--shadow-hover);
-      border: 1px solid var(--border);
-    }
+#admission .section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
-    .form-grid {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 18px;
-    }
+#admission .section-heading .section-label {
+  color: var(--gold-dark);
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 
-    .form-group {
-      display: flex;
-      flex-direction: column;
-    }
+#admission .section-heading h2 {
+  margin: 8px 0 10px;
+  color: var(--green-dark);
+  font-size: 38px;
+  font-weight: 800;
+}
 
-    .form-group.full {
-      grid-column: 1 / -1;
-    }
+#admission .section-heading p {
+  margin: 0 auto;
+  max-width: 650px;
+  color: rgba(11,77,59,0.75);
+  font-size: 17px;
+  line-height: 1.7;
+}
 
-    label {
-      font-size: 13px;
-      color: var(--text-dark);
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
+.form-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 38px;
+  background: linear-gradient(145deg, var(--green-dark), var(--green));
+  border-radius: 26px;
+  border: 1px solid rgba(212,175,55,0.65);
+  box-shadow: 0 15px 40px rgba(11,59,46,0.18);
+}
 
-    input,
-    select,
-    textarea {
-      width: 100%;
-      padding: 13px 14px;
-      border: 1px solid rgba(8,120,95,.16);
-      border-radius: 12px;
-      outline: none;
-      font-family: inherit;
-      color: var(--text-dark);
-      background: #fff;
-      transition: .3s;
-    }
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
 
-    input:focus,
-    select:focus,
-    textarea:focus {
-      border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(201,162,39,.10);
-    }
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
 
-    textarea {
-      min-height: 110px;
-      resize: vertical;
-    }
+.form-group.full {
+  grid-column: 1 / -1;
+}
 
-    .form-submit {
-      margin-top: 22px;
-      width: 100%;
-      border: none;
-      cursor: pointer;
-      font-size: 15px;
-    }
+.form-group label {
+  color: var(--gold-light);
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid rgba(212,175,55,0.30);
+  border-radius: 13px;
+  outline: none;
+  font-family: inherit;
+  color: var(--text-dark);
+  background: rgba(255,255,255,0.97);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(212,175,55,0.18);
+  transform: translateY(-1px);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-submit {
+  margin-top: 24px;
+  width: 100%;
+  min-height: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 13px;
+  font-size: 16px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  color: var(--green-dark);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(212,175,55,0.30);
+}
+
+@media (max-width: 700px) {
+  #admission {
+    padding: 55px 14px;
+  }
+
+  #admission .section-heading {
+    margin-bottom: 38px;
+  }
+
+  #admission .section-heading h2 {
+    font-size: 30px;
+  }
+
+  #admission .section-heading p {
+    font-size: 16px;
+  }
+
+  .form-wrapper {
+    padding: 25px 20px;
+    border-radius: 22px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .form-group.full {
+    grid-column: auto;
+  }
+}
+    
+
+    
+
+    
 
     /* =====================================================
        CTA
