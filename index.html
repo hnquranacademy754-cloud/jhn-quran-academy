@@ -718,6 +718,105 @@
   }
 }
     /* =====================================================
+   STUDENT & TEACHER LOGIN — PREMIUM STYLE
+   ===================================================== */
+
+.login-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #F2F8F5, #FFFDF5);
+}
+
+.login-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.login-card {
+  padding: 35px 28px;
+  text-align: center;
+  background: linear-gradient(145deg, var(--green-dark), var(--green));
+  border: 1px solid rgba(231, 211, 161, 0.65);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(11, 59, 46, 0.14);
+  transition: 0.35s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 40px rgba(11, 59, 46, 0.22);
+  border-color: var(--gold);
+}
+
+.login-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  background: linear-gradient(145deg, var(--green), var(--green-dark));
+  border: 1px solid rgba(231, 211, 161, 0.65);
+  font-size: 34px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+
+.login-card h3 {
+  margin: 0 0 10px;
+  color: var(--gold-light);
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.login-card p {
+  margin: 0 0 24px;
+  color: rgba(255,255,255,0.88);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.login-card a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  padding: 13px 22px;
+  border-radius: 30px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.login-card a:hover {
+  transform: translateY(-3px);
+}
+
+.student-login-btn {
+  background: linear-gradient(135deg, var(--green-light), var(--green));
+  border: 1px solid var(--gold);
+}
+
+.teacher-login-btn {
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+  border: 1px solid var(--gold-light);
+}
+
+@media (max-width: 650px) {
+
+  .login-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .login-card {
+    padding: 30px 22px;
+  }
+
+}
+    /* =====================================================
    WHY CHOOSE US
    ===================================================== */
 
@@ -2561,6 +2660,79 @@ footer p {
         <span class="schedule-day">Saturday</span>
         <h3>Quran Revision</h3>
         <p>🕒 7:00 PM – 7:30 PM</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+  <!-- =====================================================
+     STUDENT & TEACHER LOGIN
+     ===================================================== -->
+
+<section class="login-section" id="login">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="section-label">
+        Student Portal
+      </span>
+
+      <h2>
+        Login To Your Academy Portal
+      </h2>
+
+      <p>
+        Students and teachers can access their online
+        Quran learning portal from here.
+      </p>
+
+    </div>
+
+    <div class="login-grid">
+
+      <div class="login-card">
+
+        <div class="login-icon">
+          👨‍🎓
+        </div>
+
+        <h3>
+          Student Login
+        </h3>
+
+        <p>
+          Access your classes, schedule, lessons and
+          learning materials.
+        </p>
+
+      <a href="student-login.html" class="student-login-btn">
+        </a>
+
+      </div>
+
+      <div class="login-card">
+
+        <div class="login-icon">
+          👨‍🏫
+        </div>
+
+        <h3>
+          Teacher Login
+        </h3>
+
+        <p>
+          Manage your classes, students, schedule and
+          teaching materials.
+        </p>
+
+        <a href="#" class="teacher-login-btn">
+          Teacher Login
+        </a>
+
       </div>
 
     </div>
