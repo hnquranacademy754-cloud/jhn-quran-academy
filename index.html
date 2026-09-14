@@ -641,6 +641,99 @@
 
   }
     /* =====================================================
+   CLASS RECORDINGS — PREMIUM STYLE
+   ===================================================== */
+
+.class-recordings {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #F2F8F5, #FFFDF5);
+}
+
+.recordings-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.recording-card {
+  padding: 32px 25px;
+  text-align: center;
+  background: linear-gradient(145deg, var(--green-dark), var(--green));
+  border: 1px solid rgba(231, 211, 161, 0.65);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(11, 59, 46, 0.14);
+  transition: 0.35s ease;
+}
+
+.recording-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--gold);
+  box-shadow: 0 18px 40px rgba(212, 175, 55, 0.22);
+}
+
+.recording-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  background: linear-gradient(145deg, var(--green), var(--green-dark));
+  border: 1px solid rgba(231, 211, 161, 0.65);
+  font-size: 34px;
+}
+
+.recording-card h3 {
+  margin: 0 0 12px;
+  color: var(--gold-light);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.recording-card p {
+  margin: 0 0 24px;
+  color: rgba(255,255,255,0.88);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.recording-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+  color: #FFFFFF !important;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.recording-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(198,161,91,0.25);
+}
+
+@media (max-width: 900px) {
+  .recordings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .recordings-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .recording-card {
+    padding: 28px 22px;
+  }
+}
+    /* =====================================================
    CLASS SCHEDULE — PREMIUM STYLE
    ===================================================== */
 
@@ -2591,6 +2684,101 @@ footer p {
           </a>
 
         </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+  <!-- =====================================================
+     CLASS RECORDINGS
+     ===================================================== -->
+
+<section class="class-recordings" id="recordings">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="section-label">
+        Class Recordings
+      </span>
+
+      <h2>
+        Watch Your Quran Classes Again
+      </h2>
+
+      <p>
+        Missed a live class? Watch recorded Quran lessons
+        anytime and continue your learning journey.
+      </p>
+
+    </div>
+
+    <div class="recordings-grid">
+
+      <div class="recording-card">
+
+        <div class="recording-icon">
+          🎥
+        </div>
+
+        <h3>
+          Video Recordings
+        </h3>
+
+        <p>
+          Watch recorded Quran classes and revise your
+          lessons anytime.
+        </p>
+
+        <a href="#" class="recording-btn">
+          Watch Videos
+        </a>
+
+      </div>
+
+      <div class="recording-card">
+
+        <div class="recording-icon">
+          🎧
+        </div>
+
+        <h3>
+          Audio Recordings
+        </h3>
+
+        <p>
+          Listen to Quran lessons and improve your learning
+          wherever you are.
+        </p>
+
+        <a href="#" class="recording-btn">
+          Listen Audio
+        </a>
+
+      </div>
+
+      <div class="recording-card">
+
+        <div class="recording-icon">
+          📚
+        </div>
+
+        <h3>
+          Learning Materials
+        </h3>
+
+        <p>
+          Access useful Quran notes, lessons and learning
+          materials for your classes.
+        </p>
+
+        <a href="#" class="recording-btn">
+          Open Library
+        </a>
 
       </div>
 
