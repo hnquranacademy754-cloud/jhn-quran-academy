@@ -1,3632 +1,1840 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>JHN Quran Academy | Learn Quran Online</title>
+<title>HN Quran Academy | Learn Quran Online</title>
 
-  <meta name="description"
-    content="JHN Quran Academy offers professional online Quran classes including Quran Nazra, Noorani Qaida, Tajweed, Hifz, Islamic Studies, Translation, Hadith, Seerah and Namaz.">
+<meta name="description" content="HN Quran Academy offers professional online Quran and Islamic education including Noorani Qaida, Quran Nazra, Hifz, Tajweed, Tafseer, Hadith, Seerah, Namaz and Islamic Studies.">
 
-  <meta name="keywords"
-    content="JHN Quran Academy, Online Quran Classes, Quran Teacher, Quran Nazra, Noorani Qaida, Tajweed, Hifz Quran, Islamic Studies">
+<style>
+/* =========================================================
+   HN QURAN ACADEMY
+   PREMIUM ISLAMIC WEBSITE
+   Dark Green + Cream + Gold
+========================================================= */
 
-  <style>
-.contact-section {
-  text-align: center;
-  padding: 70px 20px;
-  background: linear-gradient(135deg, #F2F8F5, #FFFDF5);
+:root{
+  --green-dark:#0B3B2E;
+  --green:#176B57;
+  --green-light:#2E8B72;
+
+  --gold-dark:#9A7415;
+  --gold:#C6A15B;
+  --gold-light:#E7D3A1;
+
+  --cream:#F8F4EA;
+  --white:#FFFFFF;
+
+  --text-dark:#1C2925;
+  --text:#5A665F;
+
+  --shadow:0 12px 35px rgba(11,59,46,.12);
+  --shadow-hover:0 20px 45px rgba(11,59,46,.20);
+
+  --radius:22px;
 }
 
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-.contact-buttons a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 190px;
-  padding: 14px 24px;
-  border-radius: 40px;
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 8px 20px rgba(6,63,52,0.15);
-  transition: .3s;
+html{
+  scroll-behavior:smooth;
 }
 
-.contact-buttons a:hover {
-  transform: translateY(-3px);
-}
-
-.contact-whatsapp {
-  background: linear-gradient(135deg, #25D366, #128C7E);
-  border: 1px solid rgba(255,255,255,0.25);
-  box-shadow: 0 10px 25px rgba(18,140,126,0.30);
-}
-
-.contact-email {
-  background: linear-gradient(135deg, var(--green-dark), var(--green));
-  border: 1px solid var(--gold);
-  box-shadow: 0 10px 25px rgba(11,59,46,0.30);
-}
-    /* =====================================================
-       JHN QURAN ACADEMY
-       PREMIUM ISLAMIC WEBSITE
-       ===================================================== */
-:root {
-  --green-dark: #0B3B2E;
-  --green: #176B57;
-  --green-light: #2E8B72;
-
-  --gold-dark: #9A7415;
-  --gold: #C6A15B;
-  --gold-light: #E7D3A1;
-
-  --cream: #F8F4EA;
-  --white: #FFFFFF;
-
-  --text-dark: #1C2925;
-  --text: #5A665F;
-  --border: rgba(11,59,46,0.12);
-
-  --shadow: 0 10px 30px rgba(11,59,46,0.10);
-  --shadow-hover: 0 18px 40px rgba(11,59,46,0.18);
-
-  --radius: 18px;
-}
-    
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--cream);
-      color: var(--text);
-      line-height: 1.7;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: min(1120px, 92%);
-      margin: auto;
-    }
-
-    /* =====================================================
-       HEADER
-       ===================================================== */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(248,244,234,0.97);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .navbar {
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 25px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 800;
-      color: var(--green-dark);
-      font-size: 20px;
-    }
-
-    .brand-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: white;
-      background: linear-gradient(135deg, var(--green-dark), var(--green));
-      box-shadow: 0 6px 15px rgba(8,120,95,0.20);
-      font-size: 21px;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-    }
-
-    nav a {
-      color: var(--text-dark);
-      font-weight: 600;
-      font-size: 14px;
-      transition: .3s;
-    }
-
-    nav a:hover {
-      color: var(--gold-dark);
-    }
-
-    .nav-btn {
-      padding: 10px 18px;
-      color: white !important;
-      background: var(--green);
-      border-radius: 30px;
-    }
-
-    .nav-btn:hover {
-      background: var(--green-dark);
-    }
-
-    /* =====================================================
-       HERO
-       ===================================================== */
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      padding: 105px 0 95px;
-      color: white;
-      background:
-        radial-gradient(circle at 90% 20%, rgba(201,162,39,.20), transparent 25%),
-        radial-gradient(circle at 10% 80%, rgba(19,163,127,.20), transparent 30%),
-        linear-gradient(135deg, #043B30, #08785F 60%, #0A6B56);
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 350px;
-      height: 350px;
-      border: 1px solid rgba(255,255,255,.10);
-      border-radius: 50%;
-      right: -120px;
-      top: -130px;
-    }
-
-    .hero-grid {
-      position: relative;
-      z-index: 2;
-      display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      align-items: center;
-      gap: 60px;
-    }
-
-    .hero-badge {
-      display: inline-block;
-      padding: 7px 16px;
-      border: 1px solid rgba(255,255,255,.20);
-      background: rgba(255,255,255,.08);
-      border-radius: 30px;
-      color: var(--gold-light);
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .hero h1 {
-      font-size: clamp(38px, 6vw, 66px);
-      line-height: 1.1;
-      margin-bottom: 22px;
-      color: white;
-    }
-
-    .hero h1 span {
-      color: var(--gold-light);
-    }
-
-    .hero p {
-      max-width: 650px;
-      color: rgba(255,255,255,.86);
-      font-size: 17px;
-      margin-bottom: 30px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 13px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 13px 24px;
-      border-radius: 40px;
-      font-weight: 700;
-      transition: .3s;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
-      color: white;
-      box-shadow: 0 8px 20px rgba(0,0,0,.15);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-3px);
-    }
-
-    .btn-outline {
-      color: white;
-      border: 1px solid rgba(255,255,255,.35);
-      background: rgba(255,255,255,.07);
-    }
-
-    .btn-outline:hover {
-      background: white;
-      color: var(--green-dark);
-    }
-
-    .hero-card {
-      background: rgba(255,255,255,.10);
-      border: 1px solid rgba(255,255,255,.16);
-      border-radius: 25px;
-      padding: 28px;
-      backdrop-filter: blur(12px);
-      box-shadow: 0 20px 45px rgba(0,0,0,.12);
-    }
-
-    .hero-card-icon {
-      width: 72px;
-      height: 72px;
-      display: grid;
-      place-items: center;
-      border-radius: 20px;
-      background: rgba(201,162,39,.18);
-      color: var(--gold-light);
-      font-size: 34px;
-      margin-bottom: 20px;
-    }
-
-    .hero-card h3 {
-      color: white;
-      margin-bottom: 10px;
-      font-size: 23px;
-    }
-
-    .hero-card p {
-      font-size: 14px;
-      margin: 0;
-    }
-
-    /* =====================================================
-       STATS
-       ===================================================== */
-
-    .stats {
-      margin-top: -35px;
-      position: relative;
-      z-index: 5;
-    }
-
-    .stats-grid {
-      background: white;
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
-      overflow: hidden;
-    }
-
-    .stat {
-      text-align: center;
-      padding: 25px 15px;
-      border-right: 1px solid var(--border);
-    }
-
-    .stat:last-child {
-      border-right: none;
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 25px;
-      color: var(--green);
-    }
-
-    .stat span {
-      font-size: 13px;
-      color: var(--text);
-    }
-
-    /* =====================================================
-       SECTIONS
-       ===================================================== */
-
-    section {
-      padding: 90px 0;
-    }
-
-    .section-heading {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 50px;
-    }
-
-    .section-label {
-      color: var(--gold-dark);
-      font-size: 13px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1.5px; display: inline-block;
-  margin-bottom: 4px;
-    }
-
-    .section-heading h2 {
-      color: var(--green dark);
-      font-size: clamp(30px, 4vw, 42px);
-      margin: 8px 0 12px; font-weight: 800;
-  letter-spacing: -0.4px;
-    }
-
-    .section-heading p {
-      color: var(--text);.why-description {
-  max-width: 620px;
-  margin: 0 auto;
-  font-size: 15px;
-  color: var(--text);
-  line-height: 1.8;
-}
-    }
-
-    /* =====================================================
-       ABOUT
-       ===================================================== */
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: 55px;
-      align-items: center;
-    }
-
-    .about-box {
-      background: linear-gradient(145deg, var(--green-dark), var(--green));
-      color: white;
-      padding: 40px;
-      border-radius: 25px;
-      box-shadow: var(--shadow);
-    }
-
-    .about-box .big-icon {
-      font-size: 55px;
-      color: var(--gold-light);
-      margin-bottom: 15px;
-    }
-
-    .about-box h3 {
-      color: white;
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .about-content h2 {
-      color: var(--text-dark);
-      font-size: 38px;
-      margin-bottom: 17px;
-    }
-
-    .about-content p {
-      margin-bottom: 15px;
-    }
-
-    .check-list {
-      list-style: none;
-      margin-top: 20px;
-    }
-
-    .check-list li {
-      margin: 10px 0;
-      color: var(--text-dark);
-      font-weight: 600;
-    }
-
-    .check-list li::before {
-      content: "✓";
-      color: var(--gold-dark);
-      font-weight: 900;
-      margin-right: 10px;
-    }
-
-    /* =====================================================
-       <!-- JHN QURAN ACADEMY COURSES -->
-       ===================================================== */
-
-    #courses {
+body{
+  font-family:Arial, Helvetica, sans-serif;
   background:var(--cream);
-    }
-
-    .courses-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  align-items: start;
-}
-.course-card {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: .3s;
-}
-    
-
-    .course-card:hover {
-      transform: translateY(-7px);
-      box-shadow: var(--shadow-hover);
-      border-color: rgba(201,162,39,.35);
-    }
-.course-image {
-  
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  border-radius: 14px;
-  background: var(--cream);
+  color:var(--text-dark);
+  line-height:1.7;
 }
 
-.course-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-    
-
-
-.course-body {
-  padding: 18px 20px;
-  box-sizing: border-box;
-}
-    .course-body h3 {
-      color: var(--green-dark);
-      font-size: 20px;
-      margin-bottom: 8px;
-    }
-
-    .course-body p {
-      font-size: 14px;
-      color: var(--text);
-    }
-    /* =====================================================
-   LIVE CLASSES — PREMIUM STYLE
-   ===================================================== */
-
-.live-classes {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #F8F4EA, #FFFDF5);
+a{
+  text-decoration:none;
 }
 
-.live-class-card {
-  max-width: 950px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  padding: 35px;
-  background: linear-gradient(145deg, var(--green-dark), var(--green));
-  border: 1px solid rgba(231, 211, 161, 0.65);
-  border-radius: 28px;
-  box-shadow: 0 15px 40px rgba(11, 59, 46, 0.18);
+button,
+a{
+  -webkit-tap-highlight-color:transparent;
 }
 
-.live-class-icon {
-  width: 90px;
-  height: 90px;
-  flex-shrink: 0;
-  display: grid;
-  place-items: center;
-  border-radius: 24px;
-  background: linear-gradient(145deg, var(--green), var(--green-dark));
-  border: 1px solid rgba(231, 211, 161, 0.65);
-  font-size: 42px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+.container{
+  width:min(1180px,92%);
+  margin:auto;
 }
 
-.live-class-content {
-  flex: 1;
+/* =========================================================
+   HEADER
+========================================================= */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(11,59,46,.10);
+  box-shadow:0 4px 18px rgba(11,59,46,.06);
 }
 
-.live-badge {
-  display: inline-block;
-  margin-bottom: 10px;
-  color: var(--gold-light);
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 1px;
+.header-inner{
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
 }
 
-.live-class-content h3 {
-  margin: 0 0 10px;
-  color: #FFFFFF;
-  font-size: 28px;
+.brand{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  color:var(--green-dark);
+  font-weight:900;
+  font-size:25px;
+  letter-spacing:.2px;
 }
 
-.live-class-content p {
-  margin: 0 0 22px;
-  color: rgba(255,255,255,0.88);
-  line-height: 1.7;
-  font-size: 15px;
+.brand-icon{
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  border-radius:15px;
+  color:var(--gold-light);
+  background:linear-gradient(145deg,var(--green-dark),var(--green));
+  border:1px solid var(--gold);
+  font-size:25px;
+  box-shadow:0 7px 18px rgba(11,59,46,.18);
 }
 
-.live-class-buttons {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
+.nav{
+  position:absolute;
+  right:0;
+  display:flex;
+  gap:8px;
 }
 
-.live-class-buttons a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 13px 20px;
-  border-radius: 30px;
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: 700;
-  transition: 0.3s ease;
+.nav a{
+  padding:9px 13px;
+  color:var(--green-dark);
+  font-size:14px;
+  font-weight:700;
+  border-radius:20px;
+  transition:.3s;
 }
 
-.live-class-buttons a:hover {
-  transform: translateY(-3px);
+.nav a:hover{
+  background:var(--green-dark);
+  color:var(--gold-light);
 }
 
-.teams-btn {
-  background: linear-gradient(135deg, #176B57, #0B3B2E);
-  border: 1px solid var(--gold);
-}
-
-.meet-btn {
-  background: linear-gradient(135deg, #2E8B72, #176B57);
-  border: 1px solid rgba(231, 211, 161, 0.7);
-}
-
-@media (max-width: 700px) {
-
-  .live-class-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 28px 22px;
+@media(max-width:850px){
+  .header-inner{
+    min-height:75px;
   }
 
-  .live-class-icon {
-    width: 75px;
-    height: 75px;
-    font-size: 34px;
+  .brand{
+    font-size:20px;
   }
 
-  .live-class-content h3 {
-    font-size: 24px;
+  .brand-icon{
+    width:42px;
+    height:42px;
+    font-size:21px;
   }
 
-  .live-class-buttons {
-    justify-content: center;
-  }
-
-  .live-class-buttons a {
-    width: 100%;
-  }
-
-  }
-    /* =====================================================
-   CLASS RECORDINGS — PREMIUM STYLE
-   ===================================================== */
-
-.class-recordings {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #F2F8F5, #FFFDF5);
-}
-
-.recordings-grid {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.recording-card {
-  padding: 32px 25px;
-  text-align: center;
-  background: linear-gradient(145deg, var(--green-dark), var(--green));
-  border: 1px solid rgba(231, 211, 161, 0.65);
-  border-radius: 24px;
-  box-shadow: 0 10px 30px rgba(11, 59, 46, 0.14);
-  transition: 0.35s ease;
-}
-
-.recording-card:hover {
-  transform: translateY(-7px);
-  border-color: var(--gold);
-  box-shadow: 0 18px 40px rgba(212, 175, 55, 0.22);
-}
-
-.recording-icon {
-  width: 70px;
-  height: 70px;
-  margin: 0 auto 18px;
-  display: grid;
-  place-items: center;
-  border-radius: 20px;
-  background: linear-gradient(145deg, var(--green), var(--green-dark));
-  border: 1px solid rgba(231, 211, 161, 0.65);
-  font-size: 34px;
-}
-
-.recording-card h3 {
-  margin: 0 0 12px;
-  color: var(--gold-light);
-  font-size: 22px;
-  font-weight: 800;
-}
-
-.recording-card p {
-  margin: 0 0 24px;
-  color: rgba(255,255,255,0.88);
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-.recording-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 13px 22px;
-  border-radius: 30px;
-  background: linear-gradient(135deg, var(--gold-dark), var(--gold));
-  color: #FFFFFF !important;
-  font-weight: 800;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.recording-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(198,161,91,0.25);
-}
-
-@media (max-width: 900px) {
-  .recordings-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .nav{
+    display:none;
   }
 }
 
-@media (max-width: 600px) {
-  .recordings-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .recording-card {
-    padding: 28px 22px;
-  }
-}
-    /* =====================================================
-   CLASS SCHEDULE — PREMIUM STYLE
-   ===================================================== */
-
-.class-schedule {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #FFFDF5, #F8F4EA);
-}
-
-.schedule-grid {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.schedule-card {
-  padding: 28px 22px;
-  text-align: center;
-  background: linear-gradient(145deg, var(--green-dark), var(--green));
-  border: 1px solid rgba(231, 211, 161, 0.65);
-  border-radius: 22px;
-  box-shadow: 0 10px 30px rgba(11, 59, 46, 0.14);
-  transition: 0.35s ease;
-}
-
-.schedule-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 35px rgba(11, 59, 46, 0.22);
-  border-color: var(--gold);
-}
-
-.schedule-day {
-  display: inline-block;
-  margin-bottom: 12px;
-  padding: 6px 14px;
-  border-radius: 20px;
-  background: rgba(231, 211, 161, 0.12);
-  border: 1px solid rgba(231, 211, 161, 0.45);
-  color: var(--gold-light);
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.schedule-card h3 {
-  margin: 0 0 10px;
-  color: #FFFFFF;
-  font-size: 21px;
-  font-weight: 800;
-}
-
-.schedule-card p {
-  margin: 0;
-  color: rgba(255,255,255,0.88);
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-@media (max-width: 900px) {
-  .schedule-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .schedule-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .schedule-card {
-    padding: 25px 20px;
-  }
-}
-    /* =====================================================
-   STUDENT & TEACHER LOGIN — PREMIUM STYLE
-   ===================================================== */
-
-.login-section {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #F2F8F5, #FFFDF5);
-}
-
-.login-grid {
-  max-width: 900px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-}
-
-.login-card {
-  padding: 35px 28px;
-  text-align: center;
-  background: linear-gradient(145deg, var(--green-dark), var(--green));
-  border: 1px solid rgba(231, 211, 161, 0.65);
-  border-radius: 24px;
-  box-shadow: 0 10px 30px rgba(11, 59, 46, 0.14);
-  transition: 0.35s ease;
-}
-
-.login-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 18px 40px rgba(11, 59, 46, 0.22);
-  border-color: var(--gold);
-}
-
-.login-icon {
-  width: 70px;
-  height: 70px;
-  margin: 0 auto 18px;
-  display: grid;
-  place-items: center;
-  border-radius: 20px;
-  background: linear-gradient(145deg, var(--green), var(--green-dark));
-  border: 1px solid rgba(231, 211, 161, 0.65);
-  font-size: 34px;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
-}
-
-.login-card h3 {
-  margin: 0 0 10px;
-  color: var(--gold-light);
-  font-size: 24px;
-  font-weight: 800;
-}
-
-.login-card p {
-  margin: 0 0 24px;
-  color: rgba(255,255,255,0.88);
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-.login-card a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 170px;
-  padding: 13px 22px;
-  border-radius: 30px;
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: 700;
-  transition: 0.3s ease;
-}
-
-.login-card a:hover {
-  transform: translateY(-3px);
-}
-
-.student-login-btn {
-  background: linear-gradient(135deg, var(--green-light), var(--green));
-  border: 1px solid var(--gold);
-}
-
-.teacher-login-btn {
-  background: linear-gradient(135deg, var(--gold-dark), var(--gold));
-  border: 1px solid var(--gold-light);
-}
-
-@media (max-width: 650px) {
-
-  .login-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .login-card {
-    padding: 30px 22px;
-  }
-
-}
-    /* =====================================================
-   WHY CHOOSE US
-   ===================================================== */
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  align-items: stretch;
-}
-
-.feature {
-  background: linear-gradient(145deg, var(--green-dark), var(--green));
-  padding: 30px;
-  border-radius: 24px;
-  border: 1px solid rgba(212,175,55,0.65);
-  box-shadow: 0 10px 30px rgba(11,59,46,0.14);
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
-}
-
-.feature:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-hover);
-  border-color: var(--gold);
-}
-
-.feature-icon {
-  width: 58px;
-  height: 58px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(145deg, var(--green), var(--green-dark));
-  color: var(--gold-light);
-  border: 1px solid rgba(212,175,55,0.65);
-  border-radius: 18px;
-  font-size: 28px;
-  margin-bottom: 20px;
-  box-shadow: 0 8px 20px rgba(11,59,46,0.18);
-}
-
-.feature h3 {
-  color: var(--gold-light);
-  margin: 0 0 10px;
-  font-size: 21px;
-  font-weight: 800;
-  letter-spacing: 0;
-}
-
-.feature p {
-  color: rgba(255,255,255,0.88);
-  font-size: 15px;
-  line-height: 1.75;
-  margin: 0;
-}
-
-/* Tablet */
-@media (max-width: 900px) {
-  .features-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .feature {
-    padding: 25px 22px;
-  }
-}
-  /* =====================================================
-   PRICING
-   ===================================================== */
-
-#pricing {
-  padding: 75px 20px;
-  background: var(--cream);
-}
-
-#pricing .section-heading {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-#pricing .section-heading .section-label {
-  color: var(--gold-dark);
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-#pricing .section-heading h2 {
-  margin: 8px 0 10px;
-  color: var(--green-dark);
-  font-size: 38px;
-  font-weight: 800;
-}
-
-#pricing .section-heading p {
-  margin: 0 auto;
-  max-width: 650px;
-  color: rgba(11,77,59,0.75);
-  font-size: 17px;
-  line-height: 1.7;
-}
-
-.pricing-grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
-  align-items: stretch;
-}
-
-.pricing-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 32px 24px 28px;
-  background: linear-gradient(145deg, var(--green-dark), var(--green));
-  border: 1px solid rgba(212,175,55,0.65);
-  border-radius: 24px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(11,77,59,0.15);
-  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
-}
-
-.pricing-card:hover {
-  transform: translateY(-7px);
-  border-color: var(--gold);
-  box-shadow: 0 18px 40px rgba(212,175,55,0.25);
-}
-
-.pricing-card.popular {
-  border: 2px solid var(--gold);
-  box-shadow: 0 14px 38px rgba(212,175,55,0.22);
-}
-
-.popular-badge {
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(135deg, var(--gold-light), var(--gold));
-  color: var(--green-dark);
-  padding: 6px 16px;
-  border-radius: 30px;
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.16);
-}
-
-.pricing-card h3 {
-  margin: 8px 0 18px;
-  color: var(--gold-light);
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 1.3;
-}
-
-.pricing-card .old-price {
-  color: rgba(255,255,255,0.55);
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: line-through;
-  margin-bottom: 3px;
-}
-
-.pricing-card .price {
-  color: var(--white);
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 1.1;
-  margin: 2px 0 6px;
-  letter-spacing: -1px;
-}
-
-.pricing-card .per {
-  color: rgba(255,255,255,0.72);
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-.pricing-card .discount {
-  display: inline-block;
-  align-self: center;
-  margin: 12px 0 20px;
-  padding: 7px 13px;
-  border-radius: 999px;
-  background: rgba(212,175,55,0.16);
-  border: 1px solid rgba(212,175,55,0.35);
-  color: var(--gold-light);
-  font-size: 13px;
-  font-weight: 800;
-}
-
-.pricing-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 25px;
-  text-align: left;
-  flex: 1;
-}
-
-.pricing-card li {
-  position: relative;
-  color: rgba(255,255,255,0.88);
-  font-size: 15px;
-  line-height: 1.6;
-  padding: 10px 0 10px 29px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.pricing-card li:last-child {
-  border-bottom: none;
-}
-
-.pricing-card li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  top: 9px;
-  width: 20px;
-  height: 20px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: rgba(212,175,55,0.16);
-  border: 1px solid rgba(212,175,55,0.35);
-  color: var(--gold-light);
-  font-size: 12px;
-  font-weight: 900;
-}
-
-.pricing-card .btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 13px 18px;
-  margin-top: auto;
-  border-radius: 12px;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 800;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.pricing-card .btn-primary {
-  background: linear-gradient(135deg, var(--gold-light), var(--gold));
-  color: var(--green-dark);
-  border: 1px solid rgba(255,255,255,0.25);
-  box-shadow: 0 7px 18px rgba(0,0,0,0.15);
-}
-
-.pricing-card .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(212,175,55,0.30);
-}
-
-.discount-box {
-  max-width: 900px;
-  margin: 35px auto 0;
-  padding: 24px;
-  background: linear-gradient(135deg, #FFF8DF, #FFFDF5);
-  border: 1px solid rgba(201,162,39,0.30);
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0 8px 25px rgba(11,77,59,0.08);
-}
-
-.discount-box strong {
-  display: block;
-  color: var(--gold-dark);
-  font-size: 19px;
-  font-weight: 800;
-  margin-bottom: 7px;
-}
-
-.discount-box p {
-  margin: 0;
-  color: rgba(11,77,59,0.78);
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-@media (max-width: 1000px) {
-  .pricing-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  #pricing {
-    padding: 55px 14px;
-  }
-
-  #pricing .section-heading {
-    margin-bottom: 40px;
-  }
-
-  #pricing .section-heading h2 {
-    font-size: 30px;
-  }
-
-  #pricing .section-heading p {
-    font-size: 16px;
-  }
-
-  .pricing-grid {
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
-
-  .pricing-card {
-    padding: 30px 22px 26px;
-    border-radius: 22px;
-  }
-
-  .pricing-card h3 {
-    font-size: 21px;
-  }
-
-  .pricing-card .price {
-    font-size: 40px;
-  }
-
-  .discount-box {
-    padding: 20px 16px;
-  }
-}  
-    /* =====================================================
-   TESTIMONIALS
-   ===================================================== */
-
-.testimonials-grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  align-items: stretch;
-}
-
-.testimonial {
-  position: relative;
-  background: linear-gradient(145deg, var(--green-dark), var(--green));
-  padding: 30px 28px;
-  border-radius: 24px;
-  border: 1px solid rgba(212,175,55,0.65);
-  border-left: 4px solid var(--gold);
-  box-shadow: 0 10px 30px rgba(11,59,46,0.14);
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
-}
-
-.testimonial:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 18px 40px rgba(212,175,55,0.22);
-  border-color: var(--gold);
-}
-
-.stars {
-  color: var(--gold-light);
-  margin-bottom: 16px;
-  letter-spacing: 3px;
-  font-size: 17px;
-}
-
-.testimonial p {
-  color: rgba(255,255,255,0.88);
-  font-size: 15px;
-  line-height: 1.8;
-  margin: 0 0 20px;
-}
-
-.student {
-  color: var(--gold-light);
-  font-weight: 800;
-  font-size: 15px;
-  border-top: 1px solid rgba(255,255,255,0.12);
-  padding-top: 15px;
-}
-
-@media (max-width: 900px) {
-  .testimonials-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .testimonial {
-    padding: 25px 22px;
-  }
-    }
-    /* =====================================================
-   ADMISSION FORM
-   ===================================================== */
-
-#admission {
-  padding: 75px 20px;
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  text-align:center;
   background:
-    radial-gradient(circle at 90% 10%, rgba(198,161,91,0.12), transparent 25%),
-    var(--cream);
+    radial-gradient(circle at top right,rgba(198,161,91,.18),transparent 35%),
+    linear-gradient(135deg,var(--green-dark),#06362B 55%,var(--green));
+  color:white;
+  position:relative;
+  overflow:hidden;
 }
 
-#admission .section-heading {
-  text-align: center;
-  margin-bottom: 50px;
+.hero:before{
+  content:"";
+  position:absolute;
+  width:400px;
+  height:400px;
+  border:1px solid rgba(231,211,161,.15);
+  border-radius:50%;
+  right:-170px;
+  top:-150px;
 }
 
-#admission .section-heading .section-label {
-  color: var(--gold-dark);
-  font-weight: 800;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:850px;
+  margin:auto;
 }
 
-#admission .section-heading h2 {
-  margin: 8px 0 10px;
-  color: var(--green-dark);
-  font-size: 38px;
-  font-weight: 800;
+.hero-badge{
+  display:inline-block;
+  padding:7px 17px;
+  margin-bottom:20px;
+  border:1px solid rgba(231,211,161,.5);
+  border-radius:30px;
+  color:var(--gold-light);
+  background:rgba(255,255,255,.06);
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:1px;
+  text-transform:uppercase;
 }
 
-#admission .section-heading p {
-  margin: 0 auto;
-  max-width: 650px;
-  color: rgba(11,77,59,0.75);
-  font-size: 17px;
-  line-height: 1.7;
+.hero h1{
+  font-size:clamp(42px,7vw,72px);
+  line-height:1.1;
+  margin-bottom:20px;
 }
 
-.form-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 38px;
-  background: linear-gradient(145deg, var(--green-dark), var(--green));
-  border-radius: 26px;
-  border: 1px solid rgba(212,175,55,0.65);
-  box-shadow: 0 15px 40px rgba(11,59,46,0.18);
+.hero h1 span{
+  color:var(--gold-light);
 }
 
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
+.hero p{
+  max-width:720px;
+  margin:0 auto 30px;
+  color:rgba(255,255,255,.88);
+  font-size:18px;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap;
 }
 
-.form-group.full {
-  grid-column: 1 / -1;
+.btn{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  padding:14px 25px;
+  border-radius:35px;
+  font-weight:800;
+  transition:.3s;
 }
 
-.form-group label {
-  color: var(--gold-light);
-  font-size: 14px;
-  font-weight: 800;
-  margin-bottom: 8px;
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+.btn-gold{
+  color:white;
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+  border:1px solid var(--gold-light);
+}
+
+.btn-outline{
+  color:white;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(231,211,161,.6);
+}
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+section{
+  padding:85px 0;
+}
+
+.section-heading{
+  text-align:center;
+  margin-bottom:48px;
+}
+
+.section-label{
+  display:inline-block;
+  color:var(--gold-dark);
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+
+.section-heading h2{
+  color:var(--green-dark);
+  font-size:clamp(30px,5vw,42px);
+  margin-bottom:10px;
+}
+
+.section-heading p{
+  max-width:700px;
+  margin:auto;
+  color:var(--text);
+  font-size:16px;
+}
+
+/* =========================================================
+   COURSES
+========================================================= */
+
+.courses{
+  background:linear-gradient(135deg,#FFFDF5,var(--cream));
+}
+
+.course-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.course-card{
+  overflow:hidden;
+  border-radius:25px;
+  background:linear-gradient(145deg,var(--green-dark),var(--green));
+  border:1px solid rgba(231,211,161,.55);
+  box-shadow:var(--shadow);
+  transition:.35s;
+}
+
+.course-card:hover{
+  transform:translateY(-8px);
+  box-shadow:var(--shadow-hover);
+  border-color:var(--gold);
+}
+
+.course-top{
+  height:165px;
+  display:grid;
+  place-items:center;
+  background:
+    radial-gradient(circle,rgba(231,211,161,.16),transparent 60%),
+    rgba(255,255,255,.03);
+  border-bottom:1px solid rgba(231,211,161,.25);
+}
+
+.course-icon{
+  width:85px;
+  height:85px;
+  display:grid;
+  place-items:center;
+  border-radius:25px;
+  background:linear-gradient(145deg,var(--green),var(--green-dark));
+  border:1px solid var(--gold);
+  box-shadow:0 12px 25px rgba(0,0,0,.18);
+  color:var(--gold-light);
+  font-size:42px;
+}
+
+.course-body{
+  padding:25px 22px 28px;
+  text-align:center;
+}
+
+.course-body h3{
+  color:white;
+  font-size:23px;
+  margin-bottom:8px;
+}
+
+.course-body p{
+  color:rgba(255,255,255,.82);
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+.course-btn{
+  width:100%;
+  border:1px solid var(--gold);
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+  color:white;
+  padding:12px 18px;
+  border-radius:30px;
+  font-weight:800;
+  cursor:pointer;
+  font-size:15px;
+}
+
+/* =========================================================
+   COURSE DETAIL
+========================================================= */
+
+.course-detail-section{
+  display:none;
+  background:
+    linear-gradient(135deg,#F2F8F5,#FFFDF5);
+  border-top:1px solid rgba(11,59,46,.08);
+}
+
+.course-detail-section.active{
+  display:block;
+}
+
+.course-detail-card{
+  max-width:1050px;
+  margin:auto;
+  background:white;
+  border-radius:30px;
+  overflow:hidden;
+  box-shadow:var(--shadow-hover);
+  border:1px solid rgba(198,161,91,.35);
+}
+
+.course-detail-header{
+  padding:38px 25px;
+  text-align:center;
+  background:linear-gradient(145deg,var(--green-dark),var(--green));
+  color:white;
+}
+
+.course-detail-header .big-icon{
+  width:75px;
+  height:75px;
+  margin:0 auto 15px;
+  display:grid;
+  place-items:center;
+  border-radius:22px;
+  background:rgba(255,255,255,.08);
+  border:1px solid var(--gold);
+  font-size:36px;
+}
+
+.course-detail-header h2{
+  color:white;
+  margin-bottom:8px;
+}
+
+.course-detail-header p{
+  color:rgba(255,255,255,.84);
+  max-width:700px;
+  margin:auto;
+}
+
+.detail-buttons{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  padding:22px;
+  background:#fff;
+  border-bottom:1px solid #eee;
+}
+
+.detail-tab{
+  border:1px solid rgba(11,59,46,.15);
+  background:var(--cream);
+  color:var(--green-dark);
+  padding:11px 18px;
+  border-radius:30px;
+  font-weight:800;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.detail-tab:hover,
+.detail-tab.active{
+  background:var(--green-dark);
+  color:var(--gold-light);
+  border-color:var(--gold);
+}
+
+.detail-panel{
+  display:none;
+  padding:35px 28px;
+}
+
+.detail-panel.active{
+  display:block;
+}
+
+.detail-panel h3{
+  color:var(--green-dark);
+  font-size:25px;
+  margin-bottom:12px;
+}
+
+.detail-panel p{
+  color:var(--text);
+  margin-bottom:15px;
+}
+
+/* =========================================================
+   FEES
+========================================================= */
+
+.fee-table-wrap{
+  overflow-x:auto;
+  margin-top:22px;
+  border-radius:15px;
+  border:1px solid rgba(11,59,46,.12);
+}
+
+.fee-table{
+  width:100%;
+  min-width:700px;
+  border-collapse:collapse;
+  background:white;
+}
+
+.fee-table th{
+  background:var(--green-dark);
+  color:var(--gold-light);
+  padding:14px 12px;
+  text-align:center;
+}
+
+.fee-table td{
+  padding:13px 10px;
+  text-align:center;
+  border-bottom:1px solid #eee;
+  color:var(--text-dark);
+  font-size:14px;
+}
+
+.fee-table tr:nth-child(even){
+  background:#faf8f1;
+}
+
+.fee-note{
+  margin-top:15px;
+  padding:14px 17px;
+  border-left:4px solid var(--gold);
+  background:var(--cream);
+  color:var(--text);
+  border-radius:8px;
+}
+
+/* =========================================================
+   ADMISSION FORM
+========================================================= */
+
+.admission-form{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.form-group.full{
+  grid-column:1/-1;
+}
+
+.form-group label{
+  color:var(--green-dark);
+  font-size:14px;
+  font-weight:800;
+  margin-bottom:7px;
 }
 
 .form-group input,
 .form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 14px 15px;
-  border: 1px solid rgba(212,175,55,0.30);
-  border-radius: 13px;
-  outline: none;
-  font-family: inherit;
-  color: var(--text-dark);
-  background: rgba(255,255,255,0.97);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+.form-group textarea{
+  width:100%;
+  padding:13px 14px;
+  border:1px solid rgba(11,59,46,.16);
+  border-radius:12px;
+  background:#fff;
+  color:var(--text-dark);
+  outline:none;
+  font-size:15px;
+}
+
+.form-group textarea{
+  min-height:120px;
+  resize:vertical;
 }
 
 .form-group input:focus,
 .form-group select:focus,
-.form-group textarea:focus {
-  border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(212,175,55,0.18);
-  transform: translateY(-1px);
+.form-group textarea:focus{
+  border-color:var(--gold);
+  box-shadow:0 0 0 3px rgba(198,161,91,.12);
 }
 
-.form-group textarea {
-  min-height: 120px;
-  resize: vertical;
+.form-submit{
+  grid-column:1/-1;
+  border:0;
+  padding:14px 25px;
+  border-radius:30px;
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+  color:white;
+  font-size:16px;
+  font-weight:900;
+  cursor:pointer;
 }
 
-.form-submit {
-  margin-top: 24px;
-  width: 100%;
-  min-height: 50px;
-  border: none;
-  cursor: pointer;
-  border-radius: 13px;
-  font-size: 16px;
-  font-weight: 800;
-  background: linear-gradient(135deg, var(--gold-light), var(--gold));
-  color: var(--green-dark);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.16);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* =========================================================
+   CONTACT PANEL
+========================================================= */
+
+.contact-options{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+  max-width:700px;
+  margin:auto;
 }
 
-.form-submit:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(212,175,55,0.30);
+.contact-option{
+  padding:25px;
+  text-align:center;
+  border-radius:20px;
+  background:linear-gradient(145deg,var(--green-dark),var(--green));
+  color:white;
+  border:1px solid rgba(231,211,161,.55);
 }
 
-@media (max-width: 700px) {
-  #admission {
-    padding: 55px 14px;
+.contact-option .contact-icon{
+  font-size:35px;
+  margin-bottom:8px;
+}
+
+.contact-option h4{
+  color:var(--gold-light);
+  font-size:20px;
+  margin-bottom:7px;
+}
+
+.contact-option p{
+  color:rgba(255,255,255,.85);
+}
+
+.contact-option a{
+  display:inline-block;
+  margin-top:13px;
+  padding:10px 18px;
+  border-radius:25px;
+  color:white;
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+  font-weight:800;
+}
+
+/* =========================================================
+   WHY CHOOSE US
+========================================================= */
+
+.why{
+  background:var(--cream);
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.feature{
+  padding:28px 24px;
+  border-radius:23px;
+  background:linear-gradient(145deg,var(--green-dark),var(--green));
+  border:1px solid rgba(231,211,161,.6);
+  box-shadow:var(--shadow);
+  transition:.35s;
+}
+
+.feature:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow-hover);
+}
+
+.feature-icon{
+  width:58px;
+  height:58px;
+  display:grid;
+  place-items:center;
+  border-radius:18px;
+  margin-bottom:17px;
+  background:linear-gradient(145deg,var(--green),var(--green-dark));
+  border:1px solid var(--gold);
+  font-size:28px;
+}
+
+.feature h3{
+  color:var(--gold-light);
+  font-size:20px;
+  margin-bottom:8px;
+}
+
+.feature p{
+  color:rgba(255,255,255,.86);
+  font-size:14px;
+}
+
+/* =========================================================
+   LIVE CLASSES
+========================================================= */
+
+.live{
+  background:linear-gradient(135deg,#FFFDF5,#F2F8F5);
+}
+
+.live-card{
+  max-width:950px;
+  margin:auto;
+  padding:35px;
+  border-radius:28px;
+  display:flex;
+  gap:25px;
+  align-items:center;
+  background:linear-gradient(145deg,var(--green-dark),var(--green));
+  border:1px solid rgba(231,211,161,.6);
+  box-shadow:var(--shadow-hover);
+}
+
+.live-icon{
+  width:85px;
+  height:85px;
+  flex-shrink:0;
+  display:grid;
+  place-items:center;
+  border-radius:23px;
+  background:rgba(255,255,255,.08);
+  border:1px solid var(--gold);
+  font-size:40px;
+}
+
+.live-card h3{
+  color:white;
+  font-size:27px;
+  margin-bottom:8px;
+}
+
+.live-card p{
+  color:rgba(255,255,255,.84);
+  margin-bottom:18px;
+}
+
+.live-buttons{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.live-buttons a{
+  padding:11px 17px;
+  border-radius:25px;
+  color:white;
+  font-weight:800;
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+  padding:55px 0 25px;
+  background:#032F27;
+  color:white;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
+  margin-bottom:35px;
+}
+
+footer h3{
+  color:var(--gold-light);
+  font-size:25px;
+  margin-bottom:12px;
+}
+
+footer h4{
+  color:var(--gold-light);
+  margin-bottom:12px;
+}
+
+footer p,
+footer li{
+  color:rgba(255,255,255,.72);
+  font-size:14px;
+}
+
+footer ul{
+  list-style:none;
+}
+
+footer li{
+  margin-bottom:7px;
+}
+
+footer a{
+  color:rgba(255,255,255,.75);
+}
+
+footer a:hover{
+  color:var(--gold-light);
+}
+
+.copyright{
+  padding-top:20px;
+  border-top:1px solid rgba(231,211,161,.15);
+  text-align:center;
+  color:rgba(255,255,255,.58);
+  font-size:13px;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:950px){
+  .course-grid{
+    grid-template-columns:repeat(2,1fr);
   }
 
-  #admission .section-heading {
-    margin-bottom: 38px;
-  }
-
-  #admission .section-heading h2 {
-    font-size: 30px;
-  }
-
-  #admission .section-heading p {
-    font-size: 16px;
-  }
-
-  .form-wrapper {
-    padding: 25px 20px;
-    border-radius: 22px;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .form-group.full {
-    grid-column: auto;
-  }
-}
-    
-/* =====================================================
-       CTA
-       ===================================================== */
-
-    .cta {
-      padding: 70px 0;
-      background: linear-gradient(135deg, var(--green-dark), var(--green));
-      color: white;
-      text-align: center;
-    }
-
-    .cta h2 {
-      color: white;
-      font-size: 38px;
-      margin-bottom: 12px;
-    }
-
-    .cta p {
-      color: rgba(255,255,255,.84);
-      margin-bottom: 25px;
-    }
-    /* =====================================================
-   PREMIUM FOOTER
-   ===================================================== */
-
-footer {
-  background:
-    radial-gradient(circle at 15% 20%, rgba(198,161,91,0.10), transparent 28%),
-    linear-gradient(135deg, #032F27, var(--green-dark));
-  color: rgba(255,255,255,0.78);
-  padding: 65px 20px 22px;
-  border-top: 1px solid rgba(212,175,55,0.35);
-}
-
-.footer-grid {
-  max-width: 1200px;
-  margin: 0 auto 40px;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 45px;
-}
-
-footer h3,
-footer h4 {
-  color: var(--gold-light);
-  margin: 0 0 16px;
-  font-weight: 800;
-}
-
-footer h3 {
-  font-size: 23px;
-}
-
-footer h4 {
-  font-size: 18px;
-}
-
-footer p {
-  color: rgba(255,255,255,0.72);
-  font-size: 14px;
-  line-height: 1.8;
-  margin: 0;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin: 9px 0;
-  font-size: 14px;
-}
-
-.footer-links a {
-  color: rgba(255,255,255,0.72);
-  text-decoration: none;
-  transition: color 0.3s ease, padding-left 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: var(--gold-light);
-  padding-left: 5px;
-}
-
-.copyright {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 22px;
-  border-top: 1px solid rgba(255,255,255,0.10);
-  text-align: center;
-  color: rgba(255,255,255,0.58);
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-@media (max-width: 800px) {
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
+  .feature-grid{
+    grid-template-columns:repeat(2,1fr);
   }
 }
 
-@media (max-width: 600px) {
-  footer {
-    padding: 50px 18px 20px;
+@media(max-width:650px){
+
+  section{
+    padding:65px 0;
   }
 
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    margin-bottom: 30px;
+  .course-grid,
+  .feature-grid,
+  .contact-options,
+  .footer-grid{
+    grid-template-columns:1fr;
   }
 
-  footer h3 {
-    font-size: 21px;
+  .course-top{
+    height:145px;
   }
 
-  footer h4 {
-    font-size: 17px;
+  .detail-panel{
+    padding:28px 18px;
   }
 
-  .copyright {
-    font-size: 11.5px;
+  .admission-form{
+    grid-template-columns:1fr;
+  }
+
+  .form-group.full,
+  .form-submit{
+    grid-column:auto;
+  }
+
+  .live-card{
+    flex-direction:column;
+    text-align:center;
+    padding:28px 20px;
+  }
+
+  .live-buttons{
+    justify-content:center;
+  }
+
+  .live-buttons a{
+    width:100%;
+  }
+
+  .footer-grid{
+    gap:25px;
   }
 }
-
-    
-
-    
-
-    
-
-    /* =====================================================
-       MOBILE RESPONSIVE
-       ===================================================== */
-
-    @media (max-width: 900px) {
-
-      nav {
-        display: none;
-      }
-
-      .hero-grid,
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .courses-grid,
-      .features-grid,
-      .testimonials-grid {
-        grid-template-columns: repeat(2,1fr);
-      }
-
-      .pricing-grid {
-        grid-template-columns: repeat(2,1fr);
-      }
-
-      .stats-grid {
-        grid-template-columns: repeat(2,1fr);
-      }
-
-      .stat {
-        border-bottom: 1px solid var(--border);
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      section {
-        padding: 65px 0;
-      }
-
-      .hero {
-        padding: 75px 0 70px;
-      }
-
-      .hero h1 {
-        font-size: 40px;
-      }
-
-      .hero p {
-        font-size: 15px;
-      }
-
-      .courses-grid,
-      .features-grid,
-      .testimonials-grid,
-      .pricing-grid,
-      .form-grid,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .stats-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .stat {
-        padding: 18px 8px;
-      }
-
-      .form-wrapper {
-        padding: 24px 18px;
-      }
-
-      .about-box {
-        padding: 28px;
-      }
-
-      .cta h2 {
-        font-size: 30px;
-      }
-    }
-
-  </style>
+</style>
 </head>
 
 <body>
 
-  <!-- =====================================================
-       HEADER
-       ===================================================== -->
+<!-- =======================================================
+     HEADER
+======================================================= -->
 
-  <header>
-    <div class="container navbar">
+<header>
+  <div class="container header-inner">
 
-      <a href="#home" class="brand">
-        <img src="logo.png" alt="JHN Quran Academy Logo" class="brand-icon">
-        <span>JHN Quran Academy</span>
-      </a>
+    <a href="#home" class="brand">
+      <span class="brand-icon">☪</span>
+      <span>HN Quran Academy</span>
+    </a>
 
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#courses">Courses</a>
-        <a href="#pricing">Fees</a>
-        <a href="#admission" class="nav-btn">Join Now</a>
-      </nav>
-
-    </div>
-  </header>
-
-
-  <!-- =====================================================
-       HERO
-       ===================================================== -->
-
-  <section class="hero" id="home">
-
-    <div class="container hero-grid">
-
-      <div>
-
-        <span class="hero-badge">
-          ✦ Learn Quran Online With Confidence
-        </span>
-
-        <h1>
-          Learn Quran.<br>
-          <span>Live Your Deen.</span>
-        </h1>
-
-        <p>
-          Welcome to JHN Quran Academy — a professional online Quran
-          learning platform where students can learn Quran, Tajweed,
-          Hifz and Islamic Studies from the comfort of home.
-        </p>
-
-        <div class="hero-buttons">
-
-          <a href="#admission" class="btn btn-primary">
-            Start Learning
-          </a>
-
-          <a href="#courses" class="btn btn-outline">
-            Explore Courses
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <div class="hero-card">
-
-        <div class="hero-card-icon">📖</div>
-
-        <h3>
-          Quran Learning Made Easy
-        </h3>
-
-        <p>
-          Flexible online classes designed for children, adults,
-          beginners and families around the world.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =====================================================
-       STATS
-       ===================================================== -->
-
-  <div class="stats">
-
-    <div class="container">
-
-      <div class="stats-grid">
-
-        <div class="stat">
-          <strong>1-on-1</strong>
-          <span>Personal Classes</span>
-        </div>
-
-        <div class="stat">
-          <strong>9+</strong>
-          <span>Islamic Courses</span>
-        </div>
-
-        <div class="stat">
-          <strong>Flexible</strong>
-          <span>Class Schedule</span>
-        </div>
-
-        <div class="stat">
-          <strong>Online</strong>
-          <span>Learn From Home</span>
-        </div>
-
-      </div>
-
-    </div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#why">Why Us</a>
+      <a href="#live">Live Classes</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
   </div>
+</header>
 
 
-  <!-- =====================================================
-       ABOUT
-       ===================================================== -->
+<!-- =======================================================
+     HERO
+======================================================= -->
 
-  <section id="about">
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
 
-    <div class="container">
+      <span class="hero-badge">
+        Online Quran & Islamic Education
+      </span>
 
-      <div class="about-grid">
+      <h1>
+        Learn Quran With <span>HN Quran Academy</span>
+      </h1>
 
-        <div class="about-box">
+      <p>
+        Learn the Holy Quran and essential Islamic knowledge
+        online with experienced teachers from anywhere in the world.
+      </p>
 
-          <div class="big-icon">🕌</div>
+      <div class="hero-buttons">
+        <a href="#courses" class="btn btn-gold">
+          📚 Explore Courses
+        </a>
 
-          <h3>
-            JHN Quran Academy
-          </h3>
-
-          <p>
-            Building a stronger connection with the Quran through
-            accessible and structured online Islamic education.
-          </p>
-
-        </div>
-
-
-        <div class="about-content">
-
-          <span class="section-label">About Us</span>
-
-          <h2>
-            Learn Quran From Anywhere
-          </h2>
-
-          <p>
-            JHN Quran Academy provides online Quran and Islamic
-            education for students of different ages and learning
-            levels.
-          </p>
-
-          <p>
-            Our goal is to make Quran learning simple, flexible,
-            comfortable and meaningful for every student.
-          </p>
-
-          <ul class="check-list">
-
-            <li>Online Quran Classes</li>
-            <li>Flexible Class Timings</li>
-            <li>Beginner Friendly Learning</li>
-            <li>Children & Adults Welcome</li>
-            <li>Personalized Learning Approach</li>
-
-          </ul>
-
-        </div>
-
+        <a href="#contact" class="btn btn-outline">
+          📱 Contact Academy
+        </a>
       </div>
 
     </div>
-
-  </section>
-
-  
-<!-- =========================
-     JHN QURAN ACADEMY COURSES
-     ========================= -->
-
-<style>
-  .jhn-courses {
-    padding: 75px 20px;
-    background: var(--cream);
-  }
-
-  .jhn-courses-title {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  .jhn-courses-title h2 {
-    margin: 0 0 10px;
-    color: var(--gold-dark);
-    font-size: 38px;
-    font-weight: 800;
-  }
-
-  .jhn-courses-title p {
-    margin: 0 auto;
-    max-width: 650px;
-    color: rgba(11,77,59,0.75);
-    font-size: 17.5px;
-    line-height: 1.7;
-  }
-
-  .jhn-courses-grid {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-  }
-
-  .jhn-course-card {
-    background: linear-gradient(145deg, var(--green-dark), var(--green));
-    border-radius: 24px;
-    overflow: hidden;
-    border: 1px solid rgba(212,175,55,0.65);
-    box-shadow: 0 10px 30px rgba(11, 77, 59, 0.14);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-  }
-
-  .jhn-course-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.25);
-  }
-
-  .jhn-course-picture {
-    width: 100%;
-    height: 225px;
-    overflow: hidden;
-    background: var(--cream);
-    border-bottom: 1px solid rgba(212,175,55,0.35);
-  }
-
-  .jhn-course-picture svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-
-  .jhn-course-body {
-  padding: 28px 24px 30px;
-    text-align: center;
-  }
-
-  .jhn-course-body h3 {
-    margin: 0 0 7px;
-    color: var(--white);
-    font-size: 26px;
-  }
-
-  .jhn-arabic {
-    color: var(--gold-dark);
-    font-size: 22px;
-    margin-bottom: 14px;
-    font-weight: 600;
-  }
-
-  .jhn-course-body p {
-    margin: 0;
-    color: rgba(255,255,255,0.85);
-    font-size: 16.5px;
-    line-height: 1.7;
-  }
-
-  .jhn-course-line {
-    width: 55px;
-    height: 3px;
-    background: var(--gold);
-    margin: 18px auto 0;
-    border-radius: 5px;
-  }
-
-  @media (max-width: 900px) {
-    .jhn-courses-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (max-width: 600px) {
-    .jhn-courses {
-      padding: 50px 14px;
-    }
-
-    .jhn-courses-title h2 {
-      font-size: 30px;
-    }
-
-    .jhn-courses-grid {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-
-    .jhn-course-picture {
-      height: 210px;
-    }
-  }
-</style>
-
-
-<section class="jhn-courses" id="courses">
-
-  <div class="jhn-courses-title">
-    <h2>Our Courses</h2>
-    <p>
-      Learn the Holy Quran and essential Islamic knowledge
-      with experienced teachers in a peaceful online environment.
-    </p>
-  </div>
-
-
-  <div class="jhn-courses-grid">
-
-
-    <!-- 1. QURAN NAZRA -->
-    <div class="jhn-course-card">
-
-      <div class="jhn-course-picture">
-        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-
-          <defs>
-            <linearGradient id="nazraBg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#e8f5ee"/>
-              <stop offset="100%" stop-color="#c9e5d6"/>
-            </linearGradient>
-          </defs>
-
-          <rect width="600" height="400" fill="url(#nazraBg)"/>
-
-          <!-- window -->
-          <rect x="35" y="35" width="150" height="220"
-                rx="10" fill="#f8efe0"/>
-          <path d="M110 35V255M35 145H185"
-                stroke="#c5a46d" stroke-width="8"/>
-
-          <!-- child -->
-          <circle cx="305" cy="145" r="48" fill="#d5a77b"/>
-          <path d="M258 145 Q305 90 352 145"
-                fill="#ffffff"/>
-          <path d="M270 130 Q305 105 340 130"
-                stroke="#b08a3c" stroke-width="7"
-                fill="none"/>
-
-          <path d="M265 205 Q305 170 350 205 L370 315
-                   L240 315Z"
-                fill="#0b4d3b"/>
-
-          <!-- Quran -->
-          <path d="M220 300 Q300 250 380 300 L300 350Z"
-                fill="#174f3f"/>
-          <path d="M300 350V300"
-                stroke="#d8b45d" stroke-width="4"/>
-
-          <text x="300" y="385"
-                text-anchor="middle"
-                font-size="22"
-                fill="#0b4d3b"
-                font-family="serif">
-            Quran Nazra
-          </text>
-
-        </svg>
-      </div>
-
-      <div class="jhn-course-body">
-        <h3>Quran Nazra</h3>
-        <div class="jhn-arabic">قرآن ناظرہ</div>
-        <p>
-          Learn to read the Holy Quran correctly with confidence
-          and beautiful pronunciation.
-        </p>
-        <div class="jhn-course-line"></div>
-      </div>
-
-    </div>
-
-
-    <!-- 2. NOORANI QAIDA -->
-    <div class="jhn-course-card">
-
-      <div class="jhn-course-picture">
-        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-
-          <defs>
-            <linearGradient id="qaidaBg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#f6ecd8"/>
-              <stop offset="100%" stop-color="#dceee4"/>
-            </linearGradient>
-          </defs>
-
-          <rect width="600" height="400" fill="url(#qaidaBg)"/>
-
-          <!-- table -->
-          <rect x="60" y="315" width="480" height="30"
-                rx="8" fill="#8c6848"/>
-
-          <!-- book -->
-          <path d="M145 85 Q300 45 455 85
-                   L455 300 Q300 265 145 300Z"
-                fill="#fffdf6"
-                stroke="#b08a3c"
-                stroke-width="5"/>
-
-          <line x1="300" y1="75" x2="300" y2="285"
-                stroke="#b08a3c" stroke-width="4"/>
-
-          <!-- Arabic letters -->
-          <g fill="#0b4d3b"
-             font-size="42"
-             font-family="serif"
-             text-anchor="middle">
-
-            <text x="205" y="135">ا</text>
-            <text x="260" y="135">ب</text>
-            <text x="315" y="135">ت</text>
-            <text x="370" y="135">ث</text>
-
-            <text x="205" y="200">ج</text>
-            <text x="260" y="200">ح</text>
-            <text x="315" y="200">خ</text>
-            <text x="370" y="200">د</text>
-
-            <text x="205" y="265">ر</text>
-            <text x="260" y="265">ز</text>
-            <text x="315" y="265">س</text>
-            <text x="370" y="265">ش</text>
-
-          </g>
-
-          <!-- lantern -->
-          <path d="M480 90 L510 115 L500 250
-                   L460 250 L450 115Z"
-                fill="#c28e3e"/>
-
-          <circle cx="480" cy="180" r="22"
-                  fill="#ffe7a3"/>
-
-        </svg>
-      </div>
-
-      <div class="jhn-course-body">
-        <h3>Noorani Qaida</h3>
-        <div class="jhn-arabic">نورانی قاعدہ</div>
-        <p>
-          Build a strong foundation by learning Arabic letters,
-          pronunciation and basic Quran reading.
-        </p>
-        <div class="jhn-course-line"></div>
-      </div>
-
-    </div>
-
-
-    <!-- 3. TAJWEED -->
-    <div class="jhn-course-card">
-
-      <div class="jhn-course-picture">
-        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-
-          <defs>
-            <linearGradient id="tajweedBg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#d7eee3"/>
-              <stop offset="100%" stop-color="#b8d7c8"/>
-            </linearGradient>
-          </defs>
-
-          <rect width="600" height="400" fill="url(#tajweedBg)"/>
-
-          <!-- mosque -->
-          <rect x="80" y="165" width="440" height="145"
-                fill="#f8f3e8"/>
-
-          <path d="M175 165 Q300 50 425 165Z"
-                fill="#0b4d3b"/>
-
-          <rect x="125" y="90" width="25" height="220"
-                fill="#d8b45d"/>
-          <rect x="450" y="90" width="25" height="220"
-                fill="#d8b45d"/>
-
-          <!-- Quran -->
-          <path d="M150 310 Q300 245 450 310
-                   L300 365Z"
-                fill="#164f3e"/>
-
-          <path d="M300 365V310"
-                stroke="#d8b45d" stroke-width="5"/>
-
-          <!-- tajweed marks -->
-          <g fill="#b08a3c"
-             font-size="28"
-             font-family="serif">
-            <text x="205" y="205">م</text>
-            <text x="250" y="205">ن</text>
-            <text x="295" y="205">ق</text>
-            <text x="340" y="205">ر</text>
-            <text x="385" y="205">ل</text>
-          </g>
-
-        </svg>
-      </div>
-
-      <div class="jhn-course-body">
-        <h3>Quran Tajweed</h3>
-        <div class="jhn-arabic">قرآن تجوید</div>
-        <p>
-          Improve your Quran recitation by learning Tajweed rules,
-          correct pronunciation and beautiful rhythm.
-        </p>
-        <div class="jhn-course-line"></div>
-      </div>
-
-    </div>
-
-
-    <!-- 4. HIFZ QURAN -->
-    <div class="jhn-course-card">
-
-      <div class="jhn-course-picture">
-        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-
-          <defs>
-            <linearGradient id="hifzBg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#e3f2eb"/>
-              <stop offset="100%" stop-color="#c1dfd0"/>
-            </linearGradient>
-          </defs>
-
-          <rect width="600" height="400" fill="url(#hifzBg)"/>
-
-          <!-- laptop -->
-          <rect x="335" y="95" width="190" height="125"
-                rx="8" fill="#263b36"/>
-          <rect x="350" y="110" width="160" height="95"
-                fill="#e8f4ef"/>
-
-          <!-- online teacher -->
-          <circle cx="430" cy="140" r="22"
-                  fill="#d5a77b"/>
-          <path d="M395 185 Q430 160 465 185"
-                fill="#0b4d3b"/>
-
-          <!-- child -->
-          <circle cx="190" cy="145" r="42"
-                  fill="#d5a77b"/>
-
-          <!-- headphones -->
-          <path d="M145 150 Q190 75 235 150"
-                fill="none"
-                stroke="#333"
-                stroke-width="16"/>
-
-          <circle cx="148" cy="160" r="18"
-                  fill="#333"/>
-          <circle cx="232" cy="160" r="18"
-                  fill="#333"/>
-
-          <!-- body -->
-          <path d="M155 200 Q190 175 225 200
-                   L245 315 L135 315Z"
-                fill="#0b4d3b"/>
-
-          <!-- Quran -->
-          <path d="M140 300 Q190 260 240 300
-                   L190 335Z"
-                fill="#164f3e"/>
-
-          <path d="M190 335V300"
-                stroke="#d8b45d" stroke-width="4"/>
-
-        </svg>
-      </div>
-
-      <div class="jhn-course-body">
-        <h3>Hifz Quran</h3>
-        <div class="jhn-arabic">حفظ القرآن</div>
-        <p>
-          Memorize the Holy Quran step by step with proper guidance,
-          revision and personal attention.
-        </p>
-        <div class="jhn-course-line"></div>
-      </div>
-
-    </div>
-
-
-    <!-- 5. ISLAMIC STUDIES -->
-    <div class="jhn-course-card">
-
-      <div class="jhn-course-picture">
-        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-
-          <defs>
-            <linearGradient id="islamicBg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#f4ead8"/>
-              <stop offset="100%" stop-color="#d8eadf"/>
-            </linearGradient>
-          </defs>
-
-          <rect width="600" height="400" fill="url(#islamicBg)"/>
-
-          <!-- books -->
-          <rect x="115" y="265" width="370" height="35"
-                rx="5" fill="#0b4d3b"/>
-          <rect x="135" y="225" width="330" height="35"
-                rx="5" fill="#174f3f"/>
-          <rect x="165" y="185" width="270" height="35"
-                rx="5" fill="#8d6a40"/>
-
-          <!-- globe -->
-          <circle cx="440" cy="110" r="65"
-                  fill="#dfeee8"
-                  stroke="#0b4d3b"
-                  stroke-width="6"/>
-
-          <path d="M375 110H505
-                   M440 45V175
-                   M395 65 Q440 110 485 155
-                   M485 65 Q440 110 395 155"
-                stroke="#0b4d3b"
-                stroke-width="3"
-                fill="none"/>
-
-          <!-- lantern -->
-          <path d="M90 75 L120 100 L110 185
-                   L70 185 L60 100Z"
-                fill="#b08a3c"/>
-
-          <circle cx="90" cy="140" r="18"
-                  fill="#ffe8a6"/>
-
-        </svg>
-      </div>
-
-      <div class="jhn-course-body">
-        <h3>Islamic Studies</h3>
-        <div class="jhn-arabic">اسلامک اسٹڈیز</div>
-        <p>
-          Learn essential Islamic knowledge, values and beliefs
-          to strengthen your faith and character.
-        </p>
-        <div class="jhn-course-line"></div>
-      </div>
-
-    </div>
-
-
-    <!-- 6. QURAN TRANSLATION -->
-    <div class="jhn-course-card">
-
-      <div class="jhn-course-picture">
-        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-
-          <defs>
-            <linearGradient id="translationBg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#d9eee4"/>
-              <stop offset="100%" stop-color="#c8dcd7"/>
-            </linearGradient>
-          </defs>
-
-          <rect width="600" height="400" fill="url(#translationBg)"/>
-
-          <!-- globe -->
-          <circle cx="430" cy="130" r="85"
-                  fill="#e8f3ef"
-                  stroke="#0b4d3b"
-                  stroke-width="6"/>
-
-          <path d="M345 130H515
-                   M430 45V215
-                   M370 75 Q430 130 490 185
-                   M490 75 Q430 130 370 185"
-                stroke="#0b4d3b"
-                stroke-width="4"
-                fill="none"/>
-
-          <!-- open Quran -->
-          <path d="M100 270 Q200 210 300 270
-                   Q400 210 500 270
-                   L500 350
-                   Q400 300 300 350
-                   Q200 300 100 350Z"
-                fill="#174f3f"/>
-
-          <path d="M300 270V350"
-                stroke="#d8b45d" stroke-width="5"/>
-
-          <!-- translation lines -->
-          <g stroke="#e7d69c" stroke-width="5">
-            <line x1="135" y1="285" x2="270" y2="265"/>
-            <line x1="135" y1="305" x2="270" y2="285"/>
-            <line x1="330" y1="265" x2="465" y2="285"/>
-            <line x1="330" y1="285" x2="465" y2="305"/>
-          </g>
-
-        </svg>
-      </div>
-
-      <div class="jhn-course-body">
-        <h3>Quran Translation</h3>
-        <div class="jhn-arabic">قرآن ترجمہ</div>
-        <p>
-          Understand the meaning and message of the Holy Quran
-          through translation and explanation.
-        </p>
-        <div class="jhn-course-line"></div>
-      </div>
-
-    </div>
-
-
-    <!-- 7. HADITH -->
-    <div class="jhn-course-card">
-
-      <div class="jhn-course-picture">
-        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-
-          <defs>
-            <linearGradient id="hadithBg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#efe5d0"/>
-              <stop offset="100%" stop-color="#c9e2d6"/>
-            </linearGradient>
-          </defs>
-
-          <rect width="600" height="400" fill="url(#hadithBg)"/>
-
-          <!-- stacked books -->
-          <rect x="125" y="275" width="350" height="38"
-                rx="6" fill="#174f3f"/>
-
-          <rect x="145" y="230" width="310" height="38"
-                rx="6" fill="#0b4d3b"/>
-
-          <rect x="165" y="185" width="270" height="38"
-                rx="6" fill="#80613f"/>
-
-          <!-- central hadith book -->
-          <rect x="190" y="80" width="220" height="115"
-                rx="8" fill="#164f3e"/>
-
-          <rect x="210" y="100" width="180" height="75"
-                fill="#f3ead7"/>
-
-          <text x="300" y="145"
-                text-anchor="middle"
-                font-size="27"
-                fill="#0b4d3b"
-                font-family="serif">
-            حديث
-          </text>
-
-          <!-- feather -->
-          <path d="M465 85 Q520 45 500 145"
-                stroke="#b08a3c"
-                stroke-width="8"
-                fill="none"/>
-
-          <path d="M500 145 L465 175"
-                stroke="#b08a3c"
-                stroke-width="5"/>
-
-        </svg>
-      </div>
-
-      <div class="jhn-course-body">
-        <h3>Hadith</h3>
-        <div class="jhn-arabic">حدیث</div>
-        <p>
-          Learn authentic Hadith and apply their practical lessons
-          and guidance in your daily life.
-        </p>
-        <div class="jhn-course-line"></div>
-      </div>
-
-    </div>
-
-
-    <!-- 8. SEERAH -->
-    <div class="jhn-course-card">
-
-      <div class="jhn-course-picture">
-        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-
-          <defs>
-            <linearGradient id="seerahSky" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#f4d8a3"/>
-              <stop offset="100%" stop-color="#d8eadf"/>
-            </linearGradient>
-          </defs>
-
-          <rect width="600" height="400" fill="url(#seerahSky)"/>
-
-          <!-- sun -->
-          <circle cx="450" cy="90" r="45"
-                  fill="#f6d68c"/>
-
-          <!-- mosque -->
-          <rect x="100" y="210" width="400" height="130"
-                fill="#f7f1e4"/>
-
-          <!-- green dome -->
-          <path d="M220 210 Q300 110 380 210Z"
-                fill="#0b4d3b"/>
-
-          <circle cx="300" cy="160" r="8"
-                  fill="#d8b45d"/>
-
-          <!-- minarets -->
-          <rect x="125" y="110" width="35" height="230"
-                fill="#f7f1e4"/>
-          <rect x="440" y="110" width="35" height="230"
-                fill="#f7f1e4"/>
-
-          <path d="M112 110 L142 70 L172 110Z"
-                fill="#0b4d3b"/>
-
-          <path d="M427 110 L457 70 L487 110Z"
-                fill="#0b4d3b"/>
-
-          <!-- arches -->
-          <path d="M175 340 V280 Q200 245 225 280 V340"
-                fill="#0b4d3b"/>
-
-          <path d="M375 340 V280 Q400 245 425 280 V340"
-                fill="#0b4d3b"/>
-
-          <!-- birds -->
-          <path d="M65 90 Q75 80 85 90
-                   Q95 80 105 90"
-                fill="none"
-                stroke="#536c63"
-                stroke-width="4"/>
-
-          <path d="M500 130 Q510 120 520 130
-                   Q530 120 540 130"
-                fill="none"
-                stroke="#536c63"
-                stroke-width="4"/>
-
-        </svg>
-      </div>
-
-      <div class="jhn-course-body">
-        <h3>Seerah</h3>
-        <div class="jhn-arabic">سیرت</div>
-        <p>
-          Discover the life, character and teachings of Prophet
-          Muhammad ﷺ and learn from his beautiful example.
-        </p>
-        <div class="jhn-course-line"></div>
-      </div>
-
-    </div>
-
-
-    <!-- 9. NAMAZ -->
-    <div class="jhn-course-card">
-
-      <div class="jhn-course-picture">
-        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-
-          <defs>
-            <linearGradient id="namazBg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#e5f2eb"/>
-              <stop offset="100%" stop-color="#c7dfd2"/>
-            </linearGradient>
-          </defs>
-
-          <rect width="600" height="400" fill="url(#namazBg)"/>
-
-          <!-- mosque -->
-          <rect x="105" y="175" width="390" height="150"
-                fill="#f7f2e7"/>
-
-          <path d="M190 175 Q300 65 410 175Z"
-                fill="#0b4d3b"/>
-
-          <rect x="135" y="95" width="28" height="230"
-                fill="#d8b45d"/>
-
-          <rect x="437" y="95" width="28" height="230"
-                fill="#d8b45d"/>
-
-          <!-- prayer mat -->
-          <rect x="225" y="285" width="150" height="65"
-                rx="8" fill="#0b4d3b"/>
-
-          <path d="M300 295 L345 335 H255Z"
-                fill="#d8b45d"/>
-
-          <!-- person praying -->
-          <circle cx="300" cy="205" r="22"
-                  fill="#d5a77b"/>
-
-          <path d="M270 230 Q300 215 330 230
-                   L345 275 L255 275Z"
-                fill="#174f3f"/>
-
-          <path d="M260 270 L225 310
-                   M340 270 L375 310"
-                stroke="#174f3f"
-                stroke-width="14"
-                stroke-linecap="round"/>
-
-        </svg>
-      </div>
-
-      <div class="jhn-course-body">
-        <h3>Namaz</h3>
-        <div class="jhn-arabic">نماز</div>
-        <p>
-          Learn the correct method of Salah, essential duas
-          and practical aspects of daily prayer.
-        </p>
-        <div class="jhn-course-line"></div>
-      </div>
-
-    </div>
-
-
   </div>
 </section>
-  <!-- =====================================================
-     LIVE CLASSES
-     ===================================================== -->
 
-<section class="live-classes" id="live-classes">
+
+<!-- =======================================================
+     COURSES
+======================================================= -->
+
+<section class="courses" id="courses">
 
   <div class="container">
 
     <div class="section-heading">
+      <span class="section-label">Our Courses</span>
 
-      <span class="section-label">
-        Live Classes
-      </span>
-
-      <h2>
-        Learn Quran Live With Your Teacher
-      </h2>
+      <h2>Choose Your Quran Course</h2>
 
       <p>
-        Join your live Quran class online from anywhere
-        with JHN Quran Academy.
+        Select a course to view its information, fees,
+        admission form and contact options.
       </p>
-
     </div>
 
-    <div class="live-class-card">
 
-      <div class="live-class-icon">
-        🎥
-      </div>
+    <div class="course-grid">
 
-      <div class="live-class-content">
-
-        <span class="live-badge">
-          ● LIVE CLASSES
-        </span>
-
-        <h3>
-          Your Online Quran Class
-        </h3>
-
-        <p>
-          Join your scheduled class with your teacher
-          through Microsoft Teams or Google Meet.
-        </p>
-
-        <div class="live-class-buttons">
-
-       <a href="https://teams.live.com/meet/9374434511981?p=bSQaLBumV7qWGxavD5" target="_blank" class="teams-btn">
-  🔵 Join on Microsoft Teams
-</a>  " class="teams-btn">
-            🔵 Join on Microsoft Teams
-          </a>
-
-    <a href="https://meet.google.com/xtd-pbqb-dev" target="_blank" class="meet-btn">
-  🟢 Join on Google Meet
-        </a> class="meet-btn">
-            🟢 Join on Google Meet
-          </a>
-
+      <!-- COURSE 1 -->
+      <div class="course-card">
+        <div class="course-top">
+          <div class="course-icon">📖</div>
         </div>
 
+        <div class="course-body">
+          <h3>Noorani Qaida</h3>
+          <p>Learn the basics of Quran reading step by step.</p>
+
+          <button class="course-btn"
+                  onclick="openCourse('Noorani Qaida','📖','Learn Noorani Qaida from the beginning with proper pronunciation and basic Quran reading skills.')">
+            View Course
+          </button>
+        </div>
+      </div>
+
+
+      <!-- COURSE 2 -->
+      <div class="course-card">
+        <div class="course-top">
+          <div class="course-icon">📕</div>
+        </div>
+
+        <div class="course-body">
+          <h3>Quran Nazra</h3>
+          <p>Improve Quran reading with proper pronunciation.</p>
+
+          <button class="course-btn"
+                  onclick="openCourse('Quran Nazra','📕','Learn to read the Holy Quran fluently with proper pronunciation and regular practice.')">
+            View Course
+          </button>
+        </div>
+      </div>
+
+
+      <!-- COURSE 3 -->
+      <div class="course-card">
+        <div class="course-top">
+          <div class="course-icon">🕌</div>
+        </div>
+
+        <div class="course-body">
+          <h3>Hifz Quran</h3>
+          <p>Memorize the Holy Quran with structured guidance.</p>
+
+          <button class="course-btn"
+                  onclick="openCourse('Hifz Quran','🕌','Memorize the Holy Quran with a structured revision and memorization program under teacher guidance.')">
+            View Course
+          </button>
+        </div>
+      </div>
+
+
+      <!-- COURSE 4 -->
+      <div class="course-card">
+        <div class="course-top">
+          <div class="course-icon">✨</div>
+        </div>
+
+        <div class="course-body">
+          <h3>Quran Tajweed</h3>
+          <p>Learn correct Quran pronunciation and Tajweed rules.</p>
+
+          <button class="course-btn"
+                  onclick="openCourse('Quran Tajweed','✨','Learn the rules of Tajweed and improve your Quran recitation with correct pronunciation.')">
+            View Course
+          </button>
+        </div>
+      </div>
+
+
+      <!-- COURSE 5 -->
+      <div class="course-card">
+        <div class="course-top">
+          <div class="course-icon">📚</div>
+        </div>
+
+        <div class="course-body">
+          <h3>Tafseer</h3>
+          <p>Understand the meanings and teachings of the Quran.</p>
+
+          <button class="course-btn"
+                  onclick="openCourse('Tafseer','📚','Study the meanings, explanations and lessons of the Holy Quran in an organized learning environment.')">
+            View Course
+          </button>
+        </div>
+      </div>
+
+
+      <!-- COURSE 6 -->
+      <div class="course-card">
+        <div class="course-top">
+          <div class="course-icon">📜</div>
+        </div>
+
+        <div class="course-body">
+          <h3>Hadith</h3>
+          <p>Learn selected Hadith and their practical lessons.</p>
+
+          <button class="course-btn"
+                  onclick="openCourse('Hadith','📜','Study selected Hadith with explanation and practical lessons for everyday life.')">
+            View Course
+          </button>
+        </div>
+      </div>
+
+
+      <!-- COURSE 7 -->
+      <div class="course-card">
+        <div class="course-top">
+          <div class="course-icon">🌙</div>
+        </div>
+
+        <div class="course-body">
+          <h3>Seerah</h3>
+          <p>Learn about the life and teachings of Prophet Muhammad ﷺ.</p>
+
+          <button class="course-btn"
+                  onclick="openCourse('Seerah','🌙','Learn about the life, character, teachings and important events from the Seerah of Prophet Muhammad ﷺ.')">
+            View Course
+          </button>
+        </div>
+      </div>
+
+
+      <!-- COURSE 8 -->
+      <div class="course-card">
+        <div class="course-top">
+          <div class="course-icon">🕋</div>
+        </div>
+
+        <div class="course-body">
+          <h3>Namaz</h3>
+          <p>Learn the correct method and essential rules of Salah.</p>
+
+          <button class="course-btn"
+                  onclick="openCourse('Namaz','🕋','Learn the correct method of Salah, essential duas and important rules related to Namaz.')">
+            View Course
+          </button>
+        </div>
+      </div>
+
+
+      <!-- COURSE 9 -->
+      <div class="course-card">
+        <div class="course-top">
+          <div class="course-icon">🌿</div>
+        </div>
+
+        <div class="course-body">
+          <h3>Islamic Studies</h3>
+          <p>Build essential Islamic knowledge for daily life.</p>
+
+          <button class="course-btn"
+                  onclick="openCourse('Islamic Studies','🌿','Learn essential Islamic beliefs, manners, duas, practices and knowledge for everyday life.')">
+            View Course
+          </button>
+        </div>
       </div>
 
     </div>
-
   </div>
-
 </section>
-  <!-- =====================================================
-     CLASS RECORDINGS
-     ===================================================== -->
 
-<section class="class-recordings" id="recordings">
+
+<!-- =======================================================
+     COURSE DETAIL AREA
+======================================================= -->
+
+<section class="course-detail-section" id="course-detail">
 
   <div class="container">
 
-    <div class="section-heading">
+    <div class="course-detail-card">
 
-      <span class="section-label">
-        Class Recordings
-      </span>
+      <div class="course-detail-header">
 
-      <h2>
-        Watch Your Quran Classes Again
-      </h2>
+        <div class="big-icon" id="detailIcon">📖</div>
 
-      <p>
-        Missed a live class? Watch recorded Quran lessons
-        anytime and continue your learning journey.
-      </p>
+        <h2 id="detailTitle">Course</h2>
 
-    </div>
+        <p id="detailDescription">
+          Course information
+        </p>
 
-    <div class="recordings-grid">
+      </div>
 
-      <div class="recording-card">
 
-        <div class="recording-icon">
-          🎥
-        </div>
+      <!-- BUTTONS -->
 
-        <h3>
-          Video Recordings
-        </h3>
+      <div class="detail-buttons">
+
+        <button class="detail-tab active"
+                onclick="showPanel('info',this)">
+          📖 Course
+        </button>
+
+        <button class="detail-tab"
+                onclick="showPanel('fees',this)">
+          💰 Fees
+        </button>
+
+        <button class="detail-tab"
+                onclick="showPanel('admission',this)">
+          📝 Admission
+        </button>
+
+        <button class="detail-tab"
+                onclick="showPanel('contact',this)">
+          📱 WhatsApp / Email
+        </button>
+
+      </div>
+
+
+      <!-- COURSE INFORMATION -->
+
+      <div class="detail-panel active" id="panel-info">
+
+        <h3>About This Course</h3>
+
+        <p id="infoText">
+          Course information will appear here.
+        </p>
 
         <p>
-          Watch recorded Quran classes and revise your
-          lessons anytime.
+          Our online classes are designed to provide
+          structured learning, teacher guidance and
+          flexible timings for students from around the world.
         </p>
-
-        <a href="#" class="recording-btn">
-          Watch Videos
-        </a>
-
-      </div>
-
-      <div class="recording-card">
-
-        <div class="recording-icon">
-          🎧
-        </div>
-
-        <h3>
-          Audio Recordings
-        </h3>
 
         <p>
-          Listen to Quran lessons and improve your learning
-          wherever you are.
+          Students can choose their preferred number of
+          classes per week according to their learning needs.
         </p>
-
-        <a href="#" class="recording-btn">
-          Listen Audio
-        </a>
 
       </div>
 
-      <div class="recording-card">
 
-        <div class="recording-icon">
-          📚
-        </div>
+      <!-- FEES -->
 
-        <h3>
-          Learning Materials
-        </h3>
+      <div class="detail-panel" id="panel-fees">
+
+        <h3>Course Fees</h3>
 
         <p>
-          Access useful Quran notes, lessons and learning
-          materials for your classes.
+          Select your country and weekly class frequency
+          from the table below.
         </p>
 
-        <a href="#" class="recording-btn">
-          Open Library
-        </a>
+        <div class="fee-table-wrap">
 
-      </div>
+          <table class="fee-table">
 
-    </div>
+            <thead>
+              <tr>
+                <th>Country</th>
+                <th>2 Days</th>
+                <th>3 Days</th>
+                <th>4 Days</th>
+                <th>5 Days</th>
+                <th>6 Days</th>
+              </tr>
+            </thead>
 
-  </div>
+            <tbody>
 
-</section>
-  <!-- =====================================================
-     CLASS SCHEDULE
-     ===================================================== -->
+              <tr>
+                <td>🇵🇰 Pakistan</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+              </tr>
 
-<section class="class-schedule" id="schedule">
+              <tr>
+                <td>🇦🇪 UAE</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+              </tr>
 
-  <div class="container">
+              <tr>
+                <td>🇸🇦 Saudi Arabia</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+              </tr>
 
-    <div class="section-heading">
+              <tr>
+                <td>🇬🇧 UK</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+              </tr>
 
-      <span class="section-label">
-        Class Schedule
-      </span>
+              <tr>
+                <td>🇺🇸 USA</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+              </tr>
 
-      <h2>
-        Your Quran Class Schedule
-      </h2>
+              <tr>
+                <td>🇨🇦 Canada</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+                <td>Contact Us</td>
+              </tr>
 
-      <p>
-        Check your class days and timings and join your
-        scheduled Quran class on time.
-      </p>
+            </tbody>
 
-    </div>
+          </table>
 
-    <div class="schedule-grid">
-
-      <div class="schedule-card">
-        <span class="schedule-day">Monday</span>
-        <h3>Quran Nazra</h3>
-        <p>🕒 7:00 PM – 7:30 PM</p>
-      </div>
-
-      <div class="schedule-card">
-        <span class="schedule-day">Tuesday</span>
-        <h3>Quran Tajweed</h3>
-        <p>🕒 7:00 PM – 7:30 PM</p>
-      </div>
-
-      <div class="schedule-card">
-        <span class="schedule-day">Wednesday</span>
-        <h3>Hifz Quran</h3>
-        <p>🕒 7:00 PM – 7:30 PM</p>
-      </div>
-
-      <div class="schedule-card">
-        <span class="schedule-day">Thursday</span>
-        <h3>Islamic Studies</h3>
-        <p>🕒 7:00 PM – 7:30 PM</p>
-      </div>
-
-      <div class="schedule-card">
-        <span class="schedule-day">Friday</span>
-        <h3>Hadith & Seerah</h3>
-        <p>🕒 7:00 PM – 7:30 PM</p>
-      </div>
-
-      <div class="schedule-card">
-        <span class="schedule-day">Saturday</span>
-        <h3>Quran Revision</h3>
-        <p>🕒 7:00 PM – 7:30 PM</p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-  <!-- =====================================================
-     STUDENT & TEACHER LOGIN
-     ===================================================== -->
-
-<section class="login-section" id="login">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <span class="section-label">
-        Student Portal
-      </span>
-
-      <h2>
-        Login To Your Academy Portal
-      </h2>
-
-      <p>
-        Students and teachers can access their online
-        Quran learning portal from here.
-      </p>
-
-    </div>
-
-    <div class="login-grid">
-
-      <div class="login-card">
-
-        <div class="login-icon">
-          👨‍🎓
         </div>
 
-        <h3>
-          Student Login
-        </h3>
+        <div class="fee-note">
+          💡 Final fee depends on class duration, student level
+          and selected weekly schedule. Contact HN Quran Academy
+          for the exact fee.
+        </div>
+
+      </div>
+
+
+      <!-- ADMISSION -->
+
+      <div class="detail-panel" id="panel-admission">
+
+        <h3>Student Admission Form</h3>
 
         <p>
-          Access your classes, schedule, lessons and
-          learning materials.
+          Fill out the form below and submit your admission request.
         </p>
 
-      <a href="student-login.html" class="student-login-btn">
-        </a>
-
-      </div>
-
-      <div class="login-card">
-
-        <div class="login-icon">
-          👨‍🏫
-        </div>
-
-        <h3>
-          Teacher Login
-        </h3>
-
-        <p>
-          Manage your classes, students, schedule and
-          teaching materials.
-        </p>
-
-        <a href="#" class="teacher-login-btn">
-          Teacher Login
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-  <!-- =====================================================
-       WHY CHOOSE US
-       ===================================================== -->
-
-  <section>
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <span class="section-label">
-          Why Choose JHN
-        </span>
-
-        <h2>
-          A Better Way To Learn Quran
-        </h2>
-      <p>
-        <p class="why-description">
-  Simple, flexible and student-focused online learning.
-</p> 
-          
-        </p>
-
-      </div>
-
-
-      <div class="features-grid">
-
-
-        <div class="feature">
-
-          <div class="feature-icon">👨‍🏫</div>
-
-          <h3>Personal Learning</h3>
-
-          <p>
-            Individual attention helps students learn according to
-            their own level and pace.
-          </p>
-
-        </div>
-
-
-        <div class="feature">
-
-          <div class="feature-icon">⏰</div>
-
-          <h3>Flexible Timings</h3>
-
-          <p>
-            Choose a schedule that works comfortably with your daily
-            routine.
-          </p>
-
-        </div>
-
-
-        <div class="feature">
-
-          <div class="feature-icon">🌍</div>
-
-          <h3>Online Worldwide</h3>
-
-          <p>
-            Learn Quran from the comfort of your home using online
-            classes.
-          </p>
-
-        </div>
-
-
-        <div class="feature">
-
-          <div class="feature-icon">👨‍👩‍👧</div>
-
-          <h3>For Families</h3>
-
-          <p>
-            Courses are suitable for children, adults and families.
-          </p>
-
-        </div>
-
-
-        <div class="feature">
-
-          <div class="feature-icon">📱</div>
-
-          <h3>Easy Online Access</h3>
-
-          <p>
-            Join your class using a phone, tablet or computer.
-          </p>
-
-        </div>
-
-
-        <div class="feature">
-
-          <div class="feature-icon">⭐</div>
-
-          <h3>Structured Courses</h3>
-
-          <p>
-            Organized courses help students progress step by step.
-          </p>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =====================================================
-       PRICING
-       ===================================================== -->
-
-  <section id="pricing">
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <span class="section-label">
-          Fees & Plans
-        </span>
-
-        <h2>
-          Simple & Affordable Pricing
-        </h2>
-
-        <p>
-          Choose the weekly schedule that suits your needs.
-        </p>
-
-      </div>
-
-
-      <div class="pricing-grid">
-
-        <!-- 2 DAYS -->
-
-        <div class="pricing-card">
-
-          <h3>2 Days / Week</h3>
-
-          <div class="old-price">$40</div>
-
-          <div class="price">$35</div>
-
-          <div class="per">
-            per 2 weeks
+        <form class="admission-form"
+              action="https://formspree.io/f/mwlkbdjk"
+              method="POST">
+
+          <div class="form-group">
+            <label>Student Name</label>
+            <input type="text"
+                   name="name"
+                   placeholder="Enter student name"
+                   required>
           </div>
 
-          <span class="discount">
-            10% Discount
-          </span>
-
-          <ul>
-            <li>2 Classes Every Week</li>
-            <li>Personal Attention</li>
-            <li>Flexible Schedule</li>
-          </ul>
-
-          <a href="#admission" class="btn btn-primary">
-            Choose Plan
-          </a>
-
-        </div>
-
-
-        <!-- 3 DAYS -->
-
-        <div class="pricing-card popular">
-
-          <span class="popular-badge">
-            MOST POPULAR
-          </span>
-
-          <h3>3 Days / Week</h3>
-
-          <div class="price">$50</div>
-
-          <div class="per">
-            per 2 weeks
+          <div class="form-group">
+            <label>Parent / Guardian Name</label>
+            <input type="text"
+                   name="parent_name"
+                   placeholder="Enter parent or guardian name"
+                   required>
           </div>
 
-          <span class="discount">
-            Great Value
-          </span>
-
-          <ul>
-            <li>3 Classes Every Week</li>
-            <li>Personal Attention</li>
-            <li>Flexible Schedule</li>
-          </ul>
-
-          <a href="#admission" class="btn btn-primary">
-            Choose Plan
-          </a>
-
-        </div>
-
-
-        <!-- 4 DAYS -->
-
-        <div class="pricing-card">
-
-          <h3>4 Days / Week</h3>
-
-          <div class="price">$63</div>
-
-          <div class="per">
-            per 2 weeks
+          <div class="form-group">
+            <label>Age</label>
+            <input type="number"
+                   name="age"
+                   placeholder="Student age"
+                   min="3"
+                   max="100"
+                   required>
           </div>
 
-          <span class="discount">
-            Great Value
-          </span>
+          <div class="form-group">
+            <label>Country</label>
 
-          <ul>
-            <li>4 Classes Every Week</li>
-            <li>Personal Attention</li>
-            <li>Flexible Schedule</li>
-          </ul>
-
-          <a href="#admission" class="btn btn-primary">
-            Choose Plan
-          </a>
-
-        </div>
-
-
-        <!-- 5 DAYS -->
-
-        <div class="pricing-card">
-
-          <h3>5 Days / Week</h3>
-
-          <div class="price">$72</div>
-
-          <div class="per">
-            per 2 weeks
+            <select name="country" required>
+              <option value="">Select Country</option>
+              <option>Pakistan</option>
+              <option>UAE</option>
+              <option>Saudi Arabia</option>
+              <option>UK</option>
+              <option>USA</option>
+              <option>Canada</option>
+              <option>Other</option>
+            </select>
           </div>
 
-          <span class="discount">
-            Best For Progress
-          </span>
-
-          <ul>
-            <li>5 Classes Every Week</li>
-            <li>Personal Attention</li>
-            <li>Flexible Schedule</li>
-          </ul>
-
-          <a href="#admission" class="btn btn-primary">
-            Choose Plan
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-      <div class="discount-box">
-
-        <strong>Family & Sibling Discount</strong>
-
-        <p>
-          Contact JHN Quran Academy to ask about available family
-          and sibling discounts.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =====================================================
-       TESTIMONIALS
-       ===================================================== -->
-
-  <section>
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <span class="section-label">
-          Testimonials
-        </span>
-
-        <h2>
-          What Students Say
-        </h2>
-
-        <p>
-          We aim to make Quran learning a positive experience.
-        </p>
-
-      </div>
-
-
-      <div class="testimonials-grid">
-
-
-        <div class="testimonial">
-
-          <div class="stars">
-            ★★★★★
+          <div class="form-group">
+            <label>WhatsApp / Contact Number</label>
+            <input type="tel"
+                   name="phone"
+                   placeholder="+92..."
+                   required>
           </div>
 
-          <p>
-            The online classes are convenient and easy to follow.
-            My child enjoys learning Quran from home.
-          </p>
-
-          <div class="student">
-            — Parent of a Student
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email"
+                   name="email"
+                   placeholder="Enter email address"
+                   required>
           </div>
 
-        </div>
+          <div class="form-group">
+            <label>Selected Course</label>
 
-
-        <div class="testimonial">
-
-          <div class="stars">
-            ★★★★★
+            <input type="text"
+                   id="selectedCourse"
+                   name="course"
+                   value=""
+                   readonly>
           </div>
 
-          <p>
-            The learning process is simple and well organized.
-            We really appreciate the flexible schedule.
-          </p>
+          <div class="form-group">
+            <label>Days Per Week</label>
 
-          <div class="student">
-            — JHN Student
+            <select name="days" required>
+              <option value="">Select Days</option>
+              <option>2 Days</option>
+              <option>3 Days</option>
+              <option>4 Days</option>
+              <option>5 Days</option>
+              <option>6 Days</option>
+            </select>
           </div>
 
-        </div>
+          <div class="form-group">
+            <label>Preferred Time</label>
 
-
-        <div class="testimonial">
-
-          <div class="stars">
-            ★★★★★
+            <input type="text"
+                   name="preferred_time"
+                   placeholder="Example: 7:00 PM">
           </div>
 
-          <p>
-            A comfortable way to continue Quran learning while
-            managing a busy daily routine.
-          </p>
+          <div class="form-group full">
+            <label>Message</label>
 
-          <div class="student">
-            — Parent of a Student
+            <textarea name="message"
+                      placeholder="Write any question or additional information"></textarea>
           </div>
 
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =====================================================
-       ADMISSION FORM
-       ===================================================== -->
-
-  <section id="admission">
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <span class="section-label">
-          Admission
-        </span>
-
-        <h2>
-          Start Your Quran Learning Journey
-        </h2>
-
-        <p>
-          Fill out the form and JHN Quran Academy will contact you.
-        </p>
-
-      </div>
-
-
-      <div class="form-wrapper">
-
-        <form action="https://formspree.io/f/mwlkbdjk" method="POST">
-
-          <div class="form-grid">
-
-
-            <div class="form-group">
-
-              <label for="name">
-                Student Name
-              </label>
-
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter student name"
-                required>
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="age">
-                Age
-              </label>
-
-              <input
-                type="number"
-                id="age"
-                name="age"
-                placeholder="Student age">
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="country">
-                Country
-              </label>
-
-              <select id="country" name="country">
-
-                <option value="">
-                  Select Country
-                </option>
-
-                <option>Pakistan 🇵🇰</option>
-                <option>United Kingdom 🇬🇧</option>
-                <option>United States 🇺🇸</option>
-                <option>Canada 🇨🇦</option>
-                <option>Australia 🇦🇺</option>
-                <option>United Arab Emirates 🇦🇪</option>
-                <option>Saudi Arabia 🇸🇦</option>
-                <option>Other</option>
-
-              </select>
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="phone">
-                WhatsApp Number
-              </label>
-
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="+Country Code Number"
-                required>
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="course">
-                Select Course
-              </label>
-
-              <select id="course" name="course">
-
-                <option value="">
-                  Choose a Course
-                </option>
-
-                <option>Quran Nazra</option>
-                <option>Noorani Qaida</option>
-                <option>Quran Tajweed</option>
-                <option>Hifz Quran</option>
-                <option>Islamic Studies</option>
-                <option>Quran Translation</option>
-                <option>Hadith</option>
-                <option>Seerah</option>
-                <option>Namaz</option>
-
-              </select>
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="days">
-                Classes Per Week
-              </label>
-
-              <select id="days" name="days">
-
-                <option value="">
-                  Select Days
-                </option>
-
-                <option>2 Days / Week</option>
-                <option>3 Days / Week</option>
-                <option>4 Days / Week</option>
-                <option>5 Days / Week</option>
-
-              </select>
-
-            </div>
-
-
-            <div class="form-group full">
-
-              <label for="message">
-                Message / Preferred Timing
-              </label>
-
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Tell us your preferred class timing or any questions..."></textarea>
-
-            </div>
-
-
-          </div>
-
-
-          <button
-            type="submit"
-            class="btn btn-primary form-submit">
-
-            Submit Admission Request
-
+          <button class="form-submit" type="submit">
+            📝 Submit Admission Request
           </button>
 
         </form>
 
       </div>
 
-    </div>
 
-  </section>
+      <!-- CONTACT -->
 
+      <div class="detail-panel" id="panel-contact">
 
-  <!-- =====================================================
-       CTA
-       ===================================================== -->
+        <h3>Contact HN Quran Academy</h3>
 
-  <section class="cta">
+        <p>
+          Contact us directly for admission, fees,
+          class timings or any other questions.
+        </p>
 
-    <div class="container">
+        <div class="contact-options">
 
-      <h2>
-        Begin Your Quran Journey Today
-      </h2>
+          <div class="contact-option">
 
-      <p>
-        Take the first step towards learning the Quran and
-        strengthening your connection with Islam.
-      </p>
+            <div class="contact-icon">📱</div>
 
-      <a href="#admission" class="btn btn-primary">
-        Join JHN Quran Academy
-      </a>
+            <h4>WhatsApp</h4>
 
-    </div>
+            <p>
+              Chat with HN Quran Academy on WhatsApp.
+            </p>
 
-  </section>
+            <a href="https://wa.me/923139793754"
+               target="_blank">
+              Open WhatsApp
+            </a>
 
-
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
-
-  <footer>
-
-    <div class="container">
-
-      <div class="footer-grid">
+          </div>
 
 
-        <div>
+          <div class="contact-option">
 
-          <h3>
-            JHN Quran Academy
-          </h3>
+            <div class="contact-icon">✉️</div>
 
-          <p>
-            Professional online Quran and Islamic education
-            designed to make learning accessible from anywhere.
-          </p>
+            <h4>Email</h4>
+
+            <p>
+              hnquranacademy754@gmail.com
+            </p>
+
+            <a href="mailto:hnquranacademy754@gmail.com">
+              Send Email
+            </a>
+
+          </div>
 
         </div>
-
-
-        <div>
-
-          <h4>
-            Quick Links
-          </h4>
-
-          <ul class="footer-links">
-
-            <li>
-              <a href="#home">Home</a>
-            </li>
-
-            <li>
-              <a href="#about">About Us</a>
-            </li>
-
-            <li>
-              <a href="#courses">Courses</a>
-            </li>
-
-            <li>
-              <a href="#pricing">Fees</a>
-            </li>
-
-            <li>
-              <a href="#admission">Admission</a>
-            </li>
-
-          </ul>
-
-        </div>
-
-
-        <div>
-
-          <h4>
-            Our Courses
-          </h4>
-
-          <ul class="footer-links">
-
-            <li>Quran Nazra</li>
-            <li>Noorani Qaida</li>
-            <li>Quran Tajweed</li>
-            <li>Hifz Quran</li>
-            <li>Islamic Studies</li>
-
-          </ul>
-
-        </div>
-
 
       </div>
 
-
-      <div class="copyright">
-
-        © 2026 JHN Quran Academy. All Rights Reserved.
-
-      </div>
-
-    </div>
-
-  </footer>
-<section class="contact-section">
-  <div class="container">
-
-    <div class="section-heading">
-      <span class="section-label">Contact Us</span>
-      <h2>Get In Touch With JHN Quran Academy</h2>
-      <p>Have a question or want to join our Quran classes? Contact us today.</p>
-    </div>
-
-    <div class="contact-buttons">
-      <a href="https://wa.me/923139793754" target="_blank" class="contact-whatsapp">
-        📱 WhatsApp Us
-      </a>
-
-      <a href="mailto:jhnquranacademy754@gmail.com" class="contact-email">
-        ✉️ Email Us
-      </a>
     </div>
 
   </div>
+
 </section>
 
+
+<!-- =======================================================
+     WHY CHOOSE US
+======================================================= -->
+
+<section class="why" id="why">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="section-label">Why Choose Us</span>
+
+      <h2>Learn Quran With Confidence</h2>
+
+      <p>
+        We aim to provide a comfortable, organized and
+        accessible online Islamic learning environment.
+      </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+      <div class="feature">
+        <div class="feature-icon">👨‍🏫</div>
+        <h3>Experienced Teachers</h3>
+        <p>
+          Learn from teachers who guide students with
+          patience and structured lessons.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">⏰</div>
+        <h3>Flexible Timings</h3>
+        <p>
+          Choose suitable class timings according to
+          your daily routine.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🌍</div>
+        <h3>Worldwide Learning</h3>
+        <p>
+          Join your Quran classes online from anywhere
+          in the world.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">👨‍👩‍👧‍👦</div>
+        <h3>For Families</h3>
+        <p>
+          Courses are suitable for children, adults
+          and families.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">📱</div>
+        <h3>Easy Online Access</h3>
+        <p>
+          Attend your lessons using a phone, tablet
+          or computer.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">📈</div>
+        <h3>Structured Courses</h3>
+        <p>
+          Follow an organized learning path and
+          progress step by step.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     LIVE CLASSES
+======================================================= -->
+
+<section class="live" id="live">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="section-label">Live Classes</span>
+
+      <h2>Join Your Quran Class Online</h2>
+
+      <p>
+        Students can join their scheduled online lesson
+        through the available meeting platform.
+      </p>
+
+    </div>
+
+
+    <div class="live-card">
+
+      <div class="live-icon">
+        🎥
+      </div>
+
+      <div>
+
+        <h3>Live Quran Learning</h3>
+
+        <p>
+          Join your teacher through Microsoft Teams
+          or Google Meet for your scheduled lesson.
+        </p>
+
+        <div class="live-buttons">
+
+          <a href="https://teams.live.com/meet/9374434511981?p=bSQaLBumV7qWGxavD5"
+             target="_blank">
+            🔵 Microsoft Teams
+          </a>
+
+          <a href="https://meet.google.com/xtd-pbqb-dev"
+             target="_blank">
+            🟢 Google Meet
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     CONTACT
+======================================================= -->
+
+<section id="contact"
+         style="background:linear-gradient(135deg,#F2F8F5,#FFFDF5);">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="section-label">Contact Us</span>
+
+      <h2>Get In Touch With HN Quran Academy</h2>
+
+      <p>
+        Have a question about courses, fees or admission?
+        Contact us today.
+      </p>
+
+    </div>
+
+
+    <div class="contact-options">
+
+      <div class="contact-option">
+
+        <div class="contact-icon">📱</div>
+
+        <h4>WhatsApp</h4>
+
+        <p>Chat with us directly.</p>
+
+        <a href="https://wa.me/923139793754"
+           target="_blank">
+          WhatsApp Us
+        </a>
+
+      </div>
+
+
+      <div class="contact-option">
+
+        <div class="contact-icon">✉️</div>
+
+        <h4>Email</h4>
+
+        <p>hnquranacademy754@gmail.com</p>
+
+        <a href="mailto:hnquranacademy754@gmail.com">
+          Email Us
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <h3>HN Quran Academy</h3>
+
+        <p>
+          Professional online Quran and Islamic education
+          designed to make learning accessible from anywhere.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>Quick Links</h4>
+
+        <ul>
+
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#live">Live Classes</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h4>Our Courses</h4>
+
+        <ul>
+
+          <li>Noorani Qaida</li>
+          <li>Quran Nazra</li>
+          <li>Hifz Quran</li>
+          <li>Quran Tajweed</li>
+          <li>Tafseer</li>
+          <li>Hadith</li>
+          <li>Seerah</li>
+          <li>Namaz</li>
+          <li>Islamic Studies</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 HN Quran Academy. All Rights Reserved.
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script>
+
+let currentCourse = "";
+
+
+/* OPEN COURSE */
+
+function openCourse(title, icon, description){
+
+  currentCourse = title;
+
+  document.getElementById("detailTitle").textContent = title;
+
+  document.getElementById("detailIcon").textContent = icon;
+
+  document.getElementById("detailDescription").textContent = description;
+
+  document.getElementById("infoText").textContent = description;
+
+  document.getElementById("selectedCourse").value = title;
+
+
+  /* Reset all panels */
+
+  document.querySelectorAll(".detail-panel")
+    .forEach(function(panel){
+      panel.classList.remove("active");
+    });
+
+
+  /* Show Course Information */
+
+  document.getElementById("panel-info")
+    .classList.add("active");
+
+
+  /* Reset buttons */
+
+  document.querySelectorAll(".detail-tab")
+    .forEach(function(button){
+      button.classList.remove("active");
+    });
+
+
+  document.querySelector(".detail-tab")
+    .classList.add("active");
+
+
+  /* Show detail section */
+
+  const detail = document.getElementById("course-detail");
+
+  detail.classList.add("active");
+
+
+  /* Scroll to course detail */
+
+  setTimeout(function(){
+
+    detail.scrollIntoView({
+      behavior:"smooth",
+      block:"start"
+    });
+
+  },100);
+
+}
+
+
+/* SHOW FEES / ADMISSION / CONTACT */
+
+function showPanel(panelName, button){
+
+  document.querySelectorAll(".detail-panel")
+    .forEach(function(panel){
+      panel.classList.remove("active");
+    });
+
+
+  document.getElementById("panel-" + panelName)
+    .classList.add("active");
+
+
+  document.querySelectorAll(".detail-tab")
+    .forEach(function(tab){
+      tab.classList.remove("active");
+    });
+
+
+  button.classList.add("active");
+
+}
+
+</script>
+
+</body>
+</html>
