@@ -137,6 +137,7 @@ header{
 }
 
 @media(max-width:850px){
+
   .header-inner{
     min-height:75px;
   }
@@ -154,6 +155,7 @@ header{
   .nav{
     display:none;
   }
+
 }
 
 
@@ -392,7 +394,7 @@ section{
 }
 
 .course-detail-card{
-  max-width:1050px;
+  max-width:1100px;
   margin:auto;
   background:white;
   border-radius:30px;
@@ -459,6 +461,12 @@ section{
   border-color:var(--gold);
 }
 
+.trial-tab{
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+  color:white;
+  border-color:var(--gold);
+}
+
 .detail-panel{
   display:none;
   padding:35px 28px;
@@ -481,7 +489,147 @@ section{
 
 
 /* =========================================================
-   FEES
+   COUNTRY FEES
+========================================================= */
+
+.country-title{
+  text-align:center;
+  margin-bottom:18px;
+}
+
+.country-title h4{
+  color:var(--green-dark);
+  font-size:22px;
+  margin-bottom:5px;
+}
+
+.country-title p{
+  margin-bottom:0;
+}
+
+.country-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin:25px 0 30px;
+}
+
+.country-btn{
+  border:1px solid rgba(11,59,46,.14);
+  background:#fff;
+  border-radius:16px;
+  padding:14px 8px;
+  cursor:pointer;
+  color:var(--green-dark);
+  font-weight:800;
+  transition:.3s;
+  box-shadow:0 5px 15px rgba(11,59,46,.05);
+}
+
+.country-btn:hover,
+.country-btn.active{
+  background:var(--green-dark);
+  color:var(--gold-light);
+  border-color:var(--gold);
+  transform:translateY(-3px);
+}
+
+.country-flag{
+  display:block;
+  font-size:28px;
+  margin-bottom:4px;
+}
+
+.country-name{
+  display:block;
+  font-size:13px;
+}
+
+.selected-country{
+  display:none;
+  margin-top:10px;
+  padding:25px;
+  border-radius:20px;
+  background:linear-gradient(135deg,#F2F8F5,#FFFDF5);
+  border:1px solid rgba(198,161,91,.4);
+}
+
+.selected-country.active{
+  display:block;
+}
+
+.selected-country-header{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.selected-country-header .selected-flag{
+  font-size:42px;
+}
+
+.selected-country-header h4{
+  color:var(--green-dark);
+  font-size:26px;
+}
+
+.selected-country-header p{
+  margin:3px 0 0;
+  color:var(--text);
+}
+
+.country-fee-table-wrap{
+  overflow-x:auto;
+  border-radius:15px;
+  border:1px solid rgba(11,59,46,.12);
+}
+
+.country-fee-table{
+  width:100%;
+  min-width:650px;
+  border-collapse:collapse;
+  background:white;
+}
+
+.country-fee-table th{
+  background:var(--green-dark);
+  color:var(--gold-light);
+  padding:14px 10px;
+  text-align:center;
+  font-size:13px;
+}
+
+.country-fee-table td{
+  padding:14px 10px;
+  text-align:center;
+  border-bottom:1px solid #eee;
+  color:var(--text-dark);
+  font-size:14px;
+}
+
+.country-fee-table tr:nth-child(even){
+  background:#faf8f1;
+}
+
+.country-fee-table strong{
+  color:var(--green-dark);
+}
+
+.country-note{
+  margin-top:15px;
+  padding:14px 17px;
+  border-left:4px solid var(--gold);
+  background:var(--cream);
+  color:var(--text);
+  border-radius:8px;
+}
+
+.country-note strong{
+  color:var(--green-dark);
+}
+
+
+/* =========================================================
+   OLD FEE TABLE SUPPORT
 ========================================================= */
 
 .fee-table-wrap{
@@ -524,6 +672,50 @@ section{
   background:var(--cream);
   color:var(--text);
   border-radius:8px;
+}
+
+
+/* =========================================================
+   FREE TRIAL
+========================================================= */
+
+.trial-box{
+  max-width:750px;
+  margin:auto;
+  padding:30px;
+  border-radius:24px;
+  text-align:center;
+  background:linear-gradient(145deg,var(--green-dark),var(--green));
+  border:1px solid var(--gold);
+  color:white;
+  box-shadow:var(--shadow);
+}
+
+.trial-icon{
+  font-size:45px;
+  margin-bottom:10px;
+}
+
+.trial-box h3{
+  color:var(--gold-light);
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.trial-box p{
+  color:rgba(255,255,255,.86);
+}
+
+.trial-book-btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:13px 24px;
+  border-radius:30px;
+  border:1px solid var(--gold-light);
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+  color:white;
+  font-weight:900;
+  cursor:pointer;
 }
 
 
@@ -822,6 +1014,10 @@ footer a:hover{
     grid-template-columns:repeat(2,1fr);
   }
 
+  .country-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
 }
 
 @media(max-width:650px){
@@ -837,12 +1033,25 @@ footer a:hover{
     grid-template-columns:1fr;
   }
 
+  .country-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+  }
+
   .course-top{
     height:145px;
   }
 
   .detail-panel{
     padding:28px 18px;
+  }
+
+  .detail-buttons{
+    padding:17px 12px;
+  }
+
+  .detail-tab{
+    width:100%;
   }
 
   .admission-form{
@@ -870,6 +1079,27 @@ footer a:hover{
 
   .footer-grid{
     gap:25px;
+  }
+
+  .selected-country{
+    padding:18px 12px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media(max-width:380px){
+
+  .country-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .country-name{
+    font-size:12px;
   }
 
 }
@@ -964,7 +1194,7 @@ footer a:hover{
 
       <p>
         Select a course to view its information, fees,
-        admission form and contact options.
+        free trial, admission form and contact options.
       </p>
 
     </div>
@@ -1256,6 +1486,11 @@ footer a:hover{
           💰 Fees
         </button>
 
+        <button class="detail-tab trial-tab"
+                onclick="bookFreeTrial()">
+          🎁 Book Free Trial
+        </button>
+
         <button class="detail-tab"
                 onclick="showPanel('admission',this)">
           📝 Admission
@@ -1288,8 +1523,9 @@ footer a:hover{
         </p>
 
         <p>
-          Standard schedule:
-          <strong>5 classes per week, 30 minutes per day.</strong>
+          Students can choose
+          <strong>3, 4 or 5 classes per week</strong>
+          according to their selected fee plan.
         </p>
 
       </div>
@@ -1306,85 +1542,315 @@ footer a:hover{
         </h3>
 
         <p>
-          The same fee structure applies to all HN Quran Academy courses.
+          Select your country below to view the fee structure
+          in the selected currency.
         </p>
 
 
-        <div class="fee-table-wrap">
+        <!-- COUNTRY SELECTOR -->
 
-          <table class="fee-table">
+        <div class="country-title">
 
-            <thead>
+          <h4>
+            🌍 Select Your Country
+          </h4>
 
-              <tr>
-                <th>Classes</th>
-                <th>Duration</th>
-                <th>Regular Fee</th>
-                <th>Final Fee</th>
-              </tr>
-
-            </thead>
-
-            <tbody>
-
-              <tr>
-                <td>5 Classes / Week</td>
-                <td>30 Minutes / Day</td>
-                <td>$75 / Month</td>
-                <td><strong>$67.50 / Month</strong></td>
-              </tr>
-
-            </tbody>
-
-          </table>
+          <p>
+            Tap your country to view its monthly fee.
+          </p>
 
         </div>
 
 
-        <div class="fee-note">
+        <div class="country-grid">
 
-          <strong>💰 10% Discount:</strong>
-          Regular fee is $75/month.
-          Discount is $7.50.
-          Final discounted fee is <strong>$67.50/month.</strong>
+
+          <button class="country-btn"
+                  onclick="selectCountry('pakistan',this)">
+            <span class="country-flag">🇵🇰</span>
+            <span class="country-name">Pakistan</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('uk',this)">
+            <span class="country-flag">🇬🇧</span>
+            <span class="country-name">United Kingdom</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('usa',this)">
+            <span class="country-flag">🇺🇸</span>
+            <span class="country-name">USA</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('canada',this)">
+            <span class="country-flag">🇨🇦</span>
+            <span class="country-name">Canada</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('australia',this)">
+            <span class="country-flag">🇦🇺</span>
+            <span class="country-name">Australia</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('norway',this)">
+            <span class="country-flag">🇳🇴</span>
+            <span class="country-name">Norway</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('netherlands',this)">
+            <span class="country-flag">🇳🇱</span>
+            <span class="country-name">Netherlands</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('germany',this)">
+            <span class="country-flag">🇩🇪</span>
+            <span class="country-name">Germany</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('france',this)">
+            <span class="country-flag">🇫🇷</span>
+            <span class="country-name">France</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('italy',this)">
+            <span class="country-flag">🇮🇹</span>
+            <span class="country-name">Italy</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('spain',this)">
+            <span class="country-flag">🇪🇸</span>
+            <span class="country-name">Spain</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('uae',this)">
+            <span class="country-flag">🇦🇪</span>
+            <span class="country-name">UAE</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('saudi',this)">
+            <span class="country-flag">🇸🇦</span>
+            <span class="country-name">Saudi Arabia</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('kuwait',this)">
+            <span class="country-flag">🇰🇼</span>
+            <span class="country-name">Kuwait</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('qatar',this)">
+            <span class="country-flag">🇶🇦</span>
+            <span class="country-name">Qatar</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('india',this)">
+            <span class="country-flag">🇮🇳</span>
+            <span class="country-name">India</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('bangladesh',this)">
+            <span class="country-flag">🇧🇩</span>
+            <span class="country-name">Bangladesh</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('malaysia',this)">
+            <span class="country-flag">🇲🇾</span>
+            <span class="country-name">Malaysia</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('afghanistan',this)">
+            <span class="country-flag">🇦🇫</span>
+            <span class="country-name">Afghanistan</span>
+          </button>
+
+
+          <button class="country-btn"
+                  onclick="selectCountry('iran',this)">
+            <span class="country-flag">🇮🇷</span>
+            <span class="country-name">Iran</span>
+          </button>
+
 
         </div>
 
 
-        <div class="fee-note">
+        <!-- SELECTED COUNTRY FEE -->
 
-          <strong>🎁 Free Trial:</strong>
-          1–2 trial classes are completely FREE
-          for new students.
+        <div class="selected-country" id="selectedCountry">
+
+          <div class="selected-country-header">
+
+            <div class="selected-flag" id="countryFlag">
+              🇵🇰
+            </div>
+
+            <h4 id="countryTitle">
+              Pakistan
+            </h4>
+
+            <p id="countryCurrency">
+              Pakistani Rupee (PKR)
+            </p>
+
+          </div>
+
+
+          <div class="country-fee-table-wrap">
+
+            <table class="country-fee-table">
+
+              <thead>
+
+                <tr>
+                  <th>Classes / Week</th>
+                  <th>Regular Fee</th>
+                  <th>10% Discount</th>
+                  <th>Final Fee</th>
+                </tr>
+
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td>3 Days</td>
+                  <td id="threeRegular">-</td>
+                  <td id="threeDiscount">-</td>
+                  <td><strong id="threeFinal">-</strong></td>
+                </tr>
+
+                <tr>
+                  <td>4 Days</td>
+                  <td id="fourRegular">-</td>
+                  <td id="fourDiscount">-</td>
+                  <td><strong id="fourFinal">-</strong></td>
+                </tr>
+
+                <tr>
+                  <td>5 Days</td>
+                  <td id="fiveRegular">-</td>
+                  <td id="fiveDiscount">-</td>
+                  <td><strong id="fiveFinal">-</strong></td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+
+          <div class="country-note">
+
+            <strong>🎁 Free Trial:</strong>
+            1–2 trial classes are completely FREE
+            for new students.
+
+          </div>
+
+
+          <div class="country-note">
+
+            <strong>📝 First Month:</strong>
+            After the free trial, the first month is paid
+            in two equal parts:
+            <strong id="firstHalf">-</strong>
+            in advance and
+            <strong id="secondHalf">-</strong>
+            at the end of the month.
+
+          </div>
+
+
+          <div class="country-note">
+
+            <strong>📅 From Second Month:</strong>
+            No advance payment is required.
+            The full selected discounted monthly fee
+            is paid at the end of each month.
+
+          </div>
+
+
+          <div class="country-note">
+
+            💡 These are monthly academy fees.
+            The selected course does not change the fee.
+
+          </div>
+
 
         </div>
 
 
-        <div class="fee-note">
-
-          <strong>📝 First Month Payment:</strong>
-          After the free trial, the first month is paid in two parts:
-          <strong>$33.75 in advance</strong> and
-          <strong>$33.75 at the end of the month.</strong>
-
-        </div>
+      </div>
 
 
-        <div class="fee-note">
+      <!-- =================================================
+           FREE TRIAL PANEL
+      ================================================== -->
 
-          <strong>📅 From the Second Month:</strong>
-          No advance payment is required.
-          The full discounted fee of
-          <strong>$67.50</strong> is paid at the end of each month.
+      <div class="detail-panel" id="panel-trial">
 
-        </div>
+        <div class="trial-box">
 
+          <div class="trial-icon">
+            🎁
+          </div>
 
-        <div class="fee-note">
+          <h3>
+            Book Your Free Trial Class
+          </h3>
 
-          💡 This fee structure applies to
-          <strong>all courses</strong> offered by
-          HN Quran Academy.
+          <p>
+            Try your selected Quran course with
+            HN Quran Academy before starting regular classes.
+          </p>
+
+          <p>
+            <strong>
+              1–2 trial classes are completely FREE.
+            </strong>
+          </p>
+
+          <button class="trial-book-btn"
+                  onclick="bookFreeTrial()">
+            📝 Book My Free Trial
+          </button>
 
         </div>
 
@@ -1398,11 +1864,12 @@ footer a:hover{
       <div class="detail-panel" id="panel-admission">
 
         <h3>
-          Student Admission Form
+          Student Admission / Free Trial Form
         </h3>
 
         <p>
-          Fill out the form below and submit your admission request.
+          Fill out the form below. If you selected
+          Free Trial, your request will be marked accordingly.
         </p>
 
         <form class="admission-form"
@@ -1466,33 +1933,27 @@ footer a:hover{
                 Select Country
               </option>
 
-              <option>
-                Pakistan
-              </option>
-
-              <option>
-                UAE
-              </option>
-
-              <option>
-                Saudi Arabia
-              </option>
-
-              <option>
-                UK
-              </option>
-
-              <option>
-                USA
-              </option>
-
-              <option>
-                Canada
-              </option>
-
-              <option>
-                Other
-              </option>
+              <option>Pakistan</option>
+              <option>United Kingdom</option>
+              <option>USA</option>
+              <option>Canada</option>
+              <option>Australia</option>
+              <option>Norway</option>
+              <option>Netherlands</option>
+              <option>Germany</option>
+              <option>France</option>
+              <option>Italy</option>
+              <option>Spain</option>
+              <option>UAE</option>
+              <option>Saudi Arabia</option>
+              <option>Kuwait</option>
+              <option>Qatar</option>
+              <option>India</option>
+              <option>Bangladesh</option>
+              <option>Malaysia</option>
+              <option>Afghanistan</option>
+              <option>Iran</option>
+              <option>Other</option>
 
             </select>
 
@@ -1545,10 +2006,41 @@ footer a:hover{
           <div class="form-group">
 
             <label>
+              Request Type
+            </label>
+
+            <select id="requestType"
+                    name="request_type"
+                    required>
+
+              <option value="Regular Admission">
+                Regular Admission
+              </option>
+
+              <option value="Free Trial">
+                🎁 Free Trial
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>
               Classes Per Week
             </label>
 
             <select name="days" required>
+
+              <option value="3 Days">
+                3 Days / Week
+              </option>
+
+              <option value="4 Days">
+                4 Days / Week
+              </option>
 
               <option value="5 Days" selected>
                 5 Days / Week
@@ -1578,7 +2070,8 @@ footer a:hover{
               Message
             </label>
 
-            <textarea name="message"
+            <textarea id="admissionMessage"
+                      name="message"
                       placeholder="Write any question or additional information"></textarea>
 
           </div>
@@ -1586,7 +2079,7 @@ footer a:hover{
 
           <button class="form-submit"
                   type="submit">
-            📝 Submit Admission Request
+            📝 Submit Request
           </button>
 
 
@@ -2037,41 +2530,15 @@ footer a:hover{
 
         <ul>
 
-          <li>
-            Noorani Qaida
-          </li>
-
-          <li>
-            Quran Nazra
-          </li>
-
-          <li>
-            Hifz Quran
-          </li>
-
-          <li>
-            Quran Tajweed
-          </li>
-
-          <li>
-            Tafseer
-          </li>
-
-          <li>
-            Hadith
-          </li>
-
-          <li>
-            Seerah
-          </li>
-
-          <li>
-            Namaz
-          </li>
-
-          <li>
-            Islamic Studies
-          </li>
+          <li>Noorani Qaida</li>
+          <li>Quran Nazra</li>
+          <li>Hifz Quran</li>
+          <li>Quran Tajweed</li>
+          <li>Tafseer</li>
+          <li>Hadith</li>
+          <li>Seerah</li>
+          <li>Namaz</li>
+          <li>Islamic Studies</li>
 
         </ul>
 
@@ -2101,21 +2568,345 @@ footer a:hover{
 let currentCourse = "";
 
 
-/* OPEN COURSE */
+/* =========================================================
+   COUNTRY FEE DATA
+========================================================= */
+
+/*
+   5 Days = Full monthly base fee
+   4 Days = 80% of 5-day fee
+   3 Days = 60% of 5-day fee
+   Discount = 10%
+*/
+
+const countryFees = {
+
+  pakistan:{
+    flag:"🇵🇰",
+    name:"Pakistan",
+    currency:"Pakistani Rupee (PKR)",
+    symbol:"Rs.",
+    base:15000
+  },
+
+  uk:{
+    flag:"🇬🇧",
+    name:"United Kingdom",
+    currency:"British Pound (GBP)",
+    symbol:"£",
+    base:35
+  },
+
+  usa:{
+    flag:"🇺🇸",
+    name:"United States",
+    currency:"US Dollar (USD)",
+    symbol:"$",
+    base:45
+  },
+
+  canada:{
+    flag:"🇨🇦",
+    name:"Canada",
+    currency:"Canadian Dollar (CAD)",
+    symbol:"C$",
+    base:55
+  },
+
+  australia:{
+    flag:"🇦🇺",
+    name:"Australia",
+    currency:"Australian Dollar (AUD)",
+    symbol:"A$",
+    base:50
+  },
+
+  norway:{
+    flag:"🇳🇴",
+    name:"Norway",
+    currency:"Norwegian Krone (NOK)",
+    symbol:"NOK ",
+    base:500
+  },
+
+  netherlands:{
+    flag:"🇳🇱",
+    name:"Netherlands",
+    currency:"Euro (EUR)",
+    symbol:"€",
+    base:40
+  },
+
+  germany:{
+    flag:"🇩🇪",
+    name:"Germany",
+    currency:"Euro (EUR)",
+    symbol:"€",
+    base:40
+  },
+
+  france:{
+    flag:"🇫🇷",
+    name:"France",
+    currency:"Euro (EUR)",
+    symbol:"€",
+    base:40
+  },
+
+  italy:{
+    flag:"🇮🇹",
+    name:"Italy",
+    currency:"Euro (EUR)",
+    symbol:"€",
+    base:40
+  },
+
+  spain:{
+    flag:"🇪🇸",
+    name:"Spain",
+    currency:"Euro (EUR)",
+    symbol:"€",
+    base:40
+  },
+
+  uae:{
+    flag:"🇦🇪",
+    name:"United Arab Emirates",
+    currency:"UAE Dirham (AED)",
+    symbol:"AED ",
+    base:200
+  },
+
+  saudi:{
+    flag:"🇸🇦",
+    name:"Saudi Arabia",
+    currency:"Saudi Riyal (SAR)",
+    symbol:"SAR ",
+    base:200
+  },
+
+  kuwait:{
+    flag:"🇰🇼",
+    name:"Kuwait",
+    currency:"Kuwaiti Dinar (KWD)",
+    symbol:"KWD ",
+    base:15
+  },
+
+  qatar:{
+    flag:"🇶🇦",
+    name:"Qatar",
+    currency:"Qatari Riyal (QAR)",
+    symbol:"QAR ",
+    base:200
+  },
+
+  india:{
+    flag:"🇮🇳",
+    name:"India",
+    currency:"Indian Rupee (INR)",
+    symbol:"₹",
+    base:4500
+  },
+
+  bangladesh:{
+    flag:"🇧🇩",
+    name:"Bangladesh",
+    currency:"Bangladeshi Taka (BDT)",
+    symbol:"৳",
+    base:5000
+  },
+
+  malaysia:{
+    flag:"🇲🇾",
+    name:"Malaysia",
+    currency:"Malaysian Ringgit (MYR)",
+    symbol:"RM ",
+    base:200
+  },
+
+  afghanistan:{
+    flag:"🇦🇫",
+    name:"Afghanistan",
+    currency:"US Dollar (USD)",
+    symbol:"$",
+    base:35
+  },
+
+  iran:{
+    flag:"🇮🇷",
+    name:"Iran",
+    currency:"US Dollar (USD)",
+    symbol:"$",
+    base:35
+  }
+
+};
+
+
+/* =========================================================
+   FORMAT MONEY
+========================================================= */
+
+function formatMoney(value){
+
+  if(value % 1 !== 0){
+    return value.toFixed(2);
+  }
+
+  return value.toLocaleString();
+
+}
+
+
+/* =========================================================
+   SELECT COUNTRY
+========================================================= */
+
+function selectCountry(countryKey, button){
+
+  const country = countryFees[countryKey];
+
+  if(!country){
+    return;
+  }
+
+
+  /* Active country button */
+
+  document.querySelectorAll(".country-btn")
+    .forEach(function(btn){
+
+      btn.classList.remove("active");
+
+    });
+
+  button.classList.add("active");
+
+
+  /* Country heading */
+
+  document.getElementById("countryFlag").textContent =
+    country.flag;
+
+  document.getElementById("countryTitle").textContent =
+    country.name;
+
+  document.getElementById("countryCurrency").textContent =
+    country.currency;
+
+
+  /* 3 Days */
+
+  const threeRegular =
+    country.base * 0.60;
+
+  const threeDiscount =
+    threeRegular * 0.10;
+
+  const threeFinal =
+    threeRegular - threeDiscount;
+
+
+  /* 4 Days */
+
+  const fourRegular =
+    country.base * 0.80;
+
+  const fourDiscount =
+    fourRegular * 0.10;
+
+  const fourFinal =
+    fourRegular - fourDiscount;
+
+
+  /* 5 Days */
+
+  const fiveRegular =
+    country.base;
+
+  const fiveDiscount =
+    fiveRegular * 0.10;
+
+  const fiveFinal =
+    fiveRegular - fiveDiscount;
+
+
+  /* Put values into table */
+
+  document.getElementById("threeRegular").textContent =
+    country.symbol + formatMoney(threeRegular);
+
+  document.getElementById("threeDiscount").textContent =
+    country.symbol + formatMoney(threeDiscount);
+
+  document.getElementById("threeFinal").textContent =
+    country.symbol + formatMoney(threeFinal);
+
+
+  document.getElementById("fourRegular").textContent =
+    country.symbol + formatMoney(fourRegular);
+
+  document.getElementById("fourDiscount").textContent =
+    country.symbol + formatMoney(fourDiscount);
+
+  document.getElementById("fourFinal").textContent =
+    country.symbol + formatMoney(fourFinal);
+
+
+  document.getElementById("fiveRegular").textContent =
+    country.symbol + formatMoney(fiveRegular);
+
+  document.getElementById("fiveDiscount").textContent =
+    country.symbol + formatMoney(fiveDiscount);
+
+  document.getElementById("fiveFinal").textContent =
+    country.symbol + formatMoney(fiveFinal);
+
+
+  /* First month payment based on 5-day plan */
+
+  const halfPayment =
+    fiveFinal / 2;
+
+  document.getElementById("firstHalf").textContent =
+    country.symbol + formatMoney(halfPayment);
+
+  document.getElementById("secondHalf").textContent =
+    country.symbol + formatMoney(halfPayment);
+
+
+  /* Show selected country */
+
+  document.getElementById("selectedCountry")
+    .classList.add("active");
+
+}
+
+
+/* =========================================================
+   OPEN COURSE
+========================================================= */
 
 function openCourse(title, icon, description){
 
   currentCourse = title;
 
-  document.getElementById("detailTitle").textContent = title;
 
-  document.getElementById("detailIcon").textContent = icon;
+  document.getElementById("detailTitle").textContent =
+    title;
 
-  document.getElementById("detailDescription").textContent = description;
+  document.getElementById("detailIcon").textContent =
+    icon;
 
-  document.getElementById("infoText").textContent = description;
+  document.getElementById("detailDescription").textContent =
+    description;
 
-  document.getElementById("selectedCourse").value = title;
+  document.getElementById("infoText").textContent =
+    description;
+
+  document.getElementById("selectedCourse").value =
+    title;
 
 
   /* Reset all panels */
@@ -2128,7 +2919,7 @@ function openCourse(title, icon, description){
     });
 
 
-  /* Show Course Information */
+  /* Show course information */
 
   document.getElementById("panel-info")
     .classList.add("active");
@@ -2156,7 +2947,7 @@ function openCourse(title, icon, description){
   detail.classList.add("active");
 
 
-  /* Scroll to course detail */
+  /* Scroll */
 
   setTimeout(function(){
 
@@ -2170,7 +2961,9 @@ function openCourse(title, icon, description){
 }
 
 
-/* SHOW FEES / ADMISSION / CONTACT */
+/* =========================================================
+   SHOW FEES / ADMISSION / CONTACT / INFO
+========================================================= */
 
 function showPanel(panelName, button){
 
@@ -2195,6 +2988,93 @@ function showPanel(panelName, button){
 
 
   button.classList.add("active");
+
+}
+
+
+/* =========================================================
+   BOOK FREE TRIAL
+========================================================= */
+
+function bookFreeTrial(){
+
+  /* Make sure course name exists */
+
+  if(!currentCourse){
+
+    currentCourse =
+      document.getElementById("detailTitle").textContent;
+
+  }
+
+
+  /* Set course */
+
+  document.getElementById("selectedCourse").value =
+    currentCourse;
+
+
+  /* Set request type */
+
+  document.getElementById("requestType").value =
+    "Free Trial";
+
+
+  /* Add automatic message */
+
+  document.getElementById("admissionMessage").value =
+    "I would like to book a FREE trial class for " +
+    currentCourse +
+    ". Please contact me with the available trial class timings.";
+
+
+  /* Hide all panels */
+
+  document.querySelectorAll(".detail-panel")
+    .forEach(function(panel){
+
+      panel.classList.remove("active");
+
+    });
+
+
+  /* Open admission form */
+
+  document.getElementById("panel-admission")
+    .classList.add("active");
+
+
+  /* Reset detail tabs */
+
+  document.querySelectorAll(".detail-tab")
+    .forEach(function(tab){
+
+      tab.classList.remove("active");
+
+    });
+
+
+  /* Admission button is the 4th button */
+
+  const tabs =
+    document.querySelectorAll(".detail-tab");
+
+  if(tabs[3]){
+    tabs[3].classList.add("active");
+  }
+
+
+  /* Scroll to form */
+
+  setTimeout(function(){
+
+    document.getElementById("panel-admission")
+      .scrollIntoView({
+        behavior:"smooth",
+        block:"start"
+      });
+
+  },100);
 
 }
 
