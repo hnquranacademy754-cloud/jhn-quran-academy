@@ -9,6 +9,7 @@
 <meta name="description" content="HN Quran Academy offers professional online Quran and Islamic education including Noorani Qaida, Quran Nazra, Hifz, Tajweed, Tafseer, Hadith, Seerah, Namaz and Islamic Studies.">
 
 <style>
+
 /* =========================================================
    HN QURAN ACADEMY
    PREMIUM ISLAMIC WEBSITE
@@ -66,6 +67,7 @@ a{
   width:min(1180px,92%);
   margin:auto;
 }
+
 
 /* =========================================================
    HEADER
@@ -153,6 +155,7 @@ header{
     display:none;
   }
 }
+
 
 /* =========================================================
    HERO
@@ -253,6 +256,7 @@ header{
   border:1px solid rgba(231,211,161,.6);
 }
 
+
 /* =========================================================
    SECTION HEADINGS
 ========================================================= */
@@ -288,6 +292,7 @@ section{
   color:var(--text);
   font-size:16px;
 }
+
 
 /* =========================================================
    COURSES
@@ -369,6 +374,7 @@ section{
   cursor:pointer;
   font-size:15px;
 }
+
 
 /* =========================================================
    COURSE DETAIL
@@ -473,6 +479,7 @@ section{
   margin-bottom:15px;
 }
 
+
 /* =========================================================
    FEES
 ========================================================= */
@@ -486,7 +493,7 @@ section{
 
 .fee-table{
   width:100%;
-  min-width:700px;
+  min-width:600px;
   border-collapse:collapse;
   background:white;
 }
@@ -518,6 +525,7 @@ section{
   color:var(--text);
   border-radius:8px;
 }
+
 
 /* =========================================================
    ADMISSION FORM
@@ -582,6 +590,7 @@ section{
   cursor:pointer;
 }
 
+
 /* =========================================================
    CONTACT PANEL
 ========================================================= */
@@ -627,6 +636,7 @@ section{
   background:linear-gradient(135deg,var(--gold-dark),var(--gold));
   font-weight:800;
 }
+
 
 /* =========================================================
    WHY CHOOSE US
@@ -678,6 +688,7 @@ section{
   color:rgba(255,255,255,.86);
   font-size:14px;
 }
+
 
 /* =========================================================
    LIVE CLASSES
@@ -737,6 +748,7 @@ section{
   background:linear-gradient(135deg,var(--gold-dark),var(--gold));
 }
 
+
 /* =========================================================
    FOOTER
 ========================================================= */
@@ -795,11 +807,13 @@ footer a:hover{
   font-size:13px;
 }
 
+
 /* =========================================================
    MOBILE
 ========================================================= */
 
 @media(max-width:950px){
+
   .course-grid{
     grid-template-columns:repeat(2,1fr);
   }
@@ -807,6 +821,7 @@ footer a:hover{
   .feature-grid{
     grid-template-columns:repeat(2,1fr);
   }
+
 }
 
 @media(max-width:650px){
@@ -856,17 +871,21 @@ footer a:hover{
   .footer-grid{
     gap:25px;
   }
+
 }
+
 </style>
 </head>
 
 <body>
+
 
 <!-- =======================================================
      HEADER
 ======================================================= -->
 
 <header>
+
   <div class="container header-inner">
 
     <a href="#home" class="brand">
@@ -883,6 +902,7 @@ footer a:hover{
     </nav>
 
   </div>
+
 </header>
 
 
@@ -891,7 +911,9 @@ footer a:hover{
 ======================================================= -->
 
 <section class="hero" id="home">
+
   <div class="container">
+
     <div class="hero-content">
 
       <span class="hero-badge">
@@ -908,6 +930,7 @@ footer a:hover{
       </p>
 
       <div class="hero-buttons">
+
         <a href="#courses" class="btn btn-gold">
           📚 Explore Courses
         </a>
@@ -915,10 +938,13 @@ footer a:hover{
         <a href="#contact" class="btn btn-outline">
           📱 Contact Academy
         </a>
+
       </div>
 
     </div>
+
   </div>
+
 </section>
 
 
@@ -931,6 +957,7 @@ footer a:hover{
   <div class="container">
 
     <div class="section-heading">
+
       <span class="section-label">Our Courses</span>
 
       <h2>Choose Your Quran Course</h2>
@@ -939,174 +966,251 @@ footer a:hover{
         Select a course to view its information, fees,
         admission form and contact options.
       </p>
+
     </div>
 
 
     <div class="course-grid">
 
+
       <!-- COURSE 1 -->
+
       <div class="course-card">
+
         <div class="course-top">
           <div class="course-icon">📖</div>
         </div>
 
         <div class="course-body">
+
           <h3>Noorani Qaida</h3>
-          <p>Learn the basics of Quran reading step by step.</p>
+
+          <p>
+            Learn the basics of Quran reading step by step.
+          </p>
 
           <button class="course-btn"
                   onclick="openCourse('Noorani Qaida','📖','Learn Noorani Qaida from the beginning with proper pronunciation and basic Quran reading skills.')">
             View Course
           </button>
+
         </div>
+
       </div>
 
 
       <!-- COURSE 2 -->
+
       <div class="course-card">
+
         <div class="course-top">
           <div class="course-icon">📕</div>
         </div>
 
         <div class="course-body">
+
           <h3>Quran Nazra</h3>
-          <p>Improve Quran reading with proper pronunciation.</p>
+
+          <p>
+            Improve Quran reading with proper pronunciation.
+          </p>
 
           <button class="course-btn"
                   onclick="openCourse('Quran Nazra','📕','Learn to read the Holy Quran fluently with proper pronunciation and regular practice.')">
             View Course
           </button>
+
         </div>
+
       </div>
 
 
       <!-- COURSE 3 -->
+
       <div class="course-card">
+
         <div class="course-top">
           <div class="course-icon">🕌</div>
         </div>
 
         <div class="course-body">
+
           <h3>Hifz Quran</h3>
-          <p>Memorize the Holy Quran with structured guidance.</p>
+
+          <p>
+            Memorize the Holy Quran with structured guidance.
+          </p>
 
           <button class="course-btn"
                   onclick="openCourse('Hifz Quran','🕌','Memorize the Holy Quran with a structured revision and memorization program under teacher guidance.')">
             View Course
           </button>
+
         </div>
+
       </div>
 
 
       <!-- COURSE 4 -->
+
       <div class="course-card">
+
         <div class="course-top">
           <div class="course-icon">✨</div>
         </div>
 
         <div class="course-body">
+
           <h3>Quran Tajweed</h3>
-          <p>Learn correct Quran pronunciation and Tajweed rules.</p>
+
+          <p>
+            Learn correct Quran pronunciation and Tajweed rules.
+          </p>
 
           <button class="course-btn"
                   onclick="openCourse('Quran Tajweed','✨','Learn the rules of Tajweed and improve your Quran recitation with correct pronunciation.')">
             View Course
           </button>
+
         </div>
+
       </div>
 
 
       <!-- COURSE 5 -->
+
       <div class="course-card">
+
         <div class="course-top">
           <div class="course-icon">📚</div>
         </div>
 
         <div class="course-body">
+
           <h3>Tafseer</h3>
-          <p>Understand the meanings and teachings of the Quran.</p>
+
+          <p>
+            Understand the meanings and teachings of the Quran.
+          </p>
 
           <button class="course-btn"
                   onclick="openCourse('Tafseer','📚','Study the meanings, explanations and lessons of the Holy Quran in an organized learning environment.')">
             View Course
           </button>
+
         </div>
+
       </div>
 
 
       <!-- COURSE 6 -->
+
       <div class="course-card">
+
         <div class="course-top">
           <div class="course-icon">📜</div>
         </div>
 
         <div class="course-body">
+
           <h3>Hadith</h3>
-          <p>Learn selected Hadith and their practical lessons.</p>
+
+          <p>
+            Learn selected Hadith and their practical lessons.
+          </p>
 
           <button class="course-btn"
                   onclick="openCourse('Hadith','📜','Study selected Hadith with explanation and practical lessons for everyday life.')">
             View Course
           </button>
+
         </div>
+
       </div>
 
 
       <!-- COURSE 7 -->
+
       <div class="course-card">
+
         <div class="course-top">
           <div class="course-icon">🌙</div>
         </div>
 
         <div class="course-body">
+
           <h3>Seerah</h3>
-          <p>Learn about the life and teachings of Prophet Muhammad ﷺ.</p>
+
+          <p>
+            Learn about the life and teachings of Prophet Muhammad ﷺ.
+          </p>
 
           <button class="course-btn"
                   onclick="openCourse('Seerah','🌙','Learn about the life, character, teachings and important events from the Seerah of Prophet Muhammad ﷺ.')">
             View Course
           </button>
+
         </div>
+
       </div>
 
 
       <!-- COURSE 8 -->
+
       <div class="course-card">
+
         <div class="course-top">
           <div class="course-icon">🕋</div>
         </div>
 
         <div class="course-body">
+
           <h3>Namaz</h3>
-          <p>Learn the correct method and essential rules of Salah.</p>
+
+          <p>
+            Learn the correct method and essential rules of Salah.
+          </p>
 
           <button class="course-btn"
                   onclick="openCourse('Namaz','🕋','Learn the correct method of Salah, essential duas and important rules related to Namaz.')">
             View Course
           </button>
+
         </div>
+
       </div>
 
 
       <!-- COURSE 9 -->
+
       <div class="course-card">
+
         <div class="course-top">
           <div class="course-icon">🌿</div>
         </div>
 
         <div class="course-body">
+
           <h3>Islamic Studies</h3>
-          <p>Build essential Islamic knowledge for daily life.</p>
+
+          <p>
+            Build essential Islamic knowledge for daily life.
+          </p>
 
           <button class="course-btn"
                   onclick="openCourse('Islamic Studies','🌿','Learn essential Islamic beliefs, manners, duas, practices and knowledge for everyday life.')">
             View Course
           </button>
+
         </div>
+
       </div>
 
+
     </div>
+
   </div>
+
 </section>
 
 
@@ -1120,11 +1224,16 @@ footer a:hover{
 
     <div class="course-detail-card">
 
+
       <div class="course-detail-header">
 
-        <div class="big-icon" id="detailIcon">📖</div>
+        <div class="big-icon" id="detailIcon">
+          📖
+        </div>
 
-        <h2 id="detailTitle">Course</h2>
+        <h2 id="detailTitle">
+          Course
+        </h2>
 
         <p id="detailDescription">
           Course information
@@ -1164,7 +1273,9 @@ footer a:hover{
 
       <div class="detail-panel active" id="panel-info">
 
-        <h3>About This Course</h3>
+        <h3>
+          About This Course
+        </h3>
 
         <p id="infoText">
           Course information will appear here.
@@ -1177,93 +1288,50 @@ footer a:hover{
         </p>
 
         <p>
-          Students can choose their preferred number of
-          classes per week according to their learning needs.
+          Standard schedule:
+          <strong>5 classes per week, 30 minutes per day.</strong>
         </p>
 
       </div>
 
 
-      <!-- FEES -->
+      <!-- =================================================
+           FEES
+      ================================================== -->
 
       <div class="detail-panel" id="panel-fees">
 
-        <h3>Course Fees</h3>
+        <h3>
+          Course Fees
+        </h3>
 
         <p>
-          Select your country and weekly class frequency
-          from the table below.
+          The same fee structure applies to all HN Quran Academy courses.
         </p>
+
 
         <div class="fee-table-wrap">
 
           <table class="fee-table">
 
             <thead>
+
               <tr>
-                <th>Country</th>
-                <th>2 Days</th>
-                <th>3 Days</th>
-                <th>4 Days</th>
-                <th>5 Days</th>
-                <th>6 Days</th>
+                <th>Classes</th>
+                <th>Duration</th>
+                <th>Regular Fee</th>
+                <th>Final Fee</th>
               </tr>
+
             </thead>
 
             <tbody>
 
               <tr>
-                <td>🇵🇰 Pakistan</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-              </tr>
-
-              <tr>
-                <td>🇦🇪 UAE</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-              </tr>
-
-              <tr>
-                <td>🇸🇦 Saudi Arabia</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-              </tr>
-
-              <tr>
-                <td>🇬🇧 UK</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-              </tr>
-
-              <tr>
-                <td>🇺🇸 USA</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-              </tr>
-
-              <tr>
-                <td>🇨🇦 Canada</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
-                <td>Contact Us</td>
+                <td>5 Classes / Week</td>
+                <td>30 Minutes / Day</td>
+                <td>$75 / Month</td>
+                <td><strong>$67.50 / Month</strong></td>
               </tr>
 
             </tbody>
@@ -1272,20 +1340,66 @@ footer a:hover{
 
         </div>
 
+
         <div class="fee-note">
-          💡 Final fee depends on class duration, student level
-          and selected weekly schedule. Contact HN Quran Academy
-          for the exact fee.
+
+          <strong>💰 10% Discount:</strong>
+          Regular fee is $75/month.
+          Discount is $7.50.
+          Final discounted fee is <strong>$67.50/month.</strong>
+
+        </div>
+
+
+        <div class="fee-note">
+
+          <strong>🎁 Free Trial:</strong>
+          1–2 trial classes are completely FREE
+          for new students.
+
+        </div>
+
+
+        <div class="fee-note">
+
+          <strong>📝 First Month Payment:</strong>
+          After the free trial, the first month is paid in two parts:
+          <strong>$33.75 in advance</strong> and
+          <strong>$33.75 at the end of the month.</strong>
+
+        </div>
+
+
+        <div class="fee-note">
+
+          <strong>📅 From the Second Month:</strong>
+          No advance payment is required.
+          The full discounted fee of
+          <strong>$67.50</strong> is paid at the end of each month.
+
+        </div>
+
+
+        <div class="fee-note">
+
+          💡 This fee structure applies to
+          <strong>all courses</strong> offered by
+          HN Quran Academy.
+
         </div>
 
       </div>
 
 
-      <!-- ADMISSION -->
+      <!-- =================================================
+           ADMISSION
+      ================================================== -->
 
       <div class="detail-panel" id="panel-admission">
 
-        <h3>Student Admission Form</h3>
+        <h3>
+          Student Admission Form
+        </h3>
 
         <p>
           Fill out the form below and submit your admission request.
@@ -1295,128 +1409,220 @@ footer a:hover{
               action="https://formspree.io/f/mwlkbdjk"
               method="POST">
 
+
           <div class="form-group">
-            <label>Student Name</label>
+
+            <label>
+              Student Name
+            </label>
+
             <input type="text"
                    name="name"
                    placeholder="Enter student name"
                    required>
+
           </div>
 
+
           <div class="form-group">
-            <label>Parent / Guardian Name</label>
+
+            <label>
+              Parent / Guardian Name
+            </label>
+
             <input type="text"
                    name="parent_name"
                    placeholder="Enter parent or guardian name"
                    required>
+
           </div>
 
+
           <div class="form-group">
-            <label>Age</label>
+
+            <label>
+              Age
+            </label>
+
             <input type="number"
                    name="age"
                    placeholder="Student age"
                    min="3"
                    max="100"
                    required>
+
           </div>
 
+
           <div class="form-group">
-            <label>Country</label>
+
+            <label>
+              Country
+            </label>
 
             <select name="country" required>
-              <option value="">Select Country</option>
-              <option>Pakistan</option>
-              <option>UAE</option>
-              <option>Saudi Arabia</option>
-              <option>UK</option>
-              <option>USA</option>
-              <option>Canada</option>
-              <option>Other</option>
+
+              <option value="">
+                Select Country
+              </option>
+
+              <option>
+                Pakistan
+              </option>
+
+              <option>
+                UAE
+              </option>
+
+              <option>
+                Saudi Arabia
+              </option>
+
+              <option>
+                UK
+              </option>
+
+              <option>
+                USA
+              </option>
+
+              <option>
+                Canada
+              </option>
+
+              <option>
+                Other
+              </option>
+
             </select>
+
           </div>
 
+
           <div class="form-group">
-            <label>WhatsApp / Contact Number</label>
+
+            <label>
+              WhatsApp / Contact Number
+            </label>
+
             <input type="tel"
                    name="phone"
                    placeholder="+92..."
                    required>
+
           </div>
 
+
           <div class="form-group">
-            <label>Email</label>
+
+            <label>
+              Email
+            </label>
+
             <input type="email"
                    name="email"
                    placeholder="Enter email address"
                    required>
+
           </div>
 
+
           <div class="form-group">
-            <label>Selected Course</label>
+
+            <label>
+              Selected Course
+            </label>
 
             <input type="text"
                    id="selectedCourse"
                    name="course"
                    value=""
                    readonly>
+
           </div>
 
+
           <div class="form-group">
-            <label>Days Per Week</label>
+
+            <label>
+              Classes Per Week
+            </label>
 
             <select name="days" required>
-              <option value="">Select Days</option>
-              <option>2 Days</option>
-              <option>3 Days</option>
-              <option>4 Days</option>
-              <option>5 Days</option>
-              <option>6 Days</option>
+
+              <option value="5 Days" selected>
+                5 Days / Week
+              </option>
+
             </select>
+
           </div>
 
+
           <div class="form-group">
-            <label>Preferred Time</label>
+
+            <label>
+              Preferred Time
+            </label>
 
             <input type="text"
                    name="preferred_time"
                    placeholder="Example: 7:00 PM">
+
           </div>
 
+
           <div class="form-group full">
-            <label>Message</label>
+
+            <label>
+              Message
+            </label>
 
             <textarea name="message"
                       placeholder="Write any question or additional information"></textarea>
+
           </div>
 
-          <button class="form-submit" type="submit">
+
+          <button class="form-submit"
+                  type="submit">
             📝 Submit Admission Request
           </button>
+
 
         </form>
 
       </div>
 
 
-      <!-- CONTACT -->
+      <!-- =================================================
+           CONTACT PANEL
+      ================================================== -->
 
       <div class="detail-panel" id="panel-contact">
 
-        <h3>Contact HN Quran Academy</h3>
+        <h3>
+          Contact HN Quran Academy
+        </h3>
 
         <p>
           Contact us directly for admission, fees,
           class timings or any other questions.
         </p>
 
+
         <div class="contact-options">
+
 
           <div class="contact-option">
 
-            <div class="contact-icon">📱</div>
+            <div class="contact-icon">
+              📱
+            </div>
 
-            <h4>WhatsApp</h4>
+            <h4>
+              WhatsApp
+            </h4>
 
             <p>
               Chat with HN Quran Academy on WhatsApp.
@@ -1432,9 +1638,13 @@ footer a:hover{
 
           <div class="contact-option">
 
-            <div class="contact-icon">✉️</div>
+            <div class="contact-icon">
+              ✉️
+            </div>
 
-            <h4>Email</h4>
+            <h4>
+              Email
+            </h4>
 
             <p>
               hnquranacademy754@gmail.com
@@ -1446,9 +1656,11 @@ footer a:hover{
 
           </div>
 
+
         </div>
 
       </div>
+
 
     </div>
 
@@ -1467,9 +1679,13 @@ footer a:hover{
 
     <div class="section-heading">
 
-      <span class="section-label">Why Choose Us</span>
+      <span class="section-label">
+        Why Choose Us
+      </span>
 
-      <h2>Learn Quran With Confidence</h2>
+      <h2>
+        Learn Quran With Confidence
+      </h2>
 
       <p>
         We aim to provide a comfortable, organized and
@@ -1481,59 +1697,114 @@ footer a:hover{
 
     <div class="feature-grid">
 
+
       <div class="feature">
-        <div class="feature-icon">👨‍🏫</div>
-        <h3>Experienced Teachers</h3>
+
+        <div class="feature-icon">
+          👨‍🏫
+        </div>
+
+        <h3>
+          Experienced Teachers
+        </h3>
+
         <p>
           Learn from teachers who guide students with
           patience and structured lessons.
         </p>
+
       </div>
 
+
       <div class="feature">
-        <div class="feature-icon">⏰</div>
-        <h3>Flexible Timings</h3>
+
+        <div class="feature-icon">
+          ⏰
+        </div>
+
+        <h3>
+          Flexible Timings
+        </h3>
+
         <p>
           Choose suitable class timings according to
           your daily routine.
         </p>
+
       </div>
 
+
       <div class="feature">
-        <div class="feature-icon">🌍</div>
-        <h3>Worldwide Learning</h3>
+
+        <div class="feature-icon">
+          🌍
+        </div>
+
+        <h3>
+          Worldwide Learning
+        </h3>
+
         <p>
           Join your Quran classes online from anywhere
           in the world.
         </p>
+
       </div>
 
+
       <div class="feature">
-        <div class="feature-icon">👨‍👩‍👧‍👦</div>
-        <h3>For Families</h3>
+
+        <div class="feature-icon">
+          👨‍👩‍👧‍👦
+        </div>
+
+        <h3>
+          For Families
+        </h3>
+
         <p>
           Courses are suitable for children, adults
           and families.
         </p>
+
       </div>
 
+
       <div class="feature">
-        <div class="feature-icon">📱</div>
-        <h3>Easy Online Access</h3>
+
+        <div class="feature-icon">
+          📱
+        </div>
+
+        <h3>
+          Easy Online Access
+        </h3>
+
         <p>
           Attend your lessons using a phone, tablet
           or computer.
         </p>
+
       </div>
 
+
       <div class="feature">
-        <div class="feature-icon">📈</div>
-        <h3>Structured Courses</h3>
+
+        <div class="feature-icon">
+          📈
+        </div>
+
+        <h3>
+          Structured Courses
+        </h3>
+
         <p>
           Follow an organized learning path and
           progress step by step.
         </p>
+
       </div>
+
 
     </div>
 
@@ -1552,9 +1823,13 @@ footer a:hover{
 
     <div class="section-heading">
 
-      <span class="section-label">Live Classes</span>
+      <span class="section-label">
+        Live Classes
+      </span>
 
-      <h2>Join Your Quran Class Online</h2>
+      <h2>
+        Join Your Quran Class Online
+      </h2>
 
       <p>
         Students can join their scheduled online lesson
@@ -1570,14 +1845,18 @@ footer a:hover{
         🎥
       </div>
 
+
       <div>
 
-        <h3>Live Quran Learning</h3>
+        <h3>
+          Live Quran Learning
+        </h3>
 
         <p>
           Join your teacher through Microsoft Teams
           or Google Meet for your scheduled lesson.
         </p>
+
 
         <div class="live-buttons">
 
@@ -1613,9 +1892,13 @@ footer a:hover{
 
     <div class="section-heading">
 
-      <span class="section-label">Contact Us</span>
+      <span class="section-label">
+        Contact Us
+      </span>
 
-      <h2>Get In Touch With HN Quran Academy</h2>
+      <h2>
+        Get In Touch With HN Quran Academy
+      </h2>
 
       <p>
         Have a question about courses, fees or admission?
@@ -1627,13 +1910,20 @@ footer a:hover{
 
     <div class="contact-options">
 
+
       <div class="contact-option">
 
-        <div class="contact-icon">📱</div>
+        <div class="contact-icon">
+          📱
+        </div>
 
-        <h4>WhatsApp</h4>
+        <h4>
+          WhatsApp
+        </h4>
 
-        <p>Chat with us directly.</p>
+        <p>
+          Chat with us directly.
+        </p>
 
         <a href="https://wa.me/923139793754"
            target="_blank">
@@ -1645,17 +1935,24 @@ footer a:hover{
 
       <div class="contact-option">
 
-        <div class="contact-icon">✉️</div>
+        <div class="contact-icon">
+          ✉️
+        </div>
 
-        <h4>Email</h4>
+        <h4>
+          Email
+        </h4>
 
-        <p>hnquranacademy754@gmail.com</p>
+        <p>
+          hnquranacademy754@gmail.com
+        </p>
 
         <a href="mailto:hnquranacademy754@gmail.com">
           Email Us
         </a>
 
       </div>
+
 
     </div>
 
@@ -1674,9 +1971,12 @@ footer a:hover{
 
     <div class="footer-grid">
 
+
       <div>
 
-        <h3>HN Quran Academy</h3>
+        <h3>
+          HN Quran Academy
+        </h3>
 
         <p>
           Professional online Quran and Islamic education
@@ -1688,15 +1988,41 @@ footer a:hover{
 
       <div>
 
-        <h4>Quick Links</h4>
+        <h4>
+          Quick Links
+        </h4>
 
         <ul>
 
-          <li><a href="#home">Home</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#why">Why Choose Us</a></li>
-          <li><a href="#live">Live Classes</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#home">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="#courses">
+              Courses
+            </a>
+          </li>
+
+          <li>
+            <a href="#why">
+              Why Choose Us
+            </a>
+          </li>
+
+          <li>
+            <a href="#live">
+              Live Classes
+            </a>
+          </li>
+
+          <li>
+            <a href="#contact">
+              Contact
+            </a>
+          </li>
 
         </ul>
 
@@ -1705,23 +2031,52 @@ footer a:hover{
 
       <div>
 
-        <h4>Our Courses</h4>
+        <h4>
+          Our Courses
+        </h4>
 
         <ul>
 
-          <li>Noorani Qaida</li>
-          <li>Quran Nazra</li>
-          <li>Hifz Quran</li>
-          <li>Quran Tajweed</li>
-          <li>Tafseer</li>
-          <li>Hadith</li>
-          <li>Seerah</li>
-          <li>Namaz</li>
-          <li>Islamic Studies</li>
+          <li>
+            Noorani Qaida
+          </li>
+
+          <li>
+            Quran Nazra
+          </li>
+
+          <li>
+            Hifz Quran
+          </li>
+
+          <li>
+            Quran Tajweed
+          </li>
+
+          <li>
+            Tafseer
+          </li>
+
+          <li>
+            Hadith
+          </li>
+
+          <li>
+            Seerah
+          </li>
+
+          <li>
+            Namaz
+          </li>
+
+          <li>
+            Islamic Studies
+          </li>
 
         </ul>
 
       </div>
+
 
     </div>
 
@@ -1767,7 +2122,9 @@ function openCourse(title, icon, description){
 
   document.querySelectorAll(".detail-panel")
     .forEach(function(panel){
+
       panel.classList.remove("active");
+
     });
 
 
@@ -1781,7 +2138,9 @@ function openCourse(title, icon, description){
 
   document.querySelectorAll(".detail-tab")
     .forEach(function(button){
+
       button.classList.remove("active");
+
     });
 
 
@@ -1791,7 +2150,8 @@ function openCourse(title, icon, description){
 
   /* Show detail section */
 
-  const detail = document.getElementById("course-detail");
+  const detail =
+    document.getElementById("course-detail");
 
   detail.classList.add("active");
 
@@ -1816,7 +2176,9 @@ function showPanel(panelName, button){
 
   document.querySelectorAll(".detail-panel")
     .forEach(function(panel){
+
       panel.classList.remove("active");
+
     });
 
 
@@ -1826,7 +2188,9 @@ function showPanel(panelName, button){
 
   document.querySelectorAll(".detail-tab")
     .forEach(function(tab){
+
       tab.classList.remove("active");
+
     });
 
 
@@ -1835,6 +2199,7 @@ function showPanel(panelName, button){
 }
 
 </script>
+
 
 </body>
 </html>
