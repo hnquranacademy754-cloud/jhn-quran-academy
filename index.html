@@ -334,15 +334,17 @@ section{
     rgba(255,255,255,.03);
   border-bottom:1px solid rgba(231,211,161,.25);
 }
-
 .course-icon{
-  width:100%;
-  height:165px;
-  display:block;
-  object-fit:cover;
-  border-radius:0;
-  border:0;
-  box-shadow:none;
+  width:85px;
+  height:85px;
+  display:grid;
+  place-items:center;
+  border-radius:25px;
+  background:linear-gradient(145deg,var(--green),var(--green-dark));
+  border:1px solid var(--gold);
+  box-shadow:0 12px 25px rgba(0,0,0,.18);
+  color:var(--gold-light);
+  font-size:42px;
 }
 
 .course-body{
