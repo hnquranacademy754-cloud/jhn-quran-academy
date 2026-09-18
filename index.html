@@ -827,7 +827,114 @@ section{
   background:linear-gradient(135deg,var(--gold-dark),var(--gold));
   font-weight:800;
 }
+/* =========================================================
+   STUDENT TOOLS - AUDIO & VIDEO RECORDING
+========================================================= */
 
+.student-tools{
+  background:linear-gradient(135deg,#F8F4EA,#EEF7F3);
+}
+
+.tools-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+  max-width:1050px;
+  margin:auto;
+}
+
+.tool-card{
+  padding:30px;
+  border-radius:28px;
+  background:linear-gradient(145deg,var(--green-dark),var(--green));
+  border:1px solid rgba(231,211,161,.6);
+  box-shadow:var(--shadow-hover);
+  text-align:center;
+  color:white;
+}
+
+.tool-icon{
+  font-size:45px;
+  margin-bottom:10px;
+}
+
+.tool-card h3{
+  color:var(--gold-light);
+  font-size:25px;
+  margin-bottom:8px;
+}
+
+.tool-card p{
+  color:rgba(255,255,255,.85);
+  margin-bottom:18px;
+}
+
+.tool-preview{
+  width:100%;
+  max-width:650px;
+  min-height:120px;
+  background:#061F19;
+  border-radius:18px;
+  border:1px solid rgba(231,211,161,.35);
+  margin:18px auto;
+  display:block;
+}
+
+.video-preview{
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+
+.audio-controls,
+.video-controls{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:15px;
+}
+
+.record-btn{
+  border:1px solid var(--gold);
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+  color:white;
+  padding:12px 18px;
+  border-radius:30px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.record-btn.secondary{
+  background:var(--cream);
+  color:var(--green-dark);
+}
+
+.record-btn:disabled{
+  opacity:.5;
+  cursor:not-allowed;
+  transform:none;
+}
+
+.record-status{
+  margin-top:12px;
+  min-height:24px;
+  color:var(--gold-light);
+  font-weight:700;
+}
+
+.download-btn{
+  display:none;
+  margin-top:15px;
+  padding:11px 18px;
+  border-radius:25px;
+  background:var(--gold);
+  color:white;
+  font-weight:800;
+}
+
+.download-btn.show{
+  display:inline-block;
+}
 
 /* =========================================================
    WHY CHOOSE US
@@ -2486,7 +2593,172 @@ footer a:hover{
   </div>
 
 </section>
+<!-- =======================================================
+     STUDENT TOOLS - AUDIO & VIDEO RECORDING
+======================================================= -->
 
+<section class="student-tools" id="student-tools">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span class="section-label">
+        Student Tools
+      </span>
+
+      <h2>
+        Audio & Video Recording
+      </h2>
+
+      <p>
+        Record your Quran lesson for practice, revision and personal learning.
+      </p>
+
+    </div>
+
+
+    <div class="tools-grid">
+
+
+      <!-- AUDIO RECORDING -->
+
+      <div class="tool-card">
+
+        <div class="tool-icon">
+          🎙️
+        </div>
+
+        <h3>
+          Audio Recording
+        </h3>
+
+        <p>
+          Record your Quran lesson and listen to it again for practice and revision.
+        </p>
+
+        <audio
+          id="audioPlayback"
+          class="tool-preview"
+          controls>
+        </audio>
+
+
+        <div class="audio-controls">
+
+          <button
+            type="button"
+            class="record-btn"
+            id="startAudioRecord">
+            🎙️ Start Recording
+          </button>
+
+          <button
+            type="button"
+            class="record-btn secondary"
+            id="stopAudioRecord"
+            disabled>
+            ⏹️ Stop Recording
+          </button>
+
+        </div>
+
+
+        <div
+          class="record-status"
+          id="audioStatus">
+          Ready to record
+        </div>
+
+
+        <a
+          id="downloadAudio"
+          class="download-btn"
+          download="hn-quran-audio.webm">
+          ⬇️ Download Audio
+        </a>
+
+      </div>
+
+
+
+      <!-- VIDEO RECORDING -->
+
+      <div class="tool-card">
+
+        <div class="tool-icon">
+          🎥
+        </div>
+
+        <h3>
+          Video Recording
+        </h3>
+
+        <p>
+          Record your lesson video for personal revision and practice.
+        </p>
+
+
+        <video
+          id="videoPreview"
+          class="tool-preview video-preview"
+          autoplay
+          muted
+          playsinline>
+        </video>
+
+
+        <video
+          id="videoPlayback"
+          class="tool-preview video-preview"
+          controls
+          playsinline
+          style="display:none;">
+        </video>
+
+
+        <div class="video-controls">
+
+          <button
+            type="button"
+            class="record-btn"
+            id="startVideoRecord">
+            🎥 Start Recording
+          </button>
+
+          <button
+            type="button"
+            class="record-btn secondary"
+            id="stopVideoRecord"
+            disabled>
+            ⏹️ Stop Recording
+          </button>
+
+        </div>
+
+
+        <div
+          class="record-status"
+          id="videoStatus">
+          Ready to record
+        </div>
+
+
+        <a
+          id="downloadVideo"
+          class="download-btn"
+          download="hn-quran-video.webm">
+          ⬇️ Download Video
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
 
 <!-- =======================================================
      FOOTER
@@ -3111,7 +3383,230 @@ function bookFreeTrial(){
   },100);
 
 }
+/* =========================================================
+   AUDIO RECORDING
+========================================================= */
 
+let audioRecorder = null;
+let audioChunks = [];
+let audioStream = null;
+
+const startAudioRecord = document.getElementById("startAudioRecord");
+const stopAudioRecord = document.getElementById("stopAudioRecord");
+const audioPlayback = document.getElementById("audioPlayback");
+const audioStatus = document.getElementById("audioStatus");
+const downloadAudio = document.getElementById("downloadAudio");
+
+if (startAudioRecord && stopAudioRecord) {
+
+  startAudioRecord.onclick = async function () {
+
+    try {
+
+      audioStream = await navigator.mediaDevices.getUserMedia({
+        audio: true
+      });
+
+      audioChunks = [];
+
+      audioRecorder = new MediaRecorder(audioStream);
+
+      audioRecorder.ondataavailable = function(event) {
+
+        if (event.data.size > 0) {
+          audioChunks.push(event.data);
+        }
+
+      };
+
+      audioRecorder.onstop = function() {
+
+        const blob = new Blob(audioChunks, {
+          type: "audio/webm"
+        });
+
+        const url = URL.createObjectURL(blob);
+
+        audioPlayback.src = url;
+
+        downloadAudio.href = url;
+
+        downloadAudio.classList.add("show");
+
+        audioStatus.textContent =
+          "Recording finished. You can listen or download it.";
+
+        if (audioStream) {
+
+          audioStream.getTracks().forEach(function(track) {
+            track.stop();
+          });
+
+        }
+
+      };
+
+      audioRecorder.start();
+
+      startAudioRecord.disabled = true;
+
+      stopAudioRecord.disabled = false;
+
+      audioStatus.textContent = "🔴 Recording...";
+
+    } catch (error) {
+
+      audioStatus.textContent =
+        "Microphone permission is required.";
+
+      alert(
+        "Please allow microphone permission to record audio."
+      );
+
+    }
+
+  };
+
+
+  stopAudioRecord.onclick = function() {
+
+    if (
+      audioRecorder &&
+      audioRecorder.state !== "inactive"
+    ) {
+
+      audioRecorder.stop();
+
+      startAudioRecord.disabled = false;
+
+      stopAudioRecord.disabled = true;
+
+    }
+
+  };
+
+}
+
+
+
+/* =========================================================
+   VIDEO RECORDING
+========================================================= */
+
+let videoRecorder = null;
+let videoChunks = [];
+let videoStream = null;
+
+const startVideoRecord = document.getElementById("startVideoRecord");
+const stopVideoRecord = document.getElementById("stopVideoRecord");
+const videoPreview = document.getElementById("videoPreview");
+const videoPlayback = document.getElementById("videoPlayback");
+const videoStatus = document.getElementById("videoStatus");
+const downloadVideo = document.getElementById("downloadVideo");
+
+if (startVideoRecord && stopVideoRecord) {
+
+  startVideoRecord.onclick = async function () {
+
+    try {
+
+      videoStream = await navigator.mediaDevices.getUserMedia({
+        video: true,
+        audio: true
+      });
+
+      videoChunks = [];
+
+      videoPreview.srcObject = videoStream;
+
+      videoPreview.style.display = "block";
+
+      videoRecorder = new MediaRecorder(videoStream);
+
+
+      videoRecorder.ondataavailable = function(event) {
+
+        if (event.data.size > 0) {
+          videoChunks.push(event.data);
+        }
+
+      };
+
+
+      videoRecorder.onstop = function() {
+
+        const blob = new Blob(videoChunks, {
+          type: "video/webm"
+        });
+
+        const url = URL.createObjectURL(blob);
+
+        videoPlayback.src = url;
+
+        videoPlayback.style.display = "block";
+
+        downloadVideo.href = url;
+
+        downloadVideo.classList.add("show");
+
+        videoStatus.textContent =
+          "Recording finished. You can play or download it.";
+
+
+        if (videoStream) {
+
+          videoStream.getTracks().forEach(function(track) {
+            track.stop();
+          });
+
+          videoPreview.srcObject = null;
+
+        }
+
+      };
+
+
+      videoRecorder.start();
+
+      startVideoRecord.disabled = true;
+
+      stopVideoRecord.disabled = false;
+
+      videoStatus.textContent =
+        "🔴 Recording video...";
+
+    } catch (error) {
+
+      videoStatus.textContent =
+        "Camera and microphone permission is required.";
+
+      alert(
+        "Please allow camera and microphone permission to record video."
+      );
+
+    }
+
+  };
+
+
+  stopVideoRecord.onclick = function() {
+
+    if (
+      videoRecorder &&
+      videoRecorder.state !== "inactive"
+    ) {
+
+      videoRecorder.stop();
+
+      startVideoRecord.disabled = false;
+
+      stopVideoRecord.disabled = true;
+
+    }
+
+  };
+
+         }
 </script>
 
 
