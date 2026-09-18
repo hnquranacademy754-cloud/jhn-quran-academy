@@ -2893,8 +2893,6 @@ function showPanel(panelName, button){
   button.classList.add("active");
 
 }
-
-
 /* =========================================================
    BOOK FREE TRIAL
 ========================================================= */
@@ -2911,26 +2909,6 @@ function bookFreeTrial(){
   }
 
 
-  /* Set course */
-
-  document.getElementById("selectedCourse").value =
-    currentCourse;
-
-
-  /* Set request type */
-
-  document.getElementById("requestType").value =
-    "Free Trial";
-
-
-  /* Add automatic message */
-
-  document.getElementById("admissionMessage").value =
-    "I would like to book a FREE trial class for " +
-    currentCourse +
-    ". Please contact me with the available trial class timings.";
-
-
   /* Hide all panels */
 
   document.querySelectorAll(".detail-panel")
@@ -2941,7 +2919,7 @@ function bookFreeTrial(){
     });
 
 
-  /* Open admission form */
+  /* Open Admission panel */
 
   document.getElementById("panel-admission")
     .classList.add("active");
@@ -2967,7 +2945,7 @@ function bookFreeTrial(){
   }
 
 
-  /* Scroll to form */
+  /* Scroll to Admission form */
 
   setTimeout(function(){
 
@@ -2979,22 +2957,5 @@ function bookFreeTrial(){
 
   },100);
 
-}
-   
+   }
 
-    
-
-  
-
-
-  
-      
-
-      
-
-         
-</script>
-
-
-</body>
-</html>
