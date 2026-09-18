@@ -828,7 +828,45 @@ section{
   font-weight:800;
 }
 
+/* FLOATING WHATSAPP BUTTON */
 
+.floating-whatsapp{
+  position:fixed;
+  right:18px;
+  bottom:20px;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+}
+
+.floating-whatsapp-icon{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:#25D366;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  box-shadow:0 8px 25px rgba(0,0,0,.22);
+}
+
+.floating-whatsapp-message{
+  background:var(--green-dark);
+  color:white;
+  padding:10px 15px;
+  border-radius:20px;
+  font-size:14px;
+  font-weight:700;
+  box-shadow:0 6px 20px rgba(0,0,0,.18);
+}
+
+.floating-whatsapp:hover{
+  transform:translateY(-3px);
+}
 /* =========================================================
    WHY CHOOSE US
 ========================================================= */
@@ -2406,7 +2444,21 @@ footer a:hover{
   </div>
 
 </section>
+<a
+  href="https://wa.me/923139793754"
+  class="floating-whatsapp"
+  target="_blank"
+  aria-label="Chat with HN Quran Academy on WhatsApp">
 
+  <span class="floating-whatsapp-message">
+    💬 Chat with us
+  </span>
+
+  <span class="floating-whatsapp-icon">
+    ☎️
+  </span>
+
+</a>
 
 <!-- =======================================================
      CONTACT
