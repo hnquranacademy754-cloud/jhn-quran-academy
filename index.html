@@ -780,7 +780,20 @@ section{
   font-weight:900;
   cursor:pointer;
 }
+.google-form-wrapper{
+  max-width:760px;
+  margin:30px auto;
+  overflow:hidden;
+  border-radius:18px;
+}
 
+.google-form-wrapper iframe{
+  width:100%;
+  height:1225px;
+  border:0;
+  display:block;
+  background:#fff;
+}
 
 /* =========================================================
    CONTACT PANEL
@@ -1928,8 +1941,7 @@ footer a:hover{
 
       </div>
 
-
-      <!-- =================================================
+<!-- =================================================
            ADMISSION
       ================================================== -->
 
@@ -1944,220 +1956,25 @@ footer a:hover{
           Free Trial, your request will be marked accordingly.
         </p>
 
-        <form class="admission-form"
-              action="https://formspree.io/f/myezznqn"
-              method="POST">
-
-
-          <div class="form-group">
-
-            <label>
-              Student Name
-            </label>
-
-            <input type="text"
-                   name="name"
-                   placeholder="Enter student name"
-                   required>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Parent / Guardian Name
-            </label>
-
-            <input type="text"
-                   name="parent_name"
-                   placeholder="Enter parent or guardian name"
-                   required>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Age
-            </label>
-
-            <input type="number"
-                   name="age"
-                   placeholder="Student age"
-                   min="3"
-                   max="100"
-                   required>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Country
-            </label>
-
-            <select name="country" required>
-
-              <option value="">
-                Select Country
-              </option>
-
-              <option>Pakistan</option>
-              <option>United Kingdom</option>
-              <option>USA</option>
-              <option>Canada</option>
-              <option>Australia</option>
-              <option>Norway</option>
-              <option>Netherlands</option>
-              <option>Germany</option>
-              <option>France</option>
-              <option>Italy</option>
-              <option>Spain</option>
-              <option>UAE</option>
-              <option>Saudi Arabia</option>
-              <option>Kuwait</option>
-              <option>Qatar</option>
-              <option>India</option>
-              <option>Bangladesh</option>
-              <option>Malaysia</option>
-              <option>Afghanistan</option>
-              <option>Iran</option>
-              <option>Other</option>
-
-            </select>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              WhatsApp / Contact Number
-            </label>
-
-            <input type="tel"
-                   name="phone"
-                   placeholder="+92..."
-                   required>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Email
-            </label>
-
-            <input type="email"
-                   name="email"
-                   placeholder="Enter email address"
-                   required>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Selected Course
-            </label>
-
-            <input type="text"
-                   id="selectedCourse"
-                   name="course"
-                   value=""
-                   readonly>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Request Type
-            </label>
-
-            <select id="requestType"
-                    name="request_type"
-                    required>
-
-              <option value="Regular Admission">
-                Regular Admission
-              </option>
-
-              <option value="Free Trial">
-                🎁 Free Trial
-              </option>
-
-            </select>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Classes Per Week
-            </label>
-
-            <select name="days" required>
-
-              <option value="3 Days">
-                3 Days / Week
-              </option>
-
-              <option value="4 Days">
-                4 Days / Week
-              </option>
-
-              <option value="5 Days" selected>
-                5 Days / Week
-              </option>
-
-            </select>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Preferred Time
-            </label>
-
-            <input type="text"
-                   name="preferred_time"
-                   placeholder="Example: 7:00 PM">
-
-          </div>
-
-
-          <div class="form-group full">
-
-            <label>
-              Message
-            </label>
-
-            <textarea id="admissionMessage"
-                      name="message"
-                      placeholder="Write any question or additional information"></textarea>
-
-          </div>
-
-
-          <button class="form-submit"
-                  type="submit">
-            📝 Submit Request
-          </button>
-
-
-        </form>
+        <div class="google-form-wrapper">
+
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdmrNseS9BdpX6Y7TpLzqTd4V3u2IfqoB2hGYpk4CA9DEMklw/viewform?embedded=true"
+            width="640"
+            height="1225"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0">
+            Loading…
+          </iframe>
+
+        </div>
 
       </div>
+       
+
+
+          
 
 
       <!-- =================================================
