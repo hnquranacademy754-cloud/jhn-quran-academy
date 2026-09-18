@@ -2786,12 +2786,13 @@ function selectCountry(countryKey, button){
 
 }
 
-
 /* =========================================================
    OPEN COURSE
 ========================================================= */
 
 function openCourse(title, icon, description){
+
+  alert("View Course is working");
 
   currentCourse = title;
 
@@ -2807,9 +2808,6 @@ function openCourse(title, icon, description){
 
   document.getElementById("infoText").textContent =
     description;
-
-  
-   
 
 
   /* Reset all panels */
@@ -2861,7 +2859,9 @@ function openCourse(title, icon, description){
 
   },100);
 
-}
+   }
+
+  
 
 
 /* =========================================================
