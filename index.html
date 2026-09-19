@@ -114,7 +114,29 @@ header{
   font-size:25px;
   box-shadow:0 7px 18px rgba(11,59,46,.18), 0 0 12px rgba(198,161,91,.20);
 }
+.course-slider{
+  width:100%;
+  overflow:hidden;
+  padding:18px 0;
+  background:var(--cream);
+}
 
+.slider-track{
+  display:flex;
+  gap:18px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.slide{
+  padding:14px 22px;
+  border-radius:16px;
+  background:var(--green-dark);
+  color:var(--gold-light);
+  border:1px solid var(--gold);
+  font-weight:700;
+  box-shadow:0 6px 16px rgba(11,59,46,.15);
+}
 .nav{
   position:absolute;
   right:0;
@@ -1184,7 +1206,19 @@ footer a:hover{
   </div>
 
 </header>
+<!-- PREMIUM COURSE SLIDER -->
+<section class="course-slider">
+  <div class="slider-track">
 
+    <div class="slide">📖 Quran Nazra</div>
+    <div class="slide">📚 Noorani Qaida</div>
+    <div class="slide">🎙️ Tajweed</div>
+    <div class="slide">🤲 Hifz-ul-Quran</div>
+    <div class="slide">📜 Tafseer</div>
+    <div class="slide">☪️ Islamic Studies</div>
+
+  </div>
+</section>
 
 <!-- =======================================================
      HERO
