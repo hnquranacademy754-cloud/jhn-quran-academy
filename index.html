@@ -1746,7 +1746,10 @@ footer a:hover{
                 onclick="showPanel('contact',this)">
           📱 WhatsApp / Email
         </button>
-
+<button class="detail-tab"
+        onclick="showPanel('schedule',this)">
+  📅 Select Class Time
+</button>
       </div>
 
 
@@ -1777,7 +1780,7 @@ footer a:hover{
       </div>
 
 
-      <!-- =================================================
+      <!-- ================================================= 
            FEES
       ================================================== -->
 
@@ -2201,7 +2204,38 @@ footer a:hover{
 
 
         </div>
+<!-- CLASS SCHEDULE PANEL -->
 
+<div class="detail-panel" id="panel-schedule">
+
+  <h3>📅 Select Your Class Time</h3>
+
+  <p>
+    Choose a suitable day and time for your online class.
+  </p>
+
+  <label>Select Day</label>
+
+  <select id="classDay">
+    <option value="">Select Day</option>
+    <option>Monday</option>
+    <option>Tuesday</option>
+    <option>Wednesday</option>
+    <option>Thursday</option>
+    <option>Friday</option>
+    <option>Saturday</option>
+    <option>Sunday</option>
+  </select>
+
+  <label>Select Time</label>
+
+  <input type="time" id="classTime">
+
+  <button class="course-btn" onclick="bookClassTime()">
+    📅 Book Class Time
+  </button>
+
+</div>
       </div>
 
 
@@ -3181,7 +3215,23 @@ function bookFreeTrial(){
       });
 
   },100);
+function bookClassTime() {
 
+  const day = document.getElementById("classDay").value;
+  const time = document.getElementById("classTime").value;
+
+  if (!day || !time) {
+    alert("Please select your class day and time.");
+    return;
+  }
+
+  alert(
+    "Your class time has been selected.\n\n" +
+    "Day: " + day + "\n" +
+    "Time: " + time
+  );
+
+}
    }
 </script>
 
