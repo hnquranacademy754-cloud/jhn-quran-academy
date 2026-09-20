@@ -143,7 +143,153 @@ header{
   display:flex;
   gap:8px;
 }
+.nav{
+  position:absolute;
+  right:0;
+  display:flex;
+  gap:8px;
+}
+.nav{
+  position:absolute;
+  right:0;
+  display:flex;
+  gap:8px;
+}
+.student-portal{
+  padding:70px 20px;
+  background:var(--cream);
+}
 
+.portal-header{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.portal-badge{
+  display:inline-block;
+  padding:8px 16px;
+  border-radius:30px;
+  background:var(--green-dark);
+  color:var(--gold-light);
+  border:1px solid var(--gold);
+  font-weight:700;
+}
+
+.portal-header h2{
+  margin:16px 0 8px;
+  color:var(--green-dark);
+}
+
+.portal-header p{
+  color:var(--text);
+}
+
+.student-card{
+  max-width:900px;
+  margin:auto;
+  padding:30px;
+  background:var(--white);
+  border-radius:25px;
+  border:1px solid var(--gold);
+  box-shadow:0 15px 35px rgba(11,59,46,.12);
+}
+
+.student-info{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-bottom:25px;
+}
+
+.student-avatar{
+  width:58px;
+  height:58px;
+  display:grid;
+  place-items:center;
+  border-radius:18px;
+  background:var(--green-dark);
+  color:var(--gold-light);
+  font-size:28px;
+}
+
+.student-info h3{
+  margin:0;
+  color:var(--green-dark);
+}
+
+.student-info p{
+  margin:5px 0 0;
+  color:var(--text);
+}
+
+.class-info{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.info-box{
+  padding:20px;
+  text-align:center;
+  border-radius:18px;
+  background:var(--cream);
+  border:1px solid var(--gold-light);
+}
+
+.info-box span{
+  display:block;
+  font-size:25px;
+  margin-bottom:8px;
+}
+
+.info-box strong{
+  display:block;
+  color:var(--green-dark);
+}
+
+.info-box p{
+  margin:6px 0 0;
+  color:var(--text);
+}
+
+.join-area{
+  margin-top:25px;
+  text-align:center;
+}
+
+.class-status{
+  color:var(--green);
+  font-weight:700;
+}
+
+.join-class-btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:13px 28px;
+  border-radius:30px;
+  background:var(--green-dark);
+  color:var(--gold-light);
+  border:1px solid var(--gold);
+  text-decoration:none;
+  font-weight:700;
+  transition:.3s;
+}
+
+.join-class-btn:hover{
+  background:var(--green);
+}
+.nav a{
+  padding:9px 13px;
+  color:var(--green-dark);
+  font-size:14px;
+  font-weight:700;
+  border-radius:20px;
+.nav a{
+  padding:9px 13px;
+  color:var(--green-dark);
+  font-size:14px;
+  font-weight:700;
+  border-radius:20px;
 .nav a{
   padding:9px 13px;
   color:var(--green-dark);
@@ -2233,7 +2379,70 @@ footer a:hover{
   </div>
 
 </section>
+<!-- STUDENT PORTAL -->
 
+<section class="student-portal" id="student-portal">
+
+  <div class="container">
+
+    <div class="portal-header">
+      <span class="portal-badge">🎓 Student Portal</span>
+
+      <h2>Welcome to HN Quran Academy</h2>
+
+      <p>
+        Your class schedule and joining information are available here.
+      </p>
+    </div>
+
+    <div class="student-card">
+
+      <div class="student-info">
+        <div class="student-avatar">👤</div>
+
+        <div>
+          <h3>Student Name</h3>
+          <p>Quran Nazra</p>
+        </div>
+      </div>
+
+      <div class="class-info">
+
+        <div class="info-box">
+          <span>👨‍🏫</span>
+          <strong>Teacher</strong>
+          <p>Teacher Name</p>
+        </div>
+
+        <div class="info-box">
+          <span>📅</span>
+          <strong>Next Class</strong>
+          <p>Saturday</p>
+        </div>
+
+        <div class="info-box">
+          <span>🕐</span>
+          <strong>Class Time</strong>
+          <p>7:00 PM</p>
+        </div>
+
+      </div>
+
+      <div class="join-area">
+
+        <p class="class-status">⏳ Your next class is scheduled</p>
+
+        <a href="#" class="join-class-btn">
+          🔗 Join Class
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 <!-- =======================================================
      LIVE CLASSES
